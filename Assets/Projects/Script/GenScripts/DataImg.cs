@@ -78,8 +78,90 @@ namespace Projects.Script.GenScripts
             characterImages.Add("CV", Resources.Load<Sprite>("CV"));
             characterImages.Add("CW", Resources.Load<Sprite>("CW"));
             characterImages.Add("CX", Resources.Load<Sprite>("CX"));
+            //Anteaters
+            characterImages.Add("DE", Resources.Load<Sprite>("DE"));
+            characterImages.Add("DF", Resources.Load<Sprite>("DF"));
+            characterImages.Add("DG", Resources.Load<Sprite>("DG"));
+            characterImages.Add("DH", Resources.Load<Sprite>("DH"));
+            characterImages.Add("DI", Resources.Load<Sprite>("DI"));
+            characterImages.Add("DK", Resources.Load<Sprite>("DK"));
+            characterImages.Add("DL", Resources.Load<Sprite>("DL"));
+            characterImages.Add("DM", Resources.Load<Sprite>("DM"));
+            characterImages.Add("DN", Resources.Load<Sprite>("DN"));
+            characterImages.Add("DO", Resources.Load<Sprite>("DO"));
+            characterImages.Add("DP", Resources.Load<Sprite>("DP"));
+            characterImages.Add("DQ", Resources.Load<Sprite>("DQ"));
+            characterImages.Add("DR", Resources.Load<Sprite>("DR"));
+            characterImages.Add("DS", Resources.Load<Sprite>("DS"));
+            characterImages.Add("DT", Resources.Load<Sprite>("DT"));
+            characterImages.Add("DU", Resources.Load<Sprite>("DU"));
+            characterImages.Add("DV", Resources.Load<Sprite>("DV"));
+            characterImages.Add("DW", Resources.Load<Sprite>("DW"));
+            characterImages.Add("DX", Resources.Load<Sprite>("DX"));
+
+            //Pangolin
+            characterImages.Add("EF", Resources.Load<Sprite>("EF"));
+            characterImages.Add("EG", Resources.Load<Sprite>("EG"));
+            characterImages.Add("EH", Resources.Load<Sprite>("EH"));
+            characterImages.Add("EI", Resources.Load<Sprite>("EI"));
+            characterImages.Add("EK", Resources.Load<Sprite>("EK"));
+            characterImages.Add("EL", Resources.Load<Sprite>("EL"));
+            characterImages.Add("EM", Resources.Load<Sprite>("EM"));
+            characterImages.Add("EN", Resources.Load<Sprite>("EN"));
+            characterImages.Add("EO", Resources.Load<Sprite>("EO"));
+            characterImages.Add("EP", Resources.Load<Sprite>("EP"));
+            characterImages.Add("EQ", Resources.Load<Sprite>("EQ"));
+            characterImages.Add("ER", Resources.Load<Sprite>("ER"));
+            characterImages.Add("ES", Resources.Load<Sprite>("ES"));
+            characterImages.Add("ET", Resources.Load<Sprite>("ET"));
+            characterImages.Add("EU", Resources.Load<Sprite>("EU"));
+            characterImages.Add("EV", Resources.Load<Sprite>("EV"));
+            characterImages.Add("EW", Resources.Load<Sprite>("EW"));
+            characterImages.Add("EX", Resources.Load<Sprite>("EX"));
+            //Astronaut
+            characterImages.Add("FG", Resources.Load<Sprite>("FG"));
+            characterImages.Add("FH", Resources.Load<Sprite>("FH"));
+            characterImages.Add("FI", Resources.Load<Sprite>("FI"));
+            characterImages.Add("FK", Resources.Load<Sprite>("FK"));
+            characterImages.Add("FL", Resources.Load<Sprite>("FL"));
+            characterImages.Add("FM", Resources.Load<Sprite>("FM"));
+            characterImages.Add("FN", Resources.Load<Sprite>("FN"));
+            characterImages.Add("FO", Resources.Load<Sprite>("FO"));
+            characterImages.Add("FP", Resources.Load<Sprite>("FP"));
+            characterImages.Add("FQ", Resources.Load<Sprite>("FQ"));
+            characterImages.Add("FR", Resources.Load<Sprite>("FR"));
+            characterImages.Add("FS", Resources.Load<Sprite>("FS"));
+            characterImages.Add("FT", Resources.Load<Sprite>("FT"));
+            characterImages.Add("FU", Resources.Load<Sprite>("FU"));
+            characterImages.Add("FV", Resources.Load<Sprite>("FV"));
+            characterImages.Add("FW", Resources.Load<Sprite>("FW"));
+            characterImages.Add("FX", Resources.Load<Sprite>("FX"));
+
+
+            //Avacado
+            
+            //Pinkfish
+            characterImages.Add("HI", Resources.Load<Sprite>("HI"));
+            characterImages.Add("HK", Resources.Load<Sprite>("HK"));
+            characterImages.Add("HL", Resources.Load<Sprite>("HL"));
+            characterImages.Add("HM", Resources.Load<Sprite>("HM"));
+            characterImages.Add("HN", Resources.Load<Sprite>("HN"));
+            characterImages.Add("HO", Resources.Load<Sprite>("HO"));
+            characterImages.Add("HP", Resources.Load<Sprite>("HP"));
+            characterImages.Add("HQ", Resources.Load<Sprite>("HQ"));
+            characterImages.Add("HR", Resources.Load<Sprite>("HR"));
+            characterImages.Add("HS", Resources.Load<Sprite>("HS"));
+            characterImages.Add("HT", Resources.Load<Sprite>("HT"));
+            characterImages.Add("HU", Resources.Load<Sprite>("HU"));
+            characterImages.Add("HV", Resources.Load<Sprite>("HV"));
+            characterImages.Add("HW", Resources.Load<Sprite>("HW"));
+            characterImages.Add("HX", Resources.Load<Sprite>("HX"));
+
 
             
+            
+            
+
 
 
 
