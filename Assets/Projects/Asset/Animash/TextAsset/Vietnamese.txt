@@ -1,0 +1,182 @@
+CREATE NEW ANIMALS
+TẠO ĐỘNG VẬT MỚI
+
+SAVED ANIMALS
+ĐỘNG VẬT ĐÃ LƯU
+
+COMMUNITY
+CỘNG ĐỒNG
+
+MORE APPS BY CREATOR
+ỨNG DỤNG KHÁC CỦA TÁC GIẢ
+
+Different animals in
+Các loại động vật khác nhau trong
+
+Music
+Âm nhạc
+
+SFX
+Hiệu ứng âm thanh
+
+View Privacy Policy
+Xem Chính sách bảo mật
+
+Language
+Ngôn ngữ
+
+ENABLED
+ĐÃ BẬT
+
+DISABLED
+ĐÃ TẮT
+
+OKAY
+OKAY
+
+SAVED CREATURES
+SINH VẬT ĐÃ LƯU
+
+VIEW DETAILS
+XEM CHI TIẾT
+
+DELETE
+XÓA
+
+ARE YOU SURE?
+BẠN CÓ CHẮC CHỨ?
+
+Are you sure you want to delete ANIMAL_NAME?
+Bạn có chắc chắn muốn xóa ANIMAL_NAME không?
+
+YES
+CÓ
+
+NO
+KHÔNG
+
+PICK A DAD
+CHỌN MỘT CHA
+
+NEXT
+TIẾP THEO
+
+PICK A MOM
+CHỌN MỘT MẸ
+
+CREATE MORE
+TẠO THÊM
+
+GENERATING RESULT
+ĐANG TẠO KẾT QUẢ
+
+SAVED
+ĐÃ LƯU
+
+Creature saved! You can view your saved creatures in the Main Menu
+Sinh vật đã được lưu! Bạn có thể xem các sinh vật đã lưu trong Menu chính
+
+LOCKED
+KHÓA
+
+Random animals are available every INSERT_TIME! Come back later and see what's unlocked!
+Các động vật ngẫu nhiên có sẵn mỗi INSERT_TIME! Hãy quay lại sau và xem những gì đã mở khóa!
+
+3 hours
+3 giờ
+
+SAVE SLOTS FULL
+HẾT KHE LƯU
+
+You have too many saved creatures (MAX). You must delete some before saving more!
+Bạn đã lưu quá nhiều sinh vật (MAX). Bạn phải xóa một số trước khi lưu thêm!
+
+New Animals Available!
+Động vật mới có sẵn!
+
+New animals are now available!
+Các loài động vật mới hiện đã có sẵn!
+
+ERROR
+LỖI
+
+Oops! Something went wrong. Please restart the game
+Rất tiếc! Đã có lỗi xảy ra. Vui lòng khởi động lại trò chơi
+
+You have not saved any creatures yet...
+Bạn chưa lưu bất kỳ sinh vật nào...
+
+COMMON
+PHỔ BIẾN
+
+UNIQUE
+ĐỘC ĐÁO
+
+RARE
+HIẾM
+
+ULTRA RARE
+CỰC HIẾM
+
+LEGENDARY
+HUYỀN THOẠI
+
+MYTHICAL
+THẦN THOẠI
+
+DIVINE
+THIÊN THẦN
+
+SUPREME
+TỐI THƯỢNG
+
+Special Ability
+Khả năng đặc biệt
+
+Temperament
+Tính cách
+
+Location
+Vị trí
+
+Average Lifespan
+Tuổi thọ trung bình
+
+Strength
+Sức mạnh
+
+Speed
+Tốc độ
+
+Intelligence
+Trí tuệ
+
+Beauty
+Vẻ đẹp
+
+Mystical
+Huyền bí
+
+Preferred Food
+Thức ăn ưa thích
+
+Utility
+Tiện ích
+
+Value
+Giá trị
+
+Convenience
+Tiện lợi
+
+Commonly used for
+Thường được sử dụng cho
+
+Date Saved
+Ngày lưu
+
+Enjoying Animash?
+Bạn có thích trò chơi của chúng tôi không?
+
+Please rate our app! It helps us a lot.
+Vui lòng đánh giá ứng dụng của chúng tôi! Nó giúp chúng tôi rất nhiều.

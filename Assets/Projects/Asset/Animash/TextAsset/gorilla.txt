@@ -1,0 +1,8 @@
+capybara
+grizzly bear
+hedgehog
+pineapple
+sea slug
+tardigrade
+tiger
+toilet

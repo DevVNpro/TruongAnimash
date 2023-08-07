@@ -1,0 +1,11 @@
+capybara
+dragon
+frog
+gorilla
+grizzly bear
+hedgehog
+pineapple
+sea slug
+tardigrade
+tiger
+toilet

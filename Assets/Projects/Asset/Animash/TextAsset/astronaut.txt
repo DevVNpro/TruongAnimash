@@ -1,0 +1,19 @@
+ant eater
+beetle
+bunny
+chameleon
+chicken
+cockroach
+demon
+doughnut
+helicopter
+lynx
+narwhal
+orangutan
+owl
+polar bear
+unicorn
+urchin
+velociraptor
+wasp
+zombie

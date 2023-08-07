@@ -1,0 +1,581 @@
+alpaca
+alpaka
+
+angel
+malaikat
+
+ant
+semut
+
+ant eater
+penggerek semut
+
+armadillo
+armadillo
+
+asparagus
+asparagus
+
+astronaut
+astronot
+
+avocado
+alpukat
+
+axolotl
+axolotl
+
+baboon
+babun
+
+bacteria
+bakteri
+
+banana
+pisang
+
+bat
+kelelawar
+
+bath tub
+bak mandi
+
+beaver
+berang-berang
+
+beetle
+kumbang
+
+bicycle
+sepeda
+
+bison
+bison
+
+boot
+sepatu boot
+
+borzoi
+borzoi
+
+broccoli
+brokoli
+
+bunny
+kelinci
+
+burrito
+burrito
+
+butterfly
+kupu-kupu
+
+camel
+unta
+
+capybara
+kapibara
+
+car
+mobil
+
+carrot
+wortel
+
+carton of milk
+karton susu
+
+caterpillar
+ulat
+
+chameleon
+bunglon
+
+cheeseburger
+cheeseburger
+
+cheetah
+cheetah
+
+chickadee
+chickadee
+
+chicken
+ayam
+
+chihuahua
+chihuahua
+
+chimpanzee
+simpanse
+
+chinchilla
+chinchilla
+
+cinnamon bun
+roti kayu manis
+
+clouds
+awan
+
+cockroach
+kecoa
+
+coconut
+kelapa
+
+cookie
+kue kering
+
+corgi
+corgi
+
+corn
+jagung
+
+cotton candy
+gula kapas
+
+couch
+sofa
+
+cow
+sapi
+
+crab
+kepiting
+
+crocodile
+buaya
+
+crow
+gagak
+
+cupcake
+cupcake
+
+deer
+rusa
+
+demon
+iblis
+
+dolphin
+lumba-lumba
+
+doughnut
+donat
+
+dragon
+naga
+
+dragonfly
+capung
+
+duck
+bebek
+
+dwarf
+kerdil
+
+eagle
+elang
+
+electricity
+listrik
+
+elephant
+gajah
+
+emu
+emu
+
+ferret
+musang
+
+fire
+api
+
+flamingo
+flamingo
+
+fork
+garpu
+
+fox
+rubah
+
+french fries
+kentang goreng
+
+fried chicken
+ayam goreng
+
+frog
+katak
+
+garbage truck
+truk sampah
+
+gecko
+tokek
+
+ghost
+hantu
+
+gingerbread man
+manusia jahe
+
+giraffe
+jerapah
+
+goat
+kambing
+
+goose
+angsa
+
+gorilla
+gorila
+
+grasshopper
+belalang
+
+great dane
+great dane
+
+grizzly bear
+beruang grizzly
+
+guitar
+gitar
+
+hedgehog
+landak
+
+helicopter
+helikopter
+
+hippo
+hippo
+
+horse
+kuda
+
+hotdog
+hotdog
+
+housefly
+lalat rumah
+
+human
+manusia
+
+hummingbird
+kolibri
+
+hyena
+hiena
+
+ice
+es
+
+jellyfish
+ubur-ubur
+
+kangaroo
+kanguru
+
+kitten
+anak kucing
+
+knight
+ksatria
+
+koala
+koala
+
+komodo dragon
+komodo
+
+ladybug
+ladybug
+
+lemur
+lemur
+
+lion
+singa
+
+lynx
+lynx
+
+macaw
+macaw
+
+mammoth
+mamut
+
+manatee
+manatee
+
+millipede
+kelabang
+
+mole
+tikus tanah
+
+monkey
+monyet
+
+moose
+rusa kutub
+
+moth
+ngengat
+
+mouse
+tikus
+
+narwhal
+narwhal
+
+ninja
+ninja
+
+octopus
+gurita
+
+orangutan
+orangutan
+
+orca
+orca
+
+ostrich
+burung unta
+
+otter
+berang-berang
+
+owl
+burung hantu
+
+panda
+panda
+
+panther
+panther
+
+peacock
+merak
+
+penguin
+penguin
+
+piano
+piano
+
+pickle
+acar
+
+pig
+babi
+
+pineapple
+nanas
+
+pizza
+pizza
+
+plastic slide
+seluncuran plastik
+
+platypus
+platypus
+
+polar bear
+beruang kutub
+
+politician
+politikus
+
+poodle
+poodle
+
+popcorn
+popcorn
+
+praying mantis
+belalang sembah
+
+pufferfish
+ikan buntal
+
+puffin
+puffin
+
+pug
+pug
+
+pumpkin
+labu
+
+raccoon
+rakun
+
+red panda
+panda merah
+
+reindeer
+rusa kutub
+
+rhino
+badak
+
+robot
+robot
+
+rock
+batu
+
+sable
+sable
+
+salmon
+salmon
+
+santa
+santa
+
+sea anemone
+anemon laut
+
+sea slug
+siput laut
+
+seagull
+camar
+
+seahorse
+kuda laut
+
+seal
+anjing laut
+
+shark
+hiu
+
+sheep
+domba
+
+shiba inu
+shiba inu
+
+shoe
+sepatu
+
+skunk
+skunk
+
+sloth
+sloth
+
+snail
+siput
+
+spaceship
+pesawat luar angkasa
+
+spider
+labalaba
+
+squid
+cumi-cumi
+
+squirrel
+tupai
+
+starfish
+bintang laut
+
+stegosaurus
+stegosaurus
+
+stingray
+pari
+
+strawberry
+stroberi
+
+t-rex
+t-rex
+
+tardigrade
+tardigrade
+
+tiger
+harimau
+
+toaster
+pemanggang roti
+
+toilet
+toilet
+
+toothpaste
+pasta gigi
+
+tree
+pohon
+
+triceratops
+triceratops
+
+turtle
+kura-kura
+
+unicorn
+unicorn
+
+urchin
+bulu babi
+
+velociraptor
+velociraptor
+
+vulture
+burung hantu
+
+walrus
+walrus
+
+washing machine
+mesin cuci
+
+wasp
+tawon
+
+water
+air
+
+watermelon
+semangka
+
+whale
+paus
+
+wolf
+serigala
+
+yak
+yak
+
+yeti
+yeti
+
+zebra
+zebra
+
+zombie
+zombi

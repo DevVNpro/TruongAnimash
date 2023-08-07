@@ -1,0 +1,12 @@
+alpaca
+bacteria
+cheetah
+dragonfly
+fork
+ghost
+hummingbird
+macaw
+monkey
+stingray
+t-rex
+watermelon

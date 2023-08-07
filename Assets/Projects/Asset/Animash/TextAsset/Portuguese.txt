@@ -1,0 +1,182 @@
+CREATE NEW ANIMALS
+CRIAR NOVOS ANIMAIS
+
+SAVED ANIMALS
+ANIMAIS SALVOS
+
+COMMUNITY
+COMUNIDADE
+
+MORE APPS BY CREATOR
+MAIS APPS PELO CRIADOR
+
+Different animals in
+Diferentes animais em
+
+Music
+Música
+
+SFX
+SFX
+
+View Privacy Policy
+Ver Política de Privacidade
+
+Language
+Idioma
+
+ENABLED
+HABILITADO
+
+DISABLED
+DESABILITADO
+
+OKAY
+OK
+
+SAVED CREATURES
+CRIATURAS SALVAS
+
+VIEW DETAILS
+VER DETALHES
+
+DELETE
+APAGAR
+
+ARE YOU SURE?
+TEM CERTEZA?
+
+Are you sure you want to delete ANIMAL_NAME?
+Tem certeza de que quer apagar ANIMAL_NAME?
+
+YES
+SIM
+
+NO
+NÃO
+
+PICK A DAD
+ESCOLHA UM PAI
+
+NEXT
+PRÓXIMO
+
+PICK A MOM
+ESCOLHA UMA MÃE
+
+CREATE MORE
+CRIAR MAIS
+
+GENERATING RESULT
+GERANDO RESULTADO
+
+SAVED
+SALVO
+
+Creature saved! You can view your saved creatures in the Main Menu
+Criatura salva! Você pode ver suas criaturas salvas no Menu Principal
+
+LOCKED
+BLOQUEADO
+
+Random animals are available every INSERT_TIME! Come back later and see what's unlocked!
+Animais aleatórios estão disponíveis a cada INSERT_TIME! Volte mais tarde e veja o que está desbloqueado!
+
+3 hours
+3 horas
+
+SAVE SLOTS FULL
+ESPAÇOS DE SALVAMENTO CHEIOS
+
+You have too many saved creatures (MAX). You must delete some before saving more!
+Você tem muitas criaturas salvas (MAX). Você deve apagar algumas antes de salvar mais!
+
+New Animals Available!
+Novos Animais Disponíveis!
+
+New animals are now available!
+Novos animais estão agora disponíveis!
+
+ERROR
+ERRO
+
+Oops! Something went wrong. Please restart the game
+Ops! Algo deu errado. Por favor, reinicie o jogo
+
+You have not saved any creatures yet...
+Você ainda não salvou nenhuma criatura...
+
+COMMON
+COMUM
+
+UNIQUE
+ÚNICO
+
+RARE
+RARO
+
+ULTRA RARE
+ULTRA RARO
+
+LEGENDARY
+LENDÁRIO
+
+MYTHICAL
+MITOLÓGICO
+
+DIVINE
+DIVINO
+
+SUPREME
+SUPREMO
+
+Special Ability
+Habilidade Especial
+
+Temperament
+Temperamento
+
+Location
+Localização
+
+Average Lifespan
+Expectativa de Vida Média
+
+Strength
+Força
+
+Speed
+Velocidade
+
+Intelligence
+Inteligência
+
+Beauty
+Beleza
+
+Mystical
+Místico
+
+Preferred Food
+Comida Preferida
+
+Utility
+Utilidade
+
+Value
+Valor
+
+Convenience
+Conveniência
+
+Commonly used for
+Comumente usado para
+
+Date Saved
+Data Salva
+
+Enjoying Animash?
+Você está gostando do nosso jogo?
+
+Please rate our app! It helps us a lot.
+Por favor, avalie nosso aplicativo! Isso nos ajuda muito.

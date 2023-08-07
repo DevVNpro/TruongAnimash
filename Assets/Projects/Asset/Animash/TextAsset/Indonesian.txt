@@ -1,0 +1,182 @@
+CREATE NEW ANIMALS
+BUAT HAIWAN BARU
+
+SAVED ANIMALS
+HAIWAN YANG DISIMPAN
+
+COMMUNITY
+KOMUNITI
+
+MORE APPS BY CREATOR
+APLIKASI LAIN OLEH PEMBUAT
+
+Different animals in
+Haiwan yang berbeza di
+
+Music
+Musik
+
+SFX
+SFX
+
+View Privacy Policy
+Lihat Kebijakan Privasi
+
+Language
+Bahasa
+
+ENABLED
+DIDAYAKAN
+
+DISABLED
+DIDAYAKAN
+
+OKAY
+OKE
+
+SAVED CREATURES
+MAKHLUK YANG DISIMPAN
+
+VIEW DETAILS
+LIHAT DETAIL
+
+DELETE
+HAPUS
+
+ARE YOU SURE?
+APA ANDA YAKIN?
+
+Are you sure you want to delete ANIMAL_NAME?
+Anda yakin ingin menghapus ANIMAL_NAME?
+
+YES
+YA
+
+NO
+TIDAK
+
+PICK A DAD
+PILIH AYAH
+
+NEXT
+SELANJUTNYA
+
+PICK A MOM
+PILIH IBU
+
+CREATE MORE
+BUAT LEBIH BANYAK
+
+GENERATING RESULT
+MENGHASILKAN HASIL
+
+SAVED
+TERSIMPAN
+
+Creature saved! You can view your saved creatures in the Main Menu
+Makhluk disimpan! Anda dapat melihat makhluk yang disimpan di Menu Utama
+
+LOCKED
+TERKUNCI
+
+Random animals are available every INSERT_TIME! Come back later and see what's unlocked!
+Hewan acak tersedia setiap INSERT_TIME! Kembali lagi nanti dan lihat apa yang telah dibuka!
+
+3 hours
+3 jam
+
+SAVE SLOTS FULL
+SLOT SIMPANAN PENUH
+
+You have too many saved creatures (MAX). You must delete some before saving more!
+Anda memiliki terlalu banyak makhluk yang disimpan (MAX). Anda harus menghapus beberapa sebelum menyimpan lebih banyak!
+
+New Animals Available!
+Haiwan Baru Tersedia!
+
+New animals are now available!
+Hewan baru sekarang tersedia!
+
+ERROR
+KESALAHAN
+
+Oops! Something went wrong. Please restart the game
+Ups! Ada yang salah. Silakan mulai ulang game
+
+You have not saved any creatures yet...
+Anda belum menyimpan makhluk apa pun...
+
+COMMON
+BIASA
+
+UNIQUE
+UNIK
+
+RARE
+FANTASTIS
+
+ULTRA RARE
+LANGKA
+
+LEGENDARY
+SANGAT LANGKA
+
+MYTHICAL
+LEGENDARIS
+
+DIVINE
+MITOS
+
+SUPREME
+SUPREME
+
+Special Ability
+Kemampuan Khusus
+
+Temperament
+Temperamen
+
+Location
+Lokasi
+
+Average Lifespan
+Jangka Hayat Rata-Rata
+
+Strength
+Kekuatan
+
+Speed
+Kecepatan
+
+Intelligence
+Kecerdasan
+
+Beauty
+Kecantikan
+
+Mystical
+Mistis
+
+Preferred Food
+Makanan Pilihan
+
+Utility
+Kegunaan
+
+Value
+Nilai
+
+Convenience
+Kemudahan
+
+Commonly used for
+Biasanya digunakan untuk
+
+Date Saved
+Tanggal Disimpan
+
+Enjoying Animash?
+Apakah Anda menikmati permainan kami?
+
+Please rate our app! It helps us a lot.
+Silakan menilai aplikasi kami! Ini sangat membantu kami.

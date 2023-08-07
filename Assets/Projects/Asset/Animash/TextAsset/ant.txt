@@ -1,0 +1,11 @@
+carrot
+deer
+ferret
+fire
+mammoth
+ninja
+orca
+panther
+pug
+rhino
+turtle

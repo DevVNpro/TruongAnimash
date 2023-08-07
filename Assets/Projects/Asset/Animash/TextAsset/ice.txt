@@ -1,0 +1,17 @@
+ant
+banana
+borzoi
+carrot
+deer
+ferret
+fire
+horse
+mammoth
+ninja
+orca
+panther
+pig
+pug
+rhino
+salmon
+turtle

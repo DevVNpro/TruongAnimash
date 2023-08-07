@@ -1,0 +1,7 @@
+banana
+borzoi
+horse
+ice
+jellyfish
+pig
+salmon

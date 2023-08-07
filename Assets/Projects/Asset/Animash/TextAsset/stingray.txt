@@ -1,0 +1,20 @@
+bacteria
+butterfly
+cheetah
+cookie
+dragonfly
+emu
+fork
+fox
+ghost
+hummingbird
+lemur
+macaw
+rock
+shiba inu
+tree
+vulture
+watermelon
+yak
+yeti
+zebra

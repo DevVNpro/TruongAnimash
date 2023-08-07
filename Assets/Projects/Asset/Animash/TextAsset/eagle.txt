@@ -1,0 +1,33 @@
+avocado
+broccoli
+capybara
+chihuahua
+cinnamon bun
+coconut
+cotton candy
+crab
+crocodile
+cupcake
+dragon
+duck
+frog
+goat
+gorilla
+grizzly bear
+hedgehog
+hyena
+penguin
+pickle
+pineapple
+raccoon
+reindeer
+robot
+santa
+sea slug
+shark
+spider
+squid
+squirrel
+tardigrade
+tiger
+toilet

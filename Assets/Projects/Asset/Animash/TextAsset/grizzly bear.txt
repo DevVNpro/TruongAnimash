@@ -1,0 +1,7 @@
+capybara
+hedgehog
+pineapple
+sea slug
+tardigrade
+tiger
+toilet

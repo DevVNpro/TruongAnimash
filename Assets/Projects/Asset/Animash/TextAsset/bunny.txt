@@ -1,0 +1,14 @@
+ant eater
+chameleon
+cockroach
+doughnut
+helicopter
+lynx
+narwhal
+owl
+polar bear
+unicorn
+urchin
+velociraptor
+wasp
+zombie

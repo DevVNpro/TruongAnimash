@@ -1,0 +1,18 @@
+ant eater
+astronaut
+beetle
+bunny
+chicken
+clouds
+corn
+demon
+giraffe
+kangaroo
+kitten
+ladybug
+lion
+orangutan
+politician
+praying mantis
+sloth
+urchin

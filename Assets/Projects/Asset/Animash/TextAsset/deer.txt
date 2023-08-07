@@ -1,0 +1,13 @@
+alpaca
+bacteria
+cheetah
+dragonfly
+fork
+ghost
+hummingbird
+macaw
+monkey
+ninja
+stingray
+t-rex
+watermelon

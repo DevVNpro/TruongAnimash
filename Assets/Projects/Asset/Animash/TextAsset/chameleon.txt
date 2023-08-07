@@ -1,0 +1,10 @@
+cockroach
+doughnut
+helicopter
+lynx
+narwhal
+owl
+polar bear
+unicorn
+velociraptor
+wasp

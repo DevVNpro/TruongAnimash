@@ -1,0 +1,16 @@
+butterfly
+cheetah
+cookie
+emu
+fork
+fox
+ghost
+hummingbird
+lemur
+rock
+shiba inu
+tree
+vulture
+yak
+yeti
+zebra

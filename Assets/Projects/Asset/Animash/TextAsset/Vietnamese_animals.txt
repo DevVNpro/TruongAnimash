@@ -1,0 +1,581 @@
+alpaca
+vải ba ga
+
+angel
+thiên thần
+
+ant
+con kiến
+
+ant eater
+con thú ăn kiến
+
+armadillo
+con tatu
+
+asparagus
+măng tây
+
+astronaut
+phi hành gia
+
+avocado
+quả bơ
+
+axolotl
+axolotl
+
+baboon
+khỉ đầu chó
+
+bacteria
+vi khuẩn
+
+banana
+quả chuối
+
+bat
+con dơi
+
+bath tub
+bồn tắm
+
+beaver
+con hải ly
+
+beetle
+bọ cánh cứng
+
+bicycle
+chiếc xe đạp
+
+bison
+trâu hoang
+
+boot
+đôi ủng
+
+borzoi
+chó Borzoi
+
+broccoli
+bông cải xanh
+
+bunny
+con thỏ
+
+burrito
+bánh burrito
+
+butterfly
+bướm
+
+camel
+lạc đà
+
+capybara
+capybara
+
+car
+xe hơi
+
+carrot
+cà rốt
+
+carton of milk
+hộp sữa
+
+caterpillar
+sâu bướm
+
+chameleon
+tắc kè hoa
+
+cheeseburger
+bánh mì kẹp thịt phô mai
+
+cheetah
+báo chạy
+
+chickadee
+chim sẻ đen
+
+chicken
+gà
+
+chihuahua
+chó Chihuahua
+
+chimpanzee
+tinh tinh
+
+chinchilla
+chinchilla
+
+cinnamon bun
+bánh quy quế
+
+clouds
+đám mây
+
+cockroach
+con gián
+
+coconut
+quả dừa
+
+cookie
+bánh quy
+
+corgi
+chó Corgi
+
+corn
+ngô
+
+cotton candy
+kẹo bông gòn
+
+couch
+ghế sofa
+
+cow
+bò
+
+crab
+con cua
+
+crocodile
+cá sấu
+
+crow
+con quạ
+
+cupcake
+bánh ngọt nhỏ
+
+deer
+hươu
+
+demon
+quỷ
+
+dolphin
+cá heo
+
+doughnut
+bánh rán
+
+dragon
+rồng
+
+dragonfly
+chuồn chuồn
+
+duck
+vịt
+
+dwarf
+người lùn
+
+eagle
+đại bàng
+
+electricity
+điện
+
+elephant
+voi
+
+emu
+đà điểu Emu
+
+ferret
+chồn
+
+fire
+lửa
+
+flamingo
+hồng hạc
+
+fork
+cái nĩa
+
+fox
+cáo
+
+french fries
+khoai tây chiên
+
+fried chicken
+gà rán
+
+frog
+ếch
+
+garbage truck
+xe rác
+
+gecko
+tắc kè
+
+ghost
+ma
+
+gingerbread man
+bánh gừng
+
+giraffe
+hươu cao cổ
+
+goat
+dê
+
+goose
+ngỗng
+
+gorilla
+gorilla
+
+grasshopper
+châu chấu
+
+great dane
+chó Đan Mạch
+
+grizzly bear
+gấu Grizzly
+
+guitar
+đàn guitar
+
+hedgehog
+nhím
+
+helicopter
+máy bay trực thăng
+
+hippo
+hà mã
+
+horse
+ngựa
+
+hotdog
+xúc xích
+
+housefly
+ruồi nhà
+
+human
+con người
+
+hummingbird
+chim ruồi
+
+hyena
+linh cẩu
+
+ice
+đá
+
+jellyfish
+sứa
+
+kangaroo
+kangaroo
+
+kitten
+mèo con
+
+knight
+hiệp sĩ
+
+koala
+koala
+
+komodo dragon
+rồng komodo
+
+ladybug
+bọ rùa
+
+lemur
+lemur
+
+lion
+sư tử
+
+lynx
+báo lynx
+
+macaw
+vẹt Macaw
+
+mammoth
+mamut
+
+manatee
+manatee
+
+millipede
+con giun millepede
+
+mole
+chuột chũi
+
+monkey
+khỉ
+
+moose
+hươu mạnh mẽ
+
+moth
+bướm đêm
+
+mouse
+chuột
+
+narwhal
+narwhal
+
+ninja
+ninja
+
+octopus
+bạch tuộc
+
+orangutan
+orangutan
+
+orca
+cá voi sát thủ
+
+ostrich
+đà điểu
+
+otter
+rái cá
+
+owl
+cú mèo
+
+panda
+gấu trúc
+
+panther
+báo đen
+
+peacock
+con công
+
+penguin
+chim cánh cụt
+
+piano
+đàn piano
+
+pickle
+dưa muối
+
+pig
+lợn
+
+pineapple
+dứa
+
+pizza
+bánh pizza
+
+plastic slide
+cầu trượt nhựa
+
+platypus
+thú mỏ vịt
+
+polar bear
+gấu Bắc Cực
+
+politician
+nhà chính trị
+
+poodle
+chó poodle
+
+popcorn
+bỏng ngô
+
+praying mantis
+con chuồn chuồn ngô
+
+pufferfish
+cá nóc
+
+puffin
+chim puffin
+
+pug
+chó Pug
+
+pumpkin
+bí ngô
+
+raccoon
+gấu trúc Mỹ
+
+red panda
+gấu trúc đỏ
+
+reindeer
+tuần lộc
+
+rhino
+tê giác
+
+robot
+robot
+
+rock
+đá
+
+sable
+sói sable
+
+salmon
+cá hồi
+
+santa
+ông già Noel
+
+sea anemone
+hải quỳ
+
+sea slug
+sên biển
+
+seagull
+mòng biển
+
+seahorse
+cá ngựa
+
+seal
+hải cẩu
+
+shark
+cá mập
+
+sheep
+cừu
+
+shiba inu
+chó Shiba Inu
+
+shoe
+giày
+
+skunk
+chồn hôi
+
+sloth
+con lười
+
+snail
+ốc sên
+
+spaceship
+tàu vũ trụ
+
+spider
+nhện
+
+squid
+mực
+
+squirrel
+sóc
+
+starfish
+sao biển
+
+stegosaurus
+khủng long stegosaurus
+
+stingray
+cá đuối
+
+strawberry
+dâu tây
+
+t-rex
+khủng long T-rex
+
+tardigrade
+tardigrade
+
+tiger
+hổ
+
+toaster
+lò nướng bánh mì
+
+toilet
+nhà vệ sinh
+
+toothpaste
+kem đánh răng
+
+tree
+cây
+
+triceratops
+khủng long triceratops
+
+turtle
+rùa
+
+unicorn
+kỳ lân
+
+urchin
+nhím biển
+
+velociraptor
+khủng long velociraptor
+
+vulture
+giải
+
+walrus
+hải mã
+
+washing machine
+máy giặt
+
+wasp
+ong bắp cày
+
+water
+nước
+
+watermelon
+dưa hấu
+
+whale
+cá voi
+
+wolf
+sói
+
+yak
+trâu Yak
+
+yeti
+yeti
+
+zebra
+ngựa vằn
+
+zombie
+xác sống

@@ -1,0 +1,17 @@
+broccoli
+capybara
+chihuahua
+coconut
+crocodile
+dragon
+frog
+gorilla
+grizzly bear
+hedgehog
+penguin
+pineapple
+sea slug
+spider
+tardigrade
+tiger
+toilet

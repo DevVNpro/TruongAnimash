@@ -1,0 +1,4 @@
+bat
+camel
+red panda
+seal

@@ -1,0 +1,9 @@
+banana
+borzoi
+cheeseburger
+horse
+ice
+jellyfish
+pig
+salmon
+strawberry

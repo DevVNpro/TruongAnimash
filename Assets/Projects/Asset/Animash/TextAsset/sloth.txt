@@ -1,0 +1,11 @@
+ant eater
+astronaut
+beetle
+bunny
+chicken
+clouds
+corn
+demon
+kitten
+orangutan
+urchin

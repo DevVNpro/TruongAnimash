@@ -1,0 +1,27 @@
+broccoli
+capybara
+chihuahua
+coconut
+cotton candy
+crocodile
+dragon
+eagle
+frog
+gorilla
+grizzly bear
+hedgehog
+lynx
+narwhal
+owl
+penguin
+pineapple
+polar bear
+robot
+sea slug
+spider
+tardigrade
+tiger
+toilet
+unicorn
+velociraptor
+wolf

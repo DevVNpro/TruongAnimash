@@ -1,0 +1,14 @@
+ant
+borzoi
+carrot
+deer
+ferret
+fire
+mammoth
+ninja
+orca
+panther
+pug
+rhino
+salmon
+turtle

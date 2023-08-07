@@ -1,0 +1,11 @@
+bat
+camel
+carton of milk
+dragon
+frog
+great dane
+peacock
+red panda
+robot
+seal
+sheep
