@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Projects.Script.PickScripts;
 using UnityEngine.UI;
 using UnityEngine;
 
@@ -16,6 +17,11 @@ public class ShowUI : MonoBehaviour
   
   [Header("HeadText")]
    public Text headText;
+
+   //test save key to find in dictionary
+   [Header(("Key"))] 
+   public Text keyText;
+   public Datakey datakey;
    
   [Header("NextButton")] [SerializeField]
   private Button _nextButton;
@@ -41,6 +47,9 @@ public class ShowUI : MonoBehaviour
     this.SetImg();
     this.SetTextName();
     this.EnableNextButton();
+    this.DisplayKey();  
+
+
 
   }
   private void SetAnimation()
@@ -84,6 +93,10 @@ public class ShowUI : MonoBehaviour
     headText.text = text;
   }
 
+  public void DisplayKey()
+  {
+    keyText.text = datakey.animalKey.Key;
+  }
 
 
 }

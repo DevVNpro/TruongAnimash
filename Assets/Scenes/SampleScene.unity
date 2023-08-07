@@ -344,6 +344,7 @@ GameObject:
   - component: {fileID: 157598612}
   - component: {fileID: 157598615}
   - component: {fileID: 157598616}
+  - component: {fileID: 157598617}
   m_Layer: 8
   m_Name: Beetle
   m_TagString: Untagged
@@ -470,6 +471,8 @@ MonoBehaviour:
   imgDad: {fileID: 862732888}
   imgMom: {fileID: 1757329067}
   headText: {fileID: 2088804937}
+  keyText: {fileID: 1122924832}
+  datakey: {fileID: 157598617}
   _nextButton: {fileID: 727957979}
 --- !u!95 &157598616
 Animator:
@@ -491,6 +494,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &157598617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157598610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca24735df4040340b95e5fc1e0eee13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalKey: {fileID: 11400000, guid: d815cca0808fa19488aedbb4a5e6845f, type: 2}
 --- !u!1 &203134941
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,7 +521,7 @@ GameObject:
   - component: {fileID: 203134946}
   - component: {fileID: 203134945}
   m_Layer: 8
-  m_Name: Image
+  m_Name: Image_HeadText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -525,7 +541,7 @@ RectTransform:
   m_Children:
   - {fileID: 2088804936}
   m_Father: {fileID: 565978572}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -640,6 +656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _nameData: 
+  _keyData: 
 --- !u!4 &249506205
 Transform:
   m_ObjectHideFlags: 0
@@ -669,6 +686,7 @@ GameObject:
   - component: {fileID: 324560266}
   - component: {fileID: 324560269}
   - component: {fileID: 324560270}
+  - component: {fileID: 324560271}
   m_Layer: 8
   m_Name: Butterfly
   m_TagString: Untagged
@@ -795,6 +813,8 @@ MonoBehaviour:
   imgDad: {fileID: 862732888}
   imgMom: {fileID: 1757329067}
   headText: {fileID: 2088804937}
+  keyText: {fileID: 1122924832}
+  datakey: {fileID: 324560271}
   _nextButton: {fileID: 727957979}
 --- !u!95 &324560270
 Animator:
@@ -816,6 +836,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &324560271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324560264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca24735df4040340b95e5fc1e0eee13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalKey: {fileID: 11400000, guid: dc1b60b9a8647374fb0c2b60d272c36c, type: 2}
 --- !u!1 &345267701
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,6 +863,7 @@ GameObject:
   - component: {fileID: 345267703}
   - component: {fileID: 345267706}
   - component: {fileID: 345267707}
+  - component: {fileID: 345267708}
   m_Layer: 8
   m_Name: Ant
   m_TagString: Untagged
@@ -956,6 +990,8 @@ MonoBehaviour:
   imgDad: {fileID: 862732888}
   imgMom: {fileID: 1757329067}
   headText: {fileID: 2088804937}
+  keyText: {fileID: 1122924832}
+  datakey: {fileID: 345267708}
   _nextButton: {fileID: 727957979}
 --- !u!95 &345267707
 Animator:
@@ -977,6 +1013,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &345267708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345267701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca24735df4040340b95e5fc1e0eee13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalKey: {fileID: 11400000, guid: 4bbfdf5db77b23c4db67cbffe0cbbb0f, type: 2}
 --- !u!1 &363076803
 GameObject:
   m_ObjectHideFlags: 0
@@ -1151,6 +1200,7 @@ GameObject:
   - component: {fileID: 427433080}
   - component: {fileID: 427433083}
   - component: {fileID: 427433084}
+  - component: {fileID: 427433085}
   m_Layer: 8
   m_Name: Broccoli
   m_TagString: Untagged
@@ -1277,6 +1327,8 @@ MonoBehaviour:
   imgDad: {fileID: 862732888}
   imgMom: {fileID: 1757329067}
   headText: {fileID: 2088804937}
+  keyText: {fileID: 1122924832}
+  datakey: {fileID: 427433085}
   _nextButton: {fileID: 727957979}
 --- !u!95 &427433084
 Animator:
@@ -1298,6 +1350,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &427433085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427433078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca24735df4040340b95e5fc1e0eee13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalKey: {fileID: 11400000, guid: 6714d84b32956534a9a9a2d9f33ed71f, type: 2}
 --- !u!1 &477158465
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,6 +1377,7 @@ GameObject:
   - component: {fileID: 477158467}
   - component: {fileID: 477158470}
   - component: {fileID: 477158471}
+  - component: {fileID: 477158472}
   m_Layer: 8
   m_Name: Boot
   m_TagString: Untagged
@@ -1438,6 +1504,8 @@ MonoBehaviour:
   imgDad: {fileID: 862732888}
   imgMom: {fileID: 1757329067}
   headText: {fileID: 2088804937}
+  keyText: {fileID: 1122924832}
+  datakey: {fileID: 477158472}
   _nextButton: {fileID: 727957979}
 --- !u!95 &477158471
 Animator:
@@ -1459,6 +1527,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &477158472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477158465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca24735df4040340b95e5fc1e0eee13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalKey: {fileID: 11400000, guid: 7eff94970f547f54db81ee2a9ec8aaf7, type: 2}
 --- !u!1 &500024876
 GameObject:
   m_ObjectHideFlags: 0
@@ -1705,6 +1786,7 @@ GameObject:
   - component: {fileID: 532222007}
   - component: {fileID: 532222010}
   - component: {fileID: 532222011}
+  - component: {fileID: 532222012}
   m_Layer: 8
   m_Name: Bunny
   m_TagString: Untagged
@@ -1831,6 +1913,8 @@ MonoBehaviour:
   imgDad: {fileID: 862732888}
   imgMom: {fileID: 1757329067}
   headText: {fileID: 2088804937}
+  keyText: {fileID: 1122924832}
+  datakey: {fileID: 532222012}
   _nextButton: {fileID: 727957979}
 --- !u!95 &532222011
 Animator:
@@ -1852,6 +1936,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &532222012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532222005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca24735df4040340b95e5fc1e0eee13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalKey: {fileID: 11400000, guid: 1981db4c7740c49458168be356b3876d, type: 2}
 --- !u!1 &560138656
 GameObject:
   m_ObjectHideFlags: 0
@@ -2024,12 +2121,12 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1352413760}
   - {fileID: 203134942}
   - {fileID: 1757329066}
   - {fileID: 862732887}
   - {fileID: 1806685854}
   - {fileID: 727957978}
+  - {fileID: 1122924831}
   m_Father: {fileID: 1227598532}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2152,7 +2249,7 @@ RectTransform:
   m_Children:
   - {fileID: 1364689248}
   m_Father: {fileID: 565978572}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2254,6 +2351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _buttonClick: {fileID: 0}
+  _TextButtonClick: {fileID: 1364689249}
   _showUI: {fileID: 1360858469}
   _buttons:
   - {fileID: 1360858466}
@@ -2296,6 +2394,7 @@ GameObject:
   - component: {fileID: 754818023}
   - component: {fileID: 754818026}
   - component: {fileID: 754818027}
+  - component: {fileID: 754818028}
   m_Layer: 8
   m_Name: banana
   m_TagString: Untagged
@@ -2422,6 +2521,8 @@ MonoBehaviour:
   imgDad: {fileID: 862732888}
   imgMom: {fileID: 1757329067}
   headText: {fileID: 2088804937}
+  keyText: {fileID: 1122924832}
+  datakey: {fileID: 754818028}
   _nextButton: {fileID: 727957979}
 --- !u!95 &754818027
 Animator:
@@ -2443,6 +2544,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &754818028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754818021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca24735df4040340b95e5fc1e0eee13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalKey: {fileID: 11400000, guid: 333736b463c12064a848c6a6c5566f35, type: 2}
 --- !u!1 &787470351
 GameObject:
   m_ObjectHideFlags: 0
@@ -2457,6 +2571,7 @@ GameObject:
   - component: {fileID: 787470353}
   - component: {fileID: 787470356}
   - component: {fileID: 787470357}
+  - component: {fileID: 787470358}
   m_Layer: 8
   m_Name: 'Red snapper '
   m_TagString: Untagged
@@ -2583,6 +2698,8 @@ MonoBehaviour:
   imgDad: {fileID: 862732888}
   imgMom: {fileID: 1757329067}
   headText: {fileID: 2088804937}
+  keyText: {fileID: 1122924832}
+  datakey: {fileID: 787470358}
   _nextButton: {fileID: 727957979}
 --- !u!95 &787470357
 Animator:
@@ -2604,6 +2721,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &787470358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787470351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca24735df4040340b95e5fc1e0eee13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalKey: {fileID: 11400000, guid: 9410d81429131f84485ae3bdcd55eb1f, type: 2}
 --- !u!1 &862732886
 GameObject:
   m_ObjectHideFlags: 0
@@ -2635,7 +2765,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 565978572}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2821,6 +2951,7 @@ GameObject:
   - component: {fileID: 931709147}
   - component: {fileID: 931709150}
   - component: {fileID: 931709151}
+  - component: {fileID: 931709152}
   m_Layer: 8
   m_Name: Bison
   m_TagString: Untagged
@@ -2947,6 +3078,8 @@ MonoBehaviour:
   imgDad: {fileID: 862732888}
   imgMom: {fileID: 1757329067}
   headText: {fileID: 2088804937}
+  keyText: {fileID: 1122924832}
+  datakey: {fileID: 931709152}
   _nextButton: {fileID: 727957979}
 --- !u!95 &931709151
 Animator:
@@ -2968,6 +3101,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &931709152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931709145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca24735df4040340b95e5fc1e0eee13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalKey: {fileID: 11400000, guid: b3e116fc1dc24c94bb5734c5c2bdc783, type: 2}
 --- !u!1 &935856298
 GameObject:
   m_ObjectHideFlags: 0
@@ -3249,42 +3395,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951540441}
   m_CullTransparentMesh: 1
---- !u!1 &961644996
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 961644997}
-  m_Layer: 8
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &961644997
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961644996}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1681852809}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.00012207031}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &963568091
 GameObject:
   m_ObjectHideFlags: 0
@@ -3459,6 +3569,7 @@ GameObject:
   - component: {fileID: 982631585}
   - component: {fileID: 982631588}
   - component: {fileID: 982631589}
+  - component: {fileID: 982631590}
   m_Layer: 8
   m_Name: Bat
   m_TagString: Untagged
@@ -3585,6 +3696,8 @@ MonoBehaviour:
   imgDad: {fileID: 862732888}
   imgMom: {fileID: 1757329067}
   headText: {fileID: 2088804937}
+  keyText: {fileID: 1122924832}
+  datakey: {fileID: 982631590}
   _nextButton: {fileID: 727957979}
 --- !u!95 &982631589
 Animator:
@@ -3606,6 +3719,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &982631590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982631583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca24735df4040340b95e5fc1e0eee13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalKey: {fileID: 11400000, guid: aff8ff7fdcb890f4da77ea9980e7539d, type: 2}
 --- !u!1 &983392525
 GameObject:
   m_ObjectHideFlags: 0
@@ -3620,6 +3746,7 @@ GameObject:
   - component: {fileID: 983392527}
   - component: {fileID: 983392530}
   - component: {fileID: 983392531}
+  - component: {fileID: 983392532}
   m_Layer: 8
   m_Name: Astronaut
   m_TagString: Untagged
@@ -3746,6 +3873,8 @@ MonoBehaviour:
   imgDad: {fileID: 862732888}
   imgMom: {fileID: 1757329067}
   headText: {fileID: 2088804937}
+  keyText: {fileID: 1122924832}
+  datakey: {fileID: 983392532}
   _nextButton: {fileID: 727957979}
 --- !u!95 &983392531
 Animator:
@@ -3767,6 +3896,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &983392532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983392525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca24735df4040340b95e5fc1e0eee13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalKey: {fileID: 11400000, guid: 261134d5f232c93498fc085a3afe13cb, type: 2}
 --- !u!1 &994314040
 GameObject:
   m_ObjectHideFlags: 0
@@ -3846,6 +3988,86 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994314040}
+  m_CullTransparentMesh: 1
+--- !u!1 &1122924830
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1122924831}
+  - component: {fileID: 1122924833}
+  - component: {fileID: 1122924832}
+  m_Layer: 8
+  m_Name: Key
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1122924831
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122924830}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 565978572}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -364.62122, y: 347.7019}
+  m_SizeDelta: {x: 216.7576, y: 124.5961}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1122924832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122924830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &1122924833
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122924830}
   m_CullTransparentMesh: 1
 --- !u!1 &1135800672
 GameObject:
@@ -3941,6 +4163,7 @@ GameObject:
   - component: {fileID: 1155568245}
   - component: {fileID: 1155568248}
   - component: {fileID: 1155568249}
+  - component: {fileID: 1155568250}
   m_Layer: 8
   m_Name: Pangolin
   m_TagString: Untagged
@@ -4067,6 +4290,8 @@ MonoBehaviour:
   imgDad: {fileID: 862732888}
   imgMom: {fileID: 1757329067}
   headText: {fileID: 2088804937}
+  keyText: {fileID: 1122924832}
+  datakey: {fileID: 1155568250}
   _nextButton: {fileID: 727957979}
 --- !u!95 &1155568249
 Animator:
@@ -4088,6 +4313,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1155568250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155568243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca24735df4040340b95e5fc1e0eee13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalKey: {fileID: 11400000, guid: fee5ab45f13bad443ba4d5f9d1539d9b, type: 2}
 --- !u!1 &1188930286
 GameObject:
   m_ObjectHideFlags: 0
@@ -4215,6 +4453,7 @@ GameObject:
   - component: {fileID: 1196514663}
   - component: {fileID: 1196514666}
   - component: {fileID: 1196514667}
+  - component: {fileID: 1196514668}
   m_Layer: 8
   m_Name: Burrito
   m_TagString: Untagged
@@ -4341,6 +4580,8 @@ MonoBehaviour:
   imgDad: {fileID: 862732888}
   imgMom: {fileID: 1757329067}
   headText: {fileID: 2088804937}
+  keyText: {fileID: 1122924832}
+  datakey: {fileID: 1196514668}
   _nextButton: {fileID: 727957979}
 --- !u!95 &1196514667
 Animator:
@@ -4362,6 +4603,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1196514668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196514661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca24735df4040340b95e5fc1e0eee13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalKey: {fileID: 11400000, guid: 5522f091af920254b892803b85070951, type: 2}
 --- !u!1 &1227598531
 GameObject:
   m_ObjectHideFlags: 0
@@ -4410,6 +4664,7 @@ GameObject:
   - component: {fileID: 1276231756}
   - component: {fileID: 1276231759}
   - component: {fileID: 1276231760}
+  - component: {fileID: 1276231761}
   m_Layer: 8
   m_Name: Slime
   m_TagString: Untagged
@@ -4536,6 +4791,8 @@ MonoBehaviour:
   imgDad: {fileID: 862732888}
   imgMom: {fileID: 1757329067}
   headText: {fileID: 2088804937}
+  keyText: {fileID: 1122924832}
+  datakey: {fileID: 1276231761}
   _nextButton: {fileID: 727957979}
 --- !u!95 &1276231760
 Animator:
@@ -4557,6 +4814,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1276231761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276231754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca24735df4040340b95e5fc1e0eee13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalKey: {fileID: 11400000, guid: 3978f4ab2eb01594f8ca66d22c4a3583, type: 2}
 --- !u!1 &1301484766
 GameObject:
   m_ObjectHideFlags: 0
@@ -9468,82 +9738,6 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
---- !u!1 &1352413759
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1352413760}
-  - component: {fileID: 1352413762}
-  - component: {fileID: 1352413761}
-  m_Layer: 8
-  m_Name: Background
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1352413760
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1352413759}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 25.438, y: 25.438, z: 25.438}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 565978572}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1352413761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1352413759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dd2e4d454bbc8994ea5cb469b5086e41, type: 3}
-  m_Type: 3
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 3
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 1
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1352413762
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1352413759}
-  m_CullTransparentMesh: 1
 --- !u!1 &1360858464
 GameObject:
   m_ObjectHideFlags: 0
@@ -9558,6 +9752,7 @@ GameObject:
   - component: {fileID: 1360858466}
   - component: {fileID: 1360858469}
   - component: {fileID: 1360858470}
+  - component: {fileID: 1360858471}
   m_Layer: 8
   m_Name: Sheep
   m_TagString: Untagged
@@ -9684,6 +9879,8 @@ MonoBehaviour:
   imgDad: {fileID: 862732888}
   imgMom: {fileID: 1757329067}
   headText: {fileID: 2088804937}
+  keyText: {fileID: 1122924832}
+  datakey: {fileID: 1360858471}
   _nextButton: {fileID: 727957979}
 --- !u!95 &1360858470
 Animator:
@@ -9705,6 +9902,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1360858471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360858464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca24735df4040340b95e5fc1e0eee13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalKey: {fileID: 11400000, guid: 1495f92b6ee87a44b9c7a9f0edbf393f, type: 2}
 --- !u!1 &1364689247
 GameObject:
   m_ObjectHideFlags: 0
@@ -9799,6 +10009,7 @@ GameObject:
   - component: {fileID: 1373968368}
   - component: {fileID: 1373968371}
   - component: {fileID: 1373968372}
+  - component: {fileID: 1373968373}
   m_Layer: 8
   m_Name: Beaver
   m_TagString: Untagged
@@ -9925,6 +10136,8 @@ MonoBehaviour:
   imgDad: {fileID: 862732888}
   imgMom: {fileID: 1757329067}
   headText: {fileID: 2088804937}
+  keyText: {fileID: 1122924832}
+  datakey: {fileID: 1373968373}
   _nextButton: {fileID: 727957979}
 --- !u!95 &1373968372
 Animator:
@@ -9946,6 +10159,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1373968373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373968366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca24735df4040340b95e5fc1e0eee13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalKey: {fileID: 11400000, guid: 3af991d4c13c1a349a5c6c19a483508b, type: 2}
 --- !u!1 &1418582519
 GameObject:
   m_ObjectHideFlags: 0
@@ -10280,6 +10506,7 @@ GameObject:
   - component: {fileID: 1557736442}
   - component: {fileID: 1557736445}
   - component: {fileID: 1557736446}
+  - component: {fileID: 1557736447}
   m_Layer: 8
   m_Name: BathTub
   m_TagString: Untagged
@@ -10406,6 +10633,8 @@ MonoBehaviour:
   imgDad: {fileID: 862732888}
   imgMom: {fileID: 1757329067}
   headText: {fileID: 2088804937}
+  keyText: {fileID: 1122924832}
+  datakey: {fileID: 1557736447}
   _nextButton: {fileID: 727957979}
 --- !u!95 &1557736446
 Animator:
@@ -10427,6 +10656,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1557736447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557736440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca24735df4040340b95e5fc1e0eee13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalKey: {fileID: 11400000, guid: 2bdea5a1e8d2407468958dc104150b30, type: 2}
 --- !u!1 &1594236944
 GameObject:
   m_ObjectHideFlags: 0
@@ -10521,6 +10763,7 @@ GameObject:
   - component: {fileID: 1624669352}
   - component: {fileID: 1624669355}
   - component: {fileID: 1624669356}
+  - component: {fileID: 1624669357}
   m_Layer: 8
   m_Name: Avocado
   m_TagString: Untagged
@@ -10647,6 +10890,8 @@ MonoBehaviour:
   imgDad: {fileID: 862732888}
   imgMom: {fileID: 1757329067}
   headText: {fileID: 2088804937}
+  keyText: {fileID: 1122924832}
+  datakey: {fileID: 1624669357}
   _nextButton: {fileID: 727957979}
 --- !u!95 &1624669356
 Animator:
@@ -10668,6 +10913,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1624669357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624669350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca24735df4040340b95e5fc1e0eee13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalKey: {fileID: 11400000, guid: 92ad981fd58504e4c97e814a0d6c4bd1, type: 2}
 --- !u!1 &1632662773
 GameObject:
   m_ObjectHideFlags: 0
@@ -10682,6 +10940,7 @@ GameObject:
   - component: {fileID: 1632662775}
   - component: {fileID: 1632662778}
   - component: {fileID: 1632662779}
+  - component: {fileID: 1632662780}
   m_Layer: 8
   m_Name: Angel
   m_TagString: Untagged
@@ -10808,6 +11067,8 @@ MonoBehaviour:
   imgDad: {fileID: 862732888}
   imgMom: {fileID: 1757329067}
   headText: {fileID: 2088804937}
+  keyText: {fileID: 1122924832}
+  datakey: {fileID: 1632662780}
   _nextButton: {fileID: 727957979}
 --- !u!95 &1632662779
 Animator:
@@ -10829,6 +11090,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1632662780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632662773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca24735df4040340b95e5fc1e0eee13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalKey: {fileID: 11400000, guid: e06dad6e4b8c47e42aa50d3715206801, type: 2}
 --- !u!1 &1681852808
 GameObject:
   m_ObjectHideFlags: 0
@@ -10861,7 +11135,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1339951184}
-  - {fileID: 961644997}
   m_Father: {fileID: 1806685854}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11015,6 +11288,7 @@ GameObject:
   - component: {fileID: 1755606972}
   - component: {fileID: 1755606975}
   - component: {fileID: 1755606976}
+  - component: {fileID: 1755606977}
   m_Layer: 8
   m_Name: Anteaters
   m_TagString: Untagged
@@ -11141,6 +11415,8 @@ MonoBehaviour:
   imgDad: {fileID: 862732888}
   imgMom: {fileID: 1757329067}
   headText: {fileID: 2088804937}
+  keyText: {fileID: 1122924832}
+  datakey: {fileID: 1755606977}
   _nextButton: {fileID: 727957979}
 --- !u!95 &1755606976
 Animator:
@@ -11162,6 +11438,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1755606977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755606970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca24735df4040340b95e5fc1e0eee13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalKey: {fileID: 11400000, guid: 844982a14d9e42c4fb644436c099220d, type: 2}
 --- !u!1 &1757329065
 GameObject:
   m_ObjectHideFlags: 0
@@ -11193,7 +11482,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 565978572}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11353,7 +11642,7 @@ RectTransform:
   - {fileID: 864155753}
   - {fileID: 110056851}
   m_Father: {fileID: 565978572}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11442,6 +11731,7 @@ GameObject:
   - component: {fileID: 1868090692}
   - component: {fileID: 1868090695}
   - component: {fileID: 1868090696}
+  - component: {fileID: 1868090697}
   m_Layer: 8
   m_Name: Dog
   m_TagString: Untagged
@@ -11568,6 +11858,8 @@ MonoBehaviour:
   imgDad: {fileID: 862732888}
   imgMom: {fileID: 1757329067}
   headText: {fileID: 2088804937}
+  keyText: {fileID: 1122924832}
+  datakey: {fileID: 1868090697}
   _nextButton: {fileID: 727957979}
 --- !u!95 &1868090696
 Animator:
@@ -11589,6 +11881,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1868090697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868090690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca24735df4040340b95e5fc1e0eee13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalKey: {fileID: 11400000, guid: f4cd69cc8dd008946b6aba6167c0754c, type: 2}
 --- !u!1 &1938693704
 GameObject:
   m_ObjectHideFlags: 0
@@ -11960,6 +12265,7 @@ GameObject:
   - component: {fileID: 2052174945}
   - component: {fileID: 2052174948}
   - component: {fileID: 2052174949}
+  - component: {fileID: 2052174950}
   m_Layer: 8
   m_Name: Monkey
   m_TagString: Untagged
@@ -12086,6 +12392,8 @@ MonoBehaviour:
   imgDad: {fileID: 862732888}
   imgMom: {fileID: 1757329067}
   headText: {fileID: 2088804937}
+  keyText: {fileID: 1122924832}
+  datakey: {fileID: 2052174950}
   _nextButton: {fileID: 727957979}
 --- !u!95 &2052174949
 Animator:
@@ -12107,6 +12415,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &2052174950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052174943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca24735df4040340b95e5fc1e0eee13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalKey: {fileID: 11400000, guid: 828466802e733c9459c9339c3880ea23, type: 2}
 --- !u!1 &2088804935
 GameObject:
   m_ObjectHideFlags: 0
@@ -12201,6 +12522,7 @@ GameObject:
   - component: {fileID: 2137763367}
   - component: {fileID: 2137763370}
   - component: {fileID: 2137763371}
+  - component: {fileID: 2137763372}
   m_Layer: 8
   m_Name: Bicycle
   m_TagString: Untagged
@@ -12327,6 +12649,8 @@ MonoBehaviour:
   imgDad: {fileID: 862732888}
   imgMom: {fileID: 1757329067}
   headText: {fileID: 2088804937}
+  keyText: {fileID: 1122924832}
+  datakey: {fileID: 2137763372}
   _nextButton: {fileID: 727957979}
 --- !u!95 &2137763371
 Animator:
@@ -12348,3 +12672,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &2137763372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137763365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca24735df4040340b95e5fc1e0eee13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalKey: {fileID: 11400000, guid: 802d73328e6c0fd4c9796e03b3c74b0d, type: 2}
