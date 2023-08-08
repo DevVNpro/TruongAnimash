@@ -32,7 +32,7 @@ public class RandomStart : MonoBehaviour
                 {
                     _text.text = "BÌNH THƯỜNG";
                 }
-                else if(3< ranNumber && ranNumber <=6)
+                else if(ranNumber <=6)
                 {
                     _text.text = "HIẾM";
                 }
