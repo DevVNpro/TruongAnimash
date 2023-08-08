@@ -9,6 +9,7 @@ public class EvenClick : MonoBehaviour
 {
     [Header("Button Next")] 
     [SerializeField] private Button _buttonClick;
+    [SerializeField]private Image _imageButton;
     [SerializeField] private Text _TextButtonClick;
 
     [Header("Class ShowUI")]
@@ -92,6 +93,7 @@ public class EvenClick : MonoBehaviour
         
         //deactice
         _buttonClick.enabled = false;
+        _imageButton.enabled = false;
         _TextButtonClick.enabled = false;
 
         //animation Generation

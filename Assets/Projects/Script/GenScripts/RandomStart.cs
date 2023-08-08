@@ -30,15 +30,15 @@ public class RandomStart : MonoBehaviour
             {
                 if (ranNumber <= 3)
                 {
-                    _text.text = "BÌNH THƯỜNG";
+                    _text.text = "NORMAR";
                 }
                 else if(ranNumber <=6)
                 {
-                    _text.text = "HIẾM";
+                    _text.text = "RARE";
                 }
                 else if(ranNumber == 7)
                 { 
-                    _text.text = "HUYỀN THOẠI";
+                    _text.text = "LEGENDARY";
                 }
                 yield break;
             }

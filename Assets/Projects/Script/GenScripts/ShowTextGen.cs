@@ -15,6 +15,7 @@ public class ShowTextGen : MonoBehaviour
     private void Awake()
     {
         imgText.enabled = false;
+        transform.localScale = new Vector3(0f, 0f);
     }
 
     private void Start()
@@ -29,7 +30,8 @@ public class ShowTextGen : MonoBehaviour
         yield return  new WaitForSeconds(2f);
         textGen.text = DataAnimal.Instance._nameData;
         imgText.enabled = true;
-        
+        transform.LeanScale(new Vector3(1.7f, 1.7f), 0.5f);
+
     }
 
 }
