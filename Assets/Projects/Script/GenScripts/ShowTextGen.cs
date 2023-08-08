@@ -10,28 +10,26 @@ public class ShowTextGen : MonoBehaviour
     [Header("Text")] 
     [SerializeField] private Text textGen;
 
-    //khong thuộc lớp này
-  //  [Header("Key")] 
-   // [SerializeField] private Text textkey;
+    [SerializeField] private Image imgText;
 
-
+    private void Awake()
+    {
+        imgText.enabled = false;
+    }
 
     private void Start()
     {
-      //  _image.enabled = true;
+
+        StartCoroutine(ShowText());
+
+    }
+
+    IEnumerator ShowText()
+    {
+        yield return  new WaitForSeconds(2f);
         textGen.text = DataAnimal.Instance._nameData;
-      //  textkey.text = DataAnimal.Instance._keyData;
-        //this.ChangeToArray();
-       // Debug.Log(textkey.text);
+        imgText.enabled = true;
         
     }
-    // không thuộc lớp này để test sẽ để trong dateimg để tìm kiếm key
-    /*private void ChangeToArray()
-    {
-        char[] charArray = textkey.text.ToCharArray();
-        Array.Sort(charArray); // Sắp xếp mảng char theo thứ tự bảng chữ cái
 
-        string sortedString = new string(charArray); // Chuyển mảng char thành chuỗi đã sắp xếp
-        textkey.text = sortedString; 
-    }*/
 }

@@ -29,6 +29,7 @@ public class EvenClick : MonoBehaviour
 
     private void Start()
     {
+        transform.gameObject.SetActive(false);
         _buttonClick = transform.GetComponent<Button>();
         _buttonClick.onClick.AddListener(Even1);
     

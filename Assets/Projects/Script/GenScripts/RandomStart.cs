@@ -17,15 +17,15 @@ public class RandomStart : MonoBehaviour
 
     IEnumerator RandomStar()
     {
+        yield return new WaitForSeconds(3f);
         int ranNumber = Random.Range(1, 8);
-        yield return new WaitForSeconds(1.2f);
         int check = 0;
         _image.enabled = true;
         foreach (var star in randomStarts)
         {
             check++;
             star.gameObject.SetActive(true);
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(1f);
             if (check == ranNumber)
             {
                 if (ranNumber <= 3)

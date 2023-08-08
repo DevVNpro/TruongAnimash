@@ -1,15 +1,14 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class ShowImgGen : MonoBehaviour
+namespace Projects.Script.GenScripts
 {
-   private void Start()
+   public class ShowImgGen : MonoBehaviour
    {
-      transform.localScale = new Vector3(0f, 0f, 0f);
+      private void Start()
+      {
+         transform.localScale = new Vector3(0f, 0f, 0f);
 
-      transform.LeanScale(new Vector3(1.3f, 1.3f), 1.2f);
+         transform.LeanScale(new Vector3(1.3f, 1.3f), 2.5f).setEaseOutBack();
+      }
    }
 }

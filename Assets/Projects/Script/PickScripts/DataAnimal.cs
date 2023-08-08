@@ -24,7 +24,7 @@ public class DataAnimal : MonoBehaviour
 
     private void GetInstance()
     {
-        if(instance!= null) return;
+        if(instance!= null) Destroy(transform.gameObject);
         instance = this;
         DontDestroyOnLoad(instance);
     }
