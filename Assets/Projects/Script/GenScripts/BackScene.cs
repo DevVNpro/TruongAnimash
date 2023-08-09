@@ -21,7 +21,7 @@ namespace Projects.Script.GenScripts
         IEnumerator AnimationButton()
         {
             yield return new WaitForSeconds(5);
-            transform.LeanScale(new Vector3(2f, 2f), 1f);
+            transform.LeanScale(new Vector3(1.5f, 1.5f), 1f);
         }
         
 
