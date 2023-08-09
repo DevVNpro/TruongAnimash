@@ -12,16 +12,16 @@ namespace Projects.Script.GenScripts
         [SerializeField] private Button button;
         private void  Start()
         {
+            transform.localScale = new Vector3(0f,0f);
             button.onClick.AddListener(BackSceneOnclick);
-            transform.position = new Vector3(-300, transform.position.y);
             StartCoroutine(AnimationButton());
             
         }
 
         IEnumerator AnimationButton()
         {
-            yield return new WaitForSeconds(4);
-            transform.LeanMove(new Vector3(540f, transform.position.y), 1f);
+            yield return new WaitForSeconds(5);
+            transform.LeanScale(new Vector3(2f, 2f), 1f);
         }
         
 
