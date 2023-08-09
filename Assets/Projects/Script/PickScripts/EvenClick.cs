@@ -112,7 +112,7 @@ public class EvenClick : MonoBehaviour
     IEnumerator AnimationGeneration()
     {
 
-        _showUI.imgMom.rectTransform.LeanMove(new Vector3(260f, 562f), 0.4f);
+        _showUI.imgMom.rectTransform.LeanMove(new Vector3(320f, 562f), 0.4f);
         _showUI.imgDad.rectTransform.LeanScale(new Vector3(1f, 1f),0.4f);
         yield return new WaitForSeconds(1.5f);
 

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 namespace Projects.Script.ScripableObject.GenAnimal
@@ -9,18 +10,38 @@ namespace Projects.Script.ScripableObject.GenAnimal
     {
        
            [SerializeField]
-         [ListDrawerSettings(ShowPaging = true)] 
          private GenSO[] characterDataArray;
+
+         [SerializeField] private string SpritePath = "Assets/Projects/Resources";
             [SerializeField] private Image characterImage;
-            [SerializeField] private Text textKey;
 
             private void Start()
             {
-                textKey.text = DataAnimal.Instance._keyData;
                 ChangeToArray();
-                ShowCharacterImage(textKey.text);
+                ShowCharacterImage(DataAnimal.Instance._keyData);
             }
 
+#if UNITY_EDITOR
+            
+            [Button]
+            void GenData()
+            {
+                var listSpriteGUID = AssetDatabase.FindAssets("t:texture2D", new[] {SpritePath});
+                var listSprite = new List<Sprite>();
+                foreach (string s in listSpriteGUID)
+                {
+                    var sprite = AssetDatabase.LoadAssetAtPath<Sprite>(AssetDatabase.GUIDToAssetPath(s));
+                    listSprite.Add(sprite);
+                }
+
+                characterDataArray = new GenSO[listSprite.Count];
+                for (var i = 0; i < characterDataArray.Length; i++)
+                {
+                    characterDataArray[i] = new GenSO(listSprite[i].name, listSprite[i]);
+                }
+            }
+#endif
+        
             private void ShowCharacterImage(string key)
             {
                 foreach (GenSO characterData in characterDataArray)
@@ -36,11 +57,11 @@ namespace Projects.Script.ScripableObject.GenAnimal
             }
             private void ChangeToArray()
             {
-                char[] charArray = textKey.text.ToCharArray();
+                char[] charArray = DataAnimal.Instance._keyData.ToCharArray();
                 Array.Sort(charArray); // Sắp xếp mảng char theo thứ tự bảng chữ cái
 
                 string sortedString = new string(charArray); // Chuyển mảng char thành chuỗi đã sắp xếp
-                textKey.text = sortedString;
+                DataAnimal.Instance._keyData = sortedString;
 
             }
         

@@ -2,8 +2,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Projects.Script.PickScripts;
+using Unity.VisualScripting;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ShowUI : MonoBehaviour
 { 
@@ -43,16 +45,16 @@ public class ShowUI : MonoBehaviour
 
   private void ShowChose()
   {
-    this.SetAnimation();
+    this.SetAnimationImgDisplay();
     this.SetImg();
     this.SetTextName();
     this.EnableNextButton();
     this.DisplayKey();  
-
-
-
+    
   }
-  private void SetAnimation()
+  
+
+  private void SetAnimationImgDisplay()
   {
     imgDisplay.transform.localScale = new Vector2(2f, 2f);
     imgDisplay.transform.LeanScale(Vector2.one, 0.1f);
