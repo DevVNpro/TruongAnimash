@@ -130,7 +130,7 @@ public class EvenClick : MonoBehaviour
         _showUI.imgMom.gameObject.SetActive((false));
         _showUI.headText.gameObject.SetActive(true);
         _imageText.enabled = true;
-        _showUI.ChangeHeadText("Generation....");
+        _showUI.ChangeHeadText("GENERATING RESULT");
         particalSystem.SetActive(true);
         //add Sound VFX
         SoundManager.Instance.PlayVfxMuSic("merge_loop");
