@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Projects.Script.Manager;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -21,14 +22,15 @@ namespace Projects.Script.GenScripts
         IEnumerator AnimationButton()
         {
             yield return new WaitForSeconds(5);
-            transform.LeanScale(new Vector3(1.5f, 1.5f), 1f);
+            transform.LeanScale(new Vector3(1f, 1f), 1f);
         }
         
 
         private void BackSceneOnclick()
         {
+            SoundManager.Instance.PlayVfxMuSic("Next");
             DataAnimal.Instance.DeleteNamedata();
-            SceneManager.LoadScene(sceneBuildIndex: 0);
+           SceneControl.Instance.BackScene();
         }
     }
 }

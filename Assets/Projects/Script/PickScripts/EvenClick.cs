@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Projects.Script.Manager;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -41,6 +42,9 @@ public class EvenClick : MonoBehaviour
 
     private void Even1()
     {
+        //addSoundVVFX
+        SoundManager.Instance.PlayVfxMuSic("Next");
+
         //Save name Display
         DataAnimal.Instance.SetNameData(_showUI.headText.text,_showUI.keyText.text);
         
@@ -81,6 +85,9 @@ public class EvenClick : MonoBehaviour
 
     private void Even2()
     {
+        //addSoundVVFX
+        SoundManager.Instance.PlayVfxMuSic("Next");
+        
         //Save name Display
         DataAnimal.Instance.SetNameData(_showUI.headText.text,_showUI.keyText.text);
         
@@ -125,8 +132,11 @@ public class EvenClick : MonoBehaviour
         _imageText.enabled = true;
         _showUI.ChangeHeadText("Generation....");
         particalSystem.SetActive(true);
+        //add Sound VFX
+        SoundManager.Instance.PlayVfxMuSic("merge_loop");
         yield return new WaitForSeconds(5f);
-        SceneManager.LoadScene(1);
+        SoundManager.Instance.TurnOffVfxSound();
+        SceneControl.Instance.LoadNextScene();
 
 
     }

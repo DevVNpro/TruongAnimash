@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Projects.Script.Manager;
 using Projects.Script.PickScripts;
 using Unity.VisualScripting;
 using UnityEngine.UI;
@@ -45,12 +46,18 @@ public class ShowUI : MonoBehaviour
 
   private void ShowChose()
   {
+    this.AddSoundVfx();
     this.SetAnimationImgDisplay();
     this.SetImg();
     this.SetTextName();
     this.EnableNextButton();
-    this.DisplayKey();  
-    
+    this.DisplayKey();
+
+  }
+
+  private void AddSoundVfx()
+  {
+    SoundManager.Instance.PlayVfxMuSic("Click");
   }
   
 

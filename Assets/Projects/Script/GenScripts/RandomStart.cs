@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Projects.Script.Manager;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -33,11 +34,13 @@ namespace Projects.Script.GenScripts
             foreach (var star in randomStarts)
             {
                 check++;
+                SoundManager.Instance.PlayVfxMuSic("star");
                 star.gameObject.SetActive(true);
                 star.transform.LeanScale(new Vector3(1f, 1f), 1f).setEaseOutBack();
                 yield return new WaitForSeconds(1f);
                 if (check == ranNumber)
                 {
+                    SoundManager.Instance.PlayVfxMuSic("stars_lock");
                     if (ranNumber <= 3)
                     {
                         _text.text = "NORMAL";
