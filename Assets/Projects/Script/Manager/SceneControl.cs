@@ -36,6 +36,11 @@ public class SceneControl : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.buildIndex - 1);
     }
-    
-    
+
+    public void MenuScene()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+
 }

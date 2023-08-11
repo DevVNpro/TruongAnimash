@@ -10,11 +10,9 @@ namespace Projects.Script.GenScripts
 {
     public class BackScene : MonoBehaviour
     {
-        [SerializeField] private Button button;
         private void  Start()
         {
             transform.localScale = new Vector3(0f,0f);
-            button.onClick.AddListener(BackSceneOnclick);
             StartCoroutine(AnimationButton());
             
         }
@@ -26,11 +24,18 @@ namespace Projects.Script.GenScripts
         }
         
 
-        private void BackSceneOnclick()
+        public void BackSceneClick()
         {
             SoundManager.Instance.PlayVfxMuSic("Next");
             DataAnimal.Instance.DeleteNamedata();
            SceneControl.Instance.BackScene();
+        }
+
+        public void BackMenuClick()
+        {
+            SoundManager.Instance.PlayVfxMuSic("Next");
+            DataAnimal.Instance.DeleteNamedata();
+            SceneControl.Instance.MenuScene();
         }
     }
 }
