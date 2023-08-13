@@ -1,16 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+[Serializable]
 public class AnimalSaveData
 {
    public string name;
-   public Sprite img;
+   public string imgname;
+   public string key;
 
 
-   public AnimalSaveData(string name1, Sprite img1)
+   public AnimalSaveData(string name1, string imgname1,string key1)
    {
       name = name1;
-      img = img1;
+      imgname = imgname1;
+      key = key1;
    }
 }

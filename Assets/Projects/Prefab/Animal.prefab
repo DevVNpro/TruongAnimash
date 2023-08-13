@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 8001253751443180582}
   - component: {fileID: 8001253751443180581}
   m_Layer: 8
-  m_Name: name
+  m_Name: Animal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

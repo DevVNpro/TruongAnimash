@@ -15,9 +15,14 @@ namespace Projects.Script.ScripableObject.GenAnimal
          [SerializeField] private string SpritePath = "Assets/Projects/Resources";
             [SerializeField] private Image characterImage;
 
-            private void Start()
+            private void Awake()
             {
                 ChangeToArray();
+
+            }
+
+            private void Start()
+            {
                 ShowCharacterImage(DataAnimal.Instance._keyData);
             }
 
