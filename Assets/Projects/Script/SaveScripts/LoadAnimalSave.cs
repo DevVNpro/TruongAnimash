@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
+using  Newtonsoft.Json;
 
 public class LoadAnimalSave : MonoBehaviour
 {
@@ -11,8 +12,35 @@ public class LoadAnimalSave : MonoBehaviour
     private void Start()
     {
         List<AnimalSaveData> savedAnimals = SaveManager.Instance.animalDataList;
-        
-        foreach (AnimalSaveData animalData in savedAnimals)
+        LoadDataSave(ref savedAnimals);
+        UpdateList(savedAnimals);
+
+    }
+
+    public void LoadDataSave(ref List<AnimalSaveData> savedAnimals)
+    {
+        string path = Application.persistentDataPath + "AnimalJsonSave.json";
+        if (!File.Exists(path))
+        {
+            Debug.LogError($"Cannot load file at {path}. File does not exist!");
+        }
+
+        try
+        {
+            Debug.Log("Da gan du lieu cho json");
+            Debug.Log(File.ReadAllText(path));
+            savedAnimals = JsonConvert.DeserializeObject<List<AnimalSaveData>>(File.ReadAllText(path));
+        }
+        catch (Exception e)
+        {
+            Debug.LogError($"Failed to load Data due to:  {e.Message} {e.StackTrace}");
+        }
+    }
+
+    public void UpdateList(List<AnimalSaveData> animalList)
+    {
+        Debug.Log(animalList.Capacity);
+        foreach (AnimalSaveData animalData in animalList)
         {
             GameObject newAnimalPrefab = Instantiate(animalPrefab, scrollViewContent);
             
@@ -24,14 +52,7 @@ public class LoadAnimalSave : MonoBehaviour
             else
             {
                 Image imageanimal = newAnimalPrefab.GetComponent<Image>();
-                if (imageanimal == null)
-                {
-                    Debug.Log("Không tìm thấy Image component trên đối tượng: " + newAnimalPrefab.name);
-                }
-                else
-                {
-                    imageanimal.sprite = loadedSprite;
-                }
+                imageanimal.sprite = loadedSprite;
             }
 
             newAnimalPrefab.name = animalData.name;

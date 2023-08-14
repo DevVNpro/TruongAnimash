@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Projects.Script.Manager;
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
+using  Newtonsoft.Json;
 
 public class ButtonSave : MonoBehaviour
 {
@@ -46,6 +48,39 @@ public class ButtonSave : MonoBehaviour
         SaveManager.Instance.AddNewAnimal(DataAnimal.Instance._nameData, _Key.text,DataAnimal.Instance._keyData);
         _button.image.color = Color.grey;
         _button.enabled = false;
+        SaveData(SaveManager.Instance.animalDataList);
         DataAnimal.Instance.DeleteNamedata();
     }
+    public void SaveData(List<AnimalSaveData> listAnimal)
+    {
+        string path = Application.persistentDataPath + "AnimalJsonSave.json";
+
+        try
+        {
+            List<AnimalSaveData> existingData = new List<AnimalSaveData>();
+
+            if (File.Exists(path))
+            {
+                Debug.Log("Data exists. Loading existing data and appending new data!");
+                string existingJson = File.ReadAllText(path);
+                existingData = JsonConvert.DeserializeObject<List<AnimalSaveData>>(existingJson);
+            }
+            else
+            {
+                Debug.Log("Writing file for the first time!");
+            }
+
+            existingData.AddRange(listAnimal);
+
+            using FileStream stream = File.Create(path);
+            stream.Close();
+            File.WriteAllText(path, JsonConvert.SerializeObject(existingData));
+            Debug.Log(JsonConvert.SerializeObject(existingData));
+        }
+        catch (Exception e)
+        {
+            Debug.LogError($"Unable to save data due to: {e.Message} {e.StackTrace}");
+        }
+    }
+
 }
