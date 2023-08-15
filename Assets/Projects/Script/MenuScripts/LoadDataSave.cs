@@ -12,7 +12,15 @@ namespace Projects.Script.MenuScripts
         void Start()
         {
           string path = Application.persistentDataPath + "AnimalJsonSave.json";
-            string jsonConten = File.ReadAllText(path);
+          /*
+          string content = File.ReadAllText(path);
+          List<AnimalSaveData> a = JsonConvert.DeserializeObject<List<AnimalSaveData>>(content);
+          a.RemoveAll(item => item.key == "TW");
+          string jsonSave = JsonConvert.SerializeObject(a);
+          File.WriteAllText(path, jsonSave);
+          Debug.Log(File.ReadAllText(path));*/
+
+          string jsonConten = File.ReadAllText(path);
             if (jsonConten != "")
             {
                 LoadDataSave1(ref SaveManager.Instance.animalDataList);

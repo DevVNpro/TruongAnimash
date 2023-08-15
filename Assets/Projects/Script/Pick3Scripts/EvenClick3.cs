@@ -162,6 +162,7 @@ namespace Projects.Script.Pick3Scripts
             //add Sound VFX
            SoundManager.Instance.PlayVfxMuSic("merge_loop");
             yield return new WaitForSeconds(5f);
+            particalSystem.SetActive(false);
             SoundManager.Instance.TurnOffVfxSound();
            SceneControl.Instance.LoadScene(2);
         

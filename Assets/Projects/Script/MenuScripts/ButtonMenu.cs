@@ -15,6 +15,11 @@ namespace Projects.Script.Menu
             SoundManager.Instance.PlayVfxMuSic("Next");
             SceneControl.Instance.LoadScene(4);
         }
+        public void LoadScenePVP()
+        {
+            SoundManager.Instance.PlayVfxMuSic("Next");
+            SceneControl.Instance.LoadScene(5);
+        }
         public void NextScene()
         {
             SoundManager.Instance.PlayVfxMuSic("Next");
