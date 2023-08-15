@@ -1,86 +1,87 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using Projects.Script.Manager;
+using System.IO;
+using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.UI;
-using System.IO;
-using  Newtonsoft.Json;
 
-public class ButtonSave : MonoBehaviour
+namespace Projects.Script.GenScripts
 {
-    [Header("imgSaveButton")] [SerializeField]
-    private Image _img;
-
-    [Header("ButtonSave")] [SerializeField]
-    private Button _button;
-
-    [Header("HeadText")] [SerializeField] private Text _text;
-    [Header("Key")] [SerializeField] private Text _Key;
-    private void  Start()
+    public class ButtonSave : MonoBehaviour
     {
-        transform.localScale = new Vector3(0f,0f);
-        StartCoroutine(AnimationButton());
-            
-    }
+        [Header("imgSaveButton")] [SerializeField]
+        private Image _img;
 
-    IEnumerator AnimationButton()
-    {
-        yield return new WaitForSeconds(5);
-        transform.LeanScale(new Vector3(1f, 1f), 1f);
-    }
-    public void AddSaveAnimal()
-    {   
-        SoundManager.Instance.PlayVfxMuSic("Next");
-        foreach (AnimalSaveData animmal in SaveManager.Instance.animalDataList)
+        [Header("ButtonSave")] [SerializeField]
+        private Button _button;
+
+        [Header("HeadText")] [SerializeField] private Text _text;
+        [Header("Key")] [SerializeField] private Text _Key;
+        private void  Start()
         {
-            if (animmal.key == DataAnimal.Instance._keyData)
+            transform.localScale = new Vector3(0f,0f);
+            StartCoroutine(AnimationButton());
+            
+        }
+
+        IEnumerator AnimationButton()
+        {
+            yield return new WaitForSeconds(5);
+            transform.LeanScale(new Vector3(1f, 1f), 1f);
+        }
+  
+        public void SaveData()
+        {
+            string path = Application.persistentDataPath + "AnimalJsonSave.json";
+            string jsonContent = File.ReadAllText(path);
+            if (jsonContent != "")
             {
+                foreach (AnimalSaveData animmal in SaveManager.Instance.animalDataList)
+                {
+                    if (animmal.key == DataAnimal.Instance._keyData)
+                    {
+                        _button.image.color = Color.grey;
+                        _button.enabled = false;
+                        _text.fontSize = 45;
+                        _text.text = "Characters already in the collection";
+                        DataAnimal.Instance.DeleteNamedata();
+                        return;
+                    }
+                }
+                SaveManager.Instance.AddNewAnimal(DataAnimal.Instance._nameData, _Key.text,DataAnimal.Instance._keyData);
                 _button.image.color = Color.grey;
                 _button.enabled = false;
-                _text.fontSize = 45;
-                _text.text = "Characters already in the collection";
+                SaveToJsonWithContent(SaveManager.Instance.animalDataList);
                 DataAnimal.Instance.DeleteNamedata();
-                return;
-            }
-
-        }
-        SaveManager.Instance.AddNewAnimal(DataAnimal.Instance._nameData, _Key.text,DataAnimal.Instance._keyData);
-        _button.image.color = Color.grey;
-        _button.enabled = false;
-        SaveData(SaveManager.Instance.animalDataList);
-        DataAnimal.Instance.DeleteNamedata();
-    }
-    public void SaveData(List<AnimalSaveData> listAnimal)
-    {
-        string path = Application.persistentDataPath + "AnimalJsonSave.json";
-
-        try
-        {
-            List<AnimalSaveData> existingData = new List<AnimalSaveData>();
-
-            if (File.Exists(path))
-            {
-                Debug.Log("Data exists. Loading existing data and appending new data!");
-                string existingJson = File.ReadAllText(path);
-                existingData = JsonConvert.DeserializeObject<List<AnimalSaveData>>(existingJson);
             }
             else
             {
-                Debug.Log("Writing file for the first time!");
+                SaveManager.Instance.AddNewAnimal(DataAnimal.Instance._nameData, _Key.text,DataAnimal.Instance._keyData);
+                _button.image.color = Color.grey;
+                _button.enabled = false;
+                SaveToJsonWithNoContent(SaveManager.Instance.animalDataList);
+                DataAnimal.Instance.DeleteNamedata();
+
             }
+        }
 
+        public void SaveToJsonWithContent(List<AnimalSaveData>  listAnimal)
+        {
+            string path = Application.persistentDataPath + "AnimalJsonSave.json";
+            List<AnimalSaveData> existingData = new List<AnimalSaveData>();
+            string existingJson = File.ReadAllText(path);
+            existingData = JsonConvert.DeserializeObject<List<AnimalSaveData>>(existingJson);
             existingData.AddRange(listAnimal);
-
             using FileStream stream = File.Create(path);
             stream.Close();
             File.WriteAllText(path, JsonConvert.SerializeObject(existingData));
-            Debug.Log(JsonConvert.SerializeObject(existingData));
         }
-        catch (Exception e)
-        {
-            Debug.LogError($"Unable to save data due to: {e.Message} {e.StackTrace}");
-        }
-    }
 
+        public void SaveToJsonWithNoContent(List<AnimalSaveData> listAnimal)
+        {
+            string path = Application.persistentDataPath + "AnimalJsonSave.json";
+            File.WriteAllText(path, JsonConvert.SerializeObject(listAnimal));
+        }
+
+    }
 }
