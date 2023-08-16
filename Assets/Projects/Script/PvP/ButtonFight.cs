@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,6 +19,9 @@ namespace Projects.Script.PvP
 
         [Header("dividingLine")] [SerializeField]
         private GameObject dividingLine;
+        
+        [Header("LoadingText")] [SerializeField]
+        private GameObject LoadingText;
 
         
 
@@ -50,10 +54,11 @@ namespace Projects.Script.PvP
             dividingLine.SetActive(false);
             DeckGrid.SetActive(false);
             TeamGrid.rectTransform.LeanMove(new Vector3(0f, -500f), 1.3f);
-            Color color = new Color(255, 255, 255, 255);
-            imageButton.color = color;
+            imageButton.enabled = false;
+            buttonFight.GetComponentInChildren<Text>().enabled = false;
             yield return new WaitForSeconds(1.5f);          
             dividingLine.SetActive(true);
+            LoadingText.SetActive(true);
         }
       
     }
