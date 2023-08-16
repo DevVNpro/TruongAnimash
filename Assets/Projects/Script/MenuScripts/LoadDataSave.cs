@@ -8,18 +8,19 @@ namespace Projects.Script.MenuScripts
 {
     public class LoadDataSave : MonoBehaviour
     {
-
+       
         void Start()
         {
+          
           string path = Application.persistentDataPath + "AnimalJsonSave.json";
-          /*
-          string content = File.ReadAllText(path);
+          
+          
+          /*string content = File.ReadAllText(path);
           List<AnimalSaveData> a = JsonConvert.DeserializeObject<List<AnimalSaveData>>(content);
-          a.RemoveAll(item => item.key == "TW");
+          a.RemoveAll(item => item.key == "LO");
           string jsonSave = JsonConvert.SerializeObject(a);
           File.WriteAllText(path, jsonSave);
           Debug.Log(File.ReadAllText(path));*/
-
           string jsonConten = File.ReadAllText(path);
             if (jsonConten != "")
             {
@@ -53,5 +54,6 @@ namespace Projects.Script.MenuScripts
                 Debug.LogError($"Failed to load Data due to:  {e.Message} {e.StackTrace}");
             }
         }
+        
     }
 }

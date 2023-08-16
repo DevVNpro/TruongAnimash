@@ -67,18 +67,20 @@ namespace Projects.Script.GenScripts
 
         public void SaveToJsonWithContent(List<AnimalSaveData>  listAnimal)
         {
+            Debug.Log("SaveWithContent");
             string path = Application.persistentDataPath + "AnimalJsonSave.json";
-            List<AnimalSaveData> existingData = new List<AnimalSaveData>();
+            /*List<AnimalSaveData> existingData = new List<AnimalSaveData>();
             string existingJson = File.ReadAllText(path);
             existingData = JsonConvert.DeserializeObject<List<AnimalSaveData>>(existingJson);
-            existingData.AddRange(listAnimal);
+            existingData.AddRange(listAnimal);*/
             using FileStream stream = File.Create(path);
             stream.Close();
-            File.WriteAllText(path, JsonConvert.SerializeObject(existingData));
+            File.WriteAllText(path, JsonConvert.SerializeObject(listAnimal));
         }
 
         public void SaveToJsonWithNoContent(List<AnimalSaveData> listAnimal)
         {
+            Debug.Log("SaveWithNoContent");
             string path = Application.persistentDataPath + "AnimalJsonSave.json";
             File.WriteAllText(path, JsonConvert.SerializeObject(listAnimal));
         }
