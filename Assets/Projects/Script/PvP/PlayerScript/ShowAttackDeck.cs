@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 namespace Projects.Script.PvP.PlayerScript
@@ -7,11 +8,11 @@ namespace Projects.Script.PvP.PlayerScript
         [SerializeField] private Card cardPlayer;
         [SerializeField] private Text textAttack;
         
-        void Start()
+    
+
+        private void Update()
         {
             textAttack.text = cardPlayer.attack.ToString();
         }
-
-    
     }
 }

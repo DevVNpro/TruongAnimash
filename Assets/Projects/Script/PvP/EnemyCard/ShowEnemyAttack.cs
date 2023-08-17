@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using  UnityEngine.UI;
 namespace Projects.Script.PvP.EnemyCard
@@ -10,11 +11,11 @@ namespace Projects.Script.PvP.EnemyCard
         [Header("AttackText")]
         [SerializeField] private Text textAttack;
     
-        void Start()
+    
+
+        private void Update()
         {
             textAttack.text = totalAttackEnemy.sumAttack.ToString();
         }
-
- 
     }
 }

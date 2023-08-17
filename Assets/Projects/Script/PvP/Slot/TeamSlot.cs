@@ -32,7 +32,6 @@ namespace Projects.Script.PvP
             bool check = dropped.GetComponent<DrapAbleItem>().droppedOnSlotTeam;
             if (!check)
             {
-                Debug.Log("Tangdiem");
                 int sumAttack = int.Parse(textPointAttack.text);
                 sumAttack += dropped.GetComponent<Card>().attack;
                 textPointAttack.text = sumAttack.ToString();

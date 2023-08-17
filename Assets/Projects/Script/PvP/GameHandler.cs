@@ -9,6 +9,12 @@ namespace Projects.Script.PvP
     public class GameHandler : MonoBehaviour
     {
         public static GameHandler instance;
+
+        public TotalAttackEnemy totalAttackEnemy;
+
+        public AttackEnemy attackEnemy;
+
+        public GameObject WinAlert;
         public GameState game;
 
         public enum GameState
@@ -28,15 +34,34 @@ namespace Projects.Script.PvP
             switch (game)
             {
                 case(GameState.PlayerTurn):
-                    Debug.Log("Người chơi tấn công");
+                    Debug.Log("PlayerTurn");
+                    if (totalAttackEnemy.sumAttack == 0)
+                    {
+                        game = GameState.GameOver;
+                    }
+
+                    if (AttackEnemy.IsPlayerTurn == false)
+                    {
+                        game = GameState.EnemyTurn;
+                        Debug.Log("EnemyTurn");
+                  
+                        
+                    }
+                    
+                    
                     break;
                 case (GameState.EnemyTurn):
-                    Debug.Log("Kẻ định tấn công");
+                    Debug.Log("EnemyTurn");
+                    //xu li enemy danh
+                    //attackEnemy.IsPlayerTurn = true;
+                    game = GameState.EnemyTurn;
                     break;
                 case (GameState.GameOver):
-                    Debug.Log("Kết thúc game");
+                     Debug.Log("Kết thúc game");
+                     WinAlert.SetActive(true);
                     break;
             }
         }
+        
     }
 }

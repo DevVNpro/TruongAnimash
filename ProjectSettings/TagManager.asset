@@ -7,6 +7,10 @@ TagManager:
   - img
   - text
   - LoadingText
+  - Enemy
+  - Enemy1
+  - Enemy2
+  - Enemy3
   layers:
   - Default
   - TransparentFX
