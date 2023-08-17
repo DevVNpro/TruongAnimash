@@ -5,8 +5,9 @@ namespace Projects.Script.PvP
         [System.Serializable] 
         public class Card : MonoBehaviour 
         {
-       //         public string name;
+            //   public string name;
                 public int attack;
-    
+              //  public int heath;
+
         }
 }

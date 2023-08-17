@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -23,7 +24,13 @@ namespace Projects.Script.PvP
         [Header("LoadingText")] [SerializeField]
         private GameObject LoadingText;
 
-        
+        [Header("EnemyGrid")] [SerializeField] private Image EnemyGrid;
+
+
+        [Header("AnimationImgEnemy")] [SerializeField]
+        private List<Image> imageEnemy;
+
+
 
         private void Awake()
         {
@@ -59,6 +66,17 @@ namespace Projects.Script.PvP
             yield return new WaitForSeconds(1.5f);          
             dividingLine.SetActive(true);
             LoadingText.SetActive(true);
+            yield return new WaitForSeconds(1.5f);
+            EnemyGrid.rectTransform.LeanScale(new Vector3(1f, 1f), 0.5f);
+            yield return new WaitForSeconds(0.6f);
+            foreach (Image image in imageEnemy)
+            {
+                image.rectTransform.LeanScale(new Vector3(1f, 1f), 0.8f);
+                yield return new WaitForSeconds(1f);
+            }
+            yield return new WaitForSeconds(0.6f);
+            LoadingText.SetActive(false);
+            
         }
       
     }
