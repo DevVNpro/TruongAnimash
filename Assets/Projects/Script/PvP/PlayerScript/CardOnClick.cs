@@ -1,5 +1,7 @@
 using System;
 using System.Collections;
+using Projects.Script.PvP.EnemyCard;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,6 +19,11 @@ namespace Projects.Script.PvP.PlayerScript
         private Button buttonPlayer2;
         [SerializeField]
         private Button buttonPlayer3;
+        
+        //test luong game
+      //  [SerializeField] private EnemyAi enemyAi;
+        public Transform[] cardSlots;
+
 
      
         
@@ -44,10 +51,7 @@ namespace Projects.Script.PvP.PlayerScript
             {
                 StartCoroutine(SetMoveAttack(transformButton));
             }
-            else
-            {
-                Debug.Log("chua chon doi thu");
-            }
+           
         }
         public void OnClickCard2()
         {
@@ -56,10 +60,7 @@ namespace Projects.Script.PvP.PlayerScript
             {
                 StartCoroutine(SetMoveAttack(transformButton));
             }
-            else
-            {
-                Debug.Log("chua chon doi thu");
-            }
+           
         }
         public void OnClickCard3()
         {
@@ -68,13 +69,11 @@ namespace Projects.Script.PvP.PlayerScript
             {
                 StartCoroutine(SetMoveAttack(transformButton));
             }
-            else
-            {
-                Debug.Log("chua chon doi thu");
-            }
+          
         }
         IEnumerator SetMoveAttack(Transform transformButton)
         {
+            //tancong enemy
             isMoving = true;
             Transform parentAfterDrag= transformButton.parent;
             transformButton.SetParent(transform.root);
@@ -84,7 +83,20 @@ namespace Projects.Script.PvP.PlayerScript
             transformButton.transform.LeanMove(new Vector3(transformButton.position.x, transformButton.position.y), 0.5f);
             transformButton.SetParent(parentAfterDrag);
             isMoving = false;
-            yield return  new WaitForSeconds(0.5f);
+            yield return  new WaitForSeconds(2f);
+            
+            
+            //xet cardEnemy attack
+            foreach (Transform slot in cardSlots)
+            {
+                    if (slot.childCount > 0)
+                    {
+                        slot.GetComponentInChildren<EnemyAi>().StartAttackLoop();
+                        break;
+                    }
+            }
+            
+
         }
        
 

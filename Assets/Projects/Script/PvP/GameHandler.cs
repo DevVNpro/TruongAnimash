@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Projects.Script.PvP.EnemyCard;
 using Projects.Script.PvP.PlayerScript;
 using UnityEngine;
 
@@ -14,8 +15,10 @@ namespace Projects.Script.PvP
 
         public AttackEnemy attackEnemy;
 
-        public GameObject WinAlert;
+        public GameObject winAlert;
         public GameState game;
+
+        public EnemyAi enemyAi1;
 
         public enum GameState
         {
@@ -31,37 +34,45 @@ namespace Projects.Script.PvP
 
         private void Update()
         {
-            switch (game)
-            {
-                case(GameState.PlayerTurn):
+
+            switch (game){
+                case (GameState.PlayerTurn):
                     Debug.Log("PlayerTurn");
                     if (totalAttackEnemy.sumAttack == 0)
                     {
                         game = GameState.GameOver;
                     }
-
                     if (AttackEnemy.IsPlayerTurn == false)
                     {
+
                         game = GameState.EnemyTurn;
-                        Debug.Log("EnemyTurn");
-                  
-                        
                     }
-                    
-                    
+
                     break;
                 case (GameState.EnemyTurn):
                     Debug.Log("EnemyTurn");
-                    //xu li enemy danh
-                    //attackEnemy.IsPlayerTurn = true;
-                    game = GameState.EnemyTurn;
+                    enemyAi1.StartAttackLoop();
+                    game = GameState.PlayerTurn;
                     break;
+
                 case (GameState.GameOver):
-                     Debug.Log("Kết thúc game");
-                     WinAlert.SetActive(true);
+                    Debug.Log("Kết thúc game");
+                    winAlert.SetActive(true);
                     break;
             }
         }
-        
+
+        IEnumerator AttackPlayer()
+        {           
+            yield return  new WaitForSeconds(1f);
+            enemyAi1.StartAttackLoop();
+            yield return  new WaitForSeconds(1f);
+            game = GameState.PlayerTurn;
+        }
+
+
+
+
+
     }
 }
