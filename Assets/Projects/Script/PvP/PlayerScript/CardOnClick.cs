@@ -23,20 +23,17 @@ namespace Projects.Script.PvP.PlayerScript
         //test luong game
       //  [SerializeField] private EnemyAi enemyAi;
         public Transform[] cardSlots;
-
-
-     
-        
-
         private Transform transformButton;
-    
-    
-
         public bool  isMoving = false;
+        
+        [Header("Animation Text")] [SerializeField]
+        private Animator teamText;
+
+        [Header("Animation Text")] [SerializeField]
+        private Animator enemyText;
 
         private void Start()
         {
-
             buttonPlayer1.onClick.AddListener(OnClickCard1); 
             buttonPlayer2.onClick.AddListener(OnClickCard2);
            buttonPlayer3.onClick.AddListener(OnClickCard3);
@@ -73,6 +70,8 @@ namespace Projects.Script.PvP.PlayerScript
         }
         IEnumerator SetMoveAttack(Transform transformButton)
         {
+            //Turn offanimation TeamText
+            teamText.SetTrigger("ChangeTurn");
             //tancong enemy
             isMoving = true;
             Transform parentAfterDrag= transformButton.parent;
@@ -83,6 +82,8 @@ namespace Projects.Script.PvP.PlayerScript
             transformButton.transform.LeanMove(new Vector3(transformButton.position.x, transformButton.position.y), 0.5f);
             transformButton.SetParent(parentAfterDrag);
             isMoving = false;
+            //Turn on fanimation EnemyText
+            enemyText.SetTrigger("ChangeTurn");
             yield return  new WaitForSeconds(2f);
             //xet bien cho trigger hoat dong 
             AttackPlayer.IsEnemeTurn = true;

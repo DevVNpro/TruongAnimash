@@ -413,6 +413,7 @@ GameObject:
   - component: {fileID: 218828027}
   - component: {fileID: 218828026}
   - component: {fileID: 218828025}
+  - component: {fileID: 218828029}
   m_Layer: 8
   m_Name: Enemy_Text
   m_TagString: Untagged
@@ -519,6 +520,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 218828023}
   m_CullTransparentMesh: 1
+--- !u!95 &218828029
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218828023}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 83ea0a096e5f10b4da02faa582725a26, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &229514936
 GameObject:
   m_ObjectHideFlags: 0
@@ -1137,6 +1158,8 @@ MonoBehaviour:
   - {fileID: 300106570414960787}
   - {fileID: 978536989}
   - {fileID: 718522669}
+  teamText: {fileID: 2048311126}
+  enemyText: {fileID: 218828029}
 --- !u!114 &457501009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1377,6 +1400,7 @@ MonoBehaviour:
   - {fileID: 457501003}
   - {fileID: 1674981623}
   - {fileID: 1136288626}
+  teamText: {fileID: 2048311126}
 --- !u!114 &611858606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2563,6 +2587,8 @@ MonoBehaviour:
   - {fileID: 300106570414960787}
   - {fileID: 978536989}
   - {fileID: 718522669}
+  teamText: {fileID: 2048311126}
+  enemyText: {fileID: 218828029}
 --- !u!114 &1136288632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2679,6 +2705,8 @@ MonoBehaviour:
   - {fileID: 5437223674767251361}
   - {fileID: 7188491428977325566}
   isMoving: 0
+  teamText: {fileID: 2048311126}
+  enemyText: {fileID: 218828029}
 --- !u!114 &1147444318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3631,6 +3659,8 @@ MonoBehaviour:
   - {fileID: 300106570414960787}
   - {fileID: 978536989}
   - {fileID: 718522669}
+  teamText: {fileID: 2048311126}
+  enemyText: {fileID: 218828029}
 --- !u!114 &1674981629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4311,6 +4341,7 @@ GameObject:
   - component: {fileID: 2048311124}
   - component: {fileID: 2048311123}
   - component: {fileID: 2048311122}
+  - component: {fileID: 2048311126}
   m_Layer: 8
   m_Name: Team_Text
   m_TagString: Untagged
@@ -4392,7 +4423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.509434, g: 0.509434, b: 0.509434, a: 1}
+  m_Color: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4417,6 +4448,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2048311120}
   m_CullTransparentMesh: 1
+--- !u!95 &2048311126
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048311120}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e11023bd2b9027045a8a106f32b01838, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &2145639227
 GameObject:
   m_ObjectHideFlags: 0

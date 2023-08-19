@@ -33,6 +33,9 @@ namespace Projects.Script.PvP
         [Header("AnimationImgEnemy")] [SerializeField]
         private List<Image> imageEnemy;
 
+        [Header("Animation Text")] [SerializeField]
+        private Animator teamText;
+
 
 
         private void Awake()
@@ -80,8 +83,9 @@ namespace Projects.Script.PvP
             yield return new WaitForSeconds(0.6f);
             LoadingText.SetActive(false);
             GameHandler.SetActive(true);
-            
-        }
+            //animation turn Text
+            teamText.SetTrigger("Fight");
+    }
       
     }
 }

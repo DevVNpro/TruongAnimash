@@ -9,6 +9,11 @@ namespace Projects.Script.PvP.EnemyCard
         public Transform[] cardSlots;
         private Transform _transform;
 
+        [Header("Animation Text")] [SerializeField]
+        private Animator teamText;
+        [Header("Animation Text")] [SerializeField]
+        private Animator enemyText;
+
         private void Start()
         {
             _transform = this.transform;
@@ -40,7 +45,8 @@ namespace Projects.Script.PvP.EnemyCard
             
             //re-enable the player's damage condition, so as not to confuse damage when the player attacks or the enemy attacks
             AttackEnemy.IsPlayerTurn = true;
-
+            enemyText.SetTrigger("ChangeTurn");
+            teamText.SetTrigger("ChangeTurn");
         }
        
     } 
