@@ -32,7 +32,7 @@ namespace Projects.Script.PvP.PlayerScript
     
     
 
-        private bool  isMoving = false;
+        public bool  isMoving = false;
 
         private void Start()
         {
@@ -84,8 +84,8 @@ namespace Projects.Script.PvP.PlayerScript
             transformButton.SetParent(parentAfterDrag);
             isMoving = false;
             yield return  new WaitForSeconds(2f);
-            
-            
+            //xet bien cho trigger hoat dong 
+            AttackPlayer.IsEnemeTurn = true;
             //xet cardEnemy attack
             foreach (Transform slot in cardSlots)
             {

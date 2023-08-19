@@ -7,6 +7,13 @@ namespace Projects.Script.PvP.EnemyCard
     public class EnemyAi : MonoBehaviour
     {
         public Transform[] cardSlots;
+        private Transform _transform;
+
+        private void Start()
+        {
+            _transform = this.transform;
+        }
+
         public void StartAttackLoop()
         {
             foreach (Transform slot in cardSlots)
@@ -14,6 +21,7 @@ namespace Projects.Script.PvP.EnemyCard
                 if (slot.childCount > 0)
                 {
                     StartCoroutine(AttackPlayer(slot));
+                    break;
                 }
             }
         }
@@ -26,7 +34,7 @@ namespace Projects.Script.PvP.EnemyCard
             transform.SetAsLastSibling();
             transform.LeanMove(new Vector3(slot.position.x, slot.position.y), 1.2f).setEasePunch();
             yield return new WaitForSeconds(1.4f);
-            transform.LeanMove(new Vector3(parentAfterDrag.position.x, parentAfterDrag.position.y), 0.5f);
+            transform.LeanMove(new Vector3(_transform.position.x, _transform.position.y), 0.5f);
             transform.SetParent(parentAfterDrag);
             yield return new WaitForSeconds(0.5f);
             

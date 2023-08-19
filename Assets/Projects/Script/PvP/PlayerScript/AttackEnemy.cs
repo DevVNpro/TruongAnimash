@@ -52,6 +52,8 @@ public class AttackEnemy : MonoBehaviour
         {
             health -= health;
             other.transform.LeanScale(new Vector3(0f, 0f), 2f);
+            //xu li tiep phan thoat ra khoi slot
+            other.transform.SetParent(transform.root);
         }
         else
         {

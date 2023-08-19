@@ -11,6 +11,9 @@ TagManager:
   - Enemy1
   - Enemy2
   - Enemy3
+  - Player1
+  - Player2
+  - Player3
   layers:
   - Default
   - TransparentFX

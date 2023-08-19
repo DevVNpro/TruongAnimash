@@ -4,75 +4,59 @@ using System.Collections.Generic;
 using Projects.Script.PvP.EnemyCard;
 using Projects.Script.PvP.PlayerScript;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Projects.Script.PvP
 {
     public class GameHandler : MonoBehaviour
     {
-        public static GameHandler instance;
+        [Header("WinAlert")] [SerializeField] private Image imageWin;
+        [Header("WinAlert")] [SerializeField] private Image imageLose;
+        [Header("ButtonBack")] [SerializeField] private Button buttonBack;
 
-        public TotalAttackEnemy totalAttackEnemy;
+        [Header("ListPlayer")] [SerializeField]
+        private List<Transform> ListPlayer;
 
-        public AttackEnemy attackEnemy;
-
-        public GameObject winAlert;
-        public GameState game;
-
-        public EnemyAi enemyAi1;
-
-        public enum GameState
-        {
-            PlayerTurn,
-            EnemyTurn,
-            GameOver
-        }
-
+        private bool playerAlve;
         private void Start()
         {
-            game = GameState.PlayerTurn;
+            buttonBack.onClick.AddListener(BackMenu);
         }
 
+        private void BackMenu()
+        {
+            SceneControl.Instance.LoadScene(0);
+        }
         private void Update()
         {
+            /*foreach (Transform card in ListPlayer)
+            {
+                if (card.childCount > 0)
+                {
 
-            switch (game){
-                case (GameState.PlayerTurn):
-                    Debug.Log("PlayerTurn");
-                    if (totalAttackEnemy.sumAttack == 0)
-                    {
-                        game = GameState.GameOver;
-                    }
-                    if (AttackEnemy.IsPlayerTurn == false)
-                    {
+                    playerAlve = true;
+                }
+                else
+                {
+                    playerAlve = false;
+                }
+            }
+            if (TotalAttack._sumAttack == 0 &&!playerAlve)
+            {
+                imageLose.gameObject.SetActive(true);
+                buttonBack.gameObject.SetActive(true);
+            }*/
 
-                        game = GameState.EnemyTurn;
-                    }
-
-                    break;
-                case (GameState.EnemyTurn):
-                    Debug.Log("EnemyTurn");
-                    enemyAi1.StartAttackLoop();
-                    game = GameState.PlayerTurn;
-                    break;
-
-                case (GameState.GameOver):
-                    Debug.Log("Kết thúc game");
-                    winAlert.SetActive(true);
-                    break;
+            if (TotalAttackEnemy.sumAttack == 0)
+            {
+                Invoke("TurnOnLoseImg",3f);
             }
         }
 
-        IEnumerator AttackPlayer()
-        {           
-            yield return  new WaitForSeconds(1f);
-            enemyAi1.StartAttackLoop();
-            yield return  new WaitForSeconds(1f);
-            game = GameState.PlayerTurn;
+        private void TurnOnLoseImg()
+        {
+            imageWin.gameObject.SetActive(true);
+            buttonBack.gameObject.SetActive(true);
         }
-
-
-
-
-
     }
 }

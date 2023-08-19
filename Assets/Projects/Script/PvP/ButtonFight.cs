@@ -9,6 +9,9 @@ namespace Projects.Script.PvP
 {
     public class ButtonFight : MonoBehaviour
     {
+        [Header("GameHandler")] [SerializeField]
+        private GameObject GameHandler;
+        
         [Header("ButtonFight")]
         [SerializeField] private Button buttonFight;
         [SerializeField] private Image imageButton;
@@ -76,6 +79,7 @@ namespace Projects.Script.PvP
             }
             yield return new WaitForSeconds(0.6f);
             LoadingText.SetActive(false);
+            GameHandler.SetActive(true);
             
         }
       
