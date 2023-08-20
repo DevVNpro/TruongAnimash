@@ -13,7 +13,7 @@ namespace Projects.Script.PvP.PlayerScript
            [SerializeField] private GameObject slot1; 
            [SerializeField] private GameObject slot2;
             [SerializeField] private GameObject slot3;
-              //thay card bang slot /, lay du lieu tu slotteam de giam phu thuoc vao card , tu do de dang thay doi card
+              //thay card bang slot /, lay du lieu tu slotteam de khong phu thuoc vao card , tu do de dang thay doi card
             //chi thay doi ham totalAttackPlayer ham showtotalattack khong can thay doi vi code game ko lien quan code ui
            //lấy máu theo slot thì bị ko update máu khi chết 
             public static int _sumAttack = 0;
@@ -23,9 +23,15 @@ namespace Projects.Script.PvP.PlayerScript
             public static bool ChangeMethodSumDeck;
 
             [Header("CardPlayer")]
-            [SerializeField] private Card cardPlayer1;
-            [SerializeField] private Card cardPlayer2;
-            [SerializeField] private Card cardPlayer3;
+             private Card cardPlayer1;
+             private Card cardPlayer2;
+             private Card cardPlayer3;
+      
+
+            private bool checkOnSlot1;
+            private bool checkOnSlot2;
+            private bool checkOnSlot3;
+
             
 
             private void Start()
@@ -48,42 +54,35 @@ namespace Projects.Script.PvP.PlayerScript
 
             public void SumAttackSoftDeck()
             {
-                Debug.Log("Da chuyen phuong tthuc tinh tong diem");
                 if (slot1.GetComponentInChildren<Card>() != null)
                 {
                     attackCard1 = slot1.GetComponentInChildren<Card>().attack;
-                    slot1.GetComponentInChildren<Card>().onSlot = true;
                 }
                 else
                 {
                     attackCard1 = 0;
-                    cardPlayer1.onSlot = false;
 
                 }
                 
                 if (slot2.GetComponentInChildren<Card>() != null)
                 {
                     attackCard2 = slot2.GetComponentInChildren<Card>().attack;
-                    slot2.GetComponentInChildren<Card>().onSlot = true;
 
                 }
                 else
                 {
                     attackCard2 = 0;
-                    cardPlayer2.onSlot = false;
 
                 }
                 
                 if (slot3.GetComponentInChildren<Card>() != null)
                 {
                     attackCard3 = slot3.GetComponentInChildren<Card>().attack;
-                    slot3.GetComponentInChildren<Card>().onSlot = true;
 
                 }
                 else
                 {
                     attackCard3 = 0;
-                    cardPlayer3.onSlot = false;
 
                 }
                 _sumAttack = attackCard1 + attackCard2 + attackCard3;
@@ -91,21 +90,44 @@ namespace Projects.Script.PvP.PlayerScript
 
             public void SumAttackPvP()
             {
-                if (cardPlayer1.onSlot == true)
+                Debug.Log("Da chuyen phuong tthuc tinh tong diem");
+                //slot1
+                if (slot1.GetComponentInChildren<Card>() != null)
+                {
+                    checkOnSlot1 = true;
+                    cardPlayer1 = slot1.GetComponentInChildren<Card>();
+                  
+                }
+                else if(checkOnSlot1)
                 {
                     attackCard1 = cardPlayer1.attack;
                 }
-                else attackCard1 = 0;
-                if (cardPlayer2.onSlot == true)
+                
+                //slot2
+
+                if (slot2.GetComponentInChildren<Card>() != null)
+                {
+                    checkOnSlot2 = true;
+                    cardPlayer2 = slot2.GetComponentInChildren<Card>();
+                 
+                }
+                else if(checkOnSlot2)
                 {
                     attackCard2 = cardPlayer2.attack;
                 }
-                else attackCard2 = 0;
-                if (cardPlayer3.onSlot == true)
+                
+                //slot3
+                if (slot3.GetComponentInChildren<Card>() != null)
+                {
+                    checkOnSlot3 = true;
+                    cardPlayer3 = slot3.GetComponentInChildren<Card>();
+                   
+                }
+                else if(checkOnSlot3)
                 {
                     attackCard3 = cardPlayer3.attack;
                 }
-                else attackCard3 = 0;
+                
                 _sumAttack = attackCard1 + attackCard2 + attackCard3;
             }
     }

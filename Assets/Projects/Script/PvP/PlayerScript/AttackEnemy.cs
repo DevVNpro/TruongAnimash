@@ -22,23 +22,12 @@ public class AttackEnemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy1")&&IsPlayerTurn)
+        if (IsPlayerTurn&& other.CompareTag("Enemy"))
         {
             IsPlayerTurn = false;
             Settrigger(other);
         }
-        if (other.CompareTag("Enemy2")&&IsPlayerTurn)
-        {
-            IsPlayerTurn = false;
-
-            Settrigger(other);
-        }
-        if (other.CompareTag("Enemy3")&&IsPlayerTurn)
-        {
-            IsPlayerTurn = false;
-
-            Settrigger(other);
-        }
+    
 
         
     }

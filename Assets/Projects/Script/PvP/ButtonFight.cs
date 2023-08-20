@@ -10,8 +10,8 @@ namespace Projects.Script.PvP
 {
     public class ButtonFight : MonoBehaviour
     {
-        [Header("GameHandler")] [SerializeField]
-        private GameObject GameHandler;
+        [Header("GameHandler")] 
+        [SerializeField] private GameObject GameHandler;
         
         [Header("ButtonFight")]
         [SerializeField] private Button buttonFight;
@@ -20,22 +20,26 @@ namespace Projects.Script.PvP
         [Header("TeamGrid")]
         [SerializeField] private Image TeamGrid;
 
-        [Header("DeckGrid")] [SerializeField] private GameObject DeckGrid;
+        [Header("DeckGrid")] 
+        [SerializeField] private GameObject DeckGrid;
 
-        [Header("dividingLine")] [SerializeField]
-        private GameObject dividingLine;
+        [Header("dividingLine")]
+        [SerializeField] private GameObject dividingLine;
         
-        [Header("LoadingText")] [SerializeField]
-        private GameObject LoadingText;
+        [Header("LoadingText")]
+        [SerializeField] private GameObject LoadingText;
 
-        [Header("EnemyGrid")] [SerializeField] private Image EnemyGrid;
+        [Header("EnemyGrid")]
+        [SerializeField] private Image EnemyGrid;
 
+        [Header("ActiveOnClickSlot")]
+        [SerializeField] private CardOnClick _cardOnClick;
 
-        [Header("AnimationImgEnemy")] [SerializeField]
-        private List<Image> imageEnemy;
+        [Header("AnimationImgEnemy")] 
+        [SerializeField] private List<Image> imageEnemy;
 
-        [Header("Animation Text")] [SerializeField]
-        private Animator teamText;
+        [Header("Animation Text")]
+        [SerializeField] private Animator teamText;
 
 
 
@@ -65,17 +69,27 @@ namespace Projects.Script.PvP
      
         IEnumerator Test()
         {
+            //Turn On Click Slot Team
+            _cardOnClick.enabled = true;
+            
+            //Change Method Sum heath
             TotalAttack.ChangeMethodSumDeck = false;
+            
+            //Set Animation
             dividingLine.SetActive(false);
             DeckGrid.SetActive(false);
             TeamGrid.rectTransform.LeanMove(new Vector3(0f, -500f), 1.3f);
             imageButton.enabled = false;
             buttonFight.GetComponentInChildren<Text>().enabled = false;
+            
             yield return new WaitForSeconds(1.5f);          
             dividingLine.SetActive(true);
             LoadingText.SetActive(true);
+            
             yield return new WaitForSeconds(1.5f);
             EnemyGrid.rectTransform.LeanScale(new Vector3(1f, 1f), 0.5f);
+            
+            //Set position attack
             yield return new WaitForSeconds(0.6f);
             foreach (Image image in imageEnemy)
             {
@@ -85,7 +99,7 @@ namespace Projects.Script.PvP
             yield return new WaitForSeconds(0.6f);
             LoadingText.SetActive(false);
             GameHandler.SetActive(true);
-            //animation turn Text
+            //animation text
             teamText.SetTrigger("Fight");
     }
       

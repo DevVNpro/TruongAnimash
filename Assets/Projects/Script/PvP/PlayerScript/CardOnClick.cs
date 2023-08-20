@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using Projects.Script.PvP.EnemyCard;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -12,17 +13,20 @@ namespace Projects.Script.PvP.PlayerScript
         [Header("ButtonEnemy")] 
         [SerializeField]
         private PositionEnemyClick positionEnemyClick;
-        [Header("ButtonPlayer")] 
+
+        [Header("List slot")] [SerializeField] private List<GameObject> listSlot;
+
+        [Header("Onclick Listcard")]
         [SerializeField]
-        private Button buttonPlayer1;
+        private Transform Slot1;
         [SerializeField]
-        private Button buttonPlayer2;
+        private Transform Slot2;
         [SerializeField]
-        private Button buttonPlayer3;
+        private Transform Slot3;
         
-        //test luong game
-      //  [SerializeField] private EnemyAi enemyAi;
-        public Transform[] cardSlots;
+        //enemyList Position
+        [Header("EnemyCard")]
+        [SerializeField] private Transform[] EnemyCards;
         private Transform transformButton;
         public bool  isMoving = false;
         
@@ -34,16 +38,48 @@ namespace Projects.Script.PvP.PlayerScript
 
         private void Start()
         {
-            buttonPlayer1.onClick.AddListener(OnClickCard1); 
-            buttonPlayer2.onClick.AddListener(OnClickCard2);
-           buttonPlayer3.onClick.AddListener(OnClickCard3);
+            CheckListSlot();
+        }
+
+        private void CheckListSlot()
+        {
+            foreach (GameObject slot in listSlot)
+            {
+                int slotIndex = listSlot.IndexOf(slot);
+
+                if (slot.transform.childCount > 0)
+                {
+
+                    if (slotIndex == 0)
+                    {
+                        slot.GetComponentInChildren<Button>().onClick.AddListener(OnClickCard1);
+                        Debug.Log("Slot 1 có thẻ nhé");
+                    }
+                    else if (slotIndex == 1)
+                    {
+                        slot.GetComponentInChildren<Button>().onClick.AddListener(OnClickCard2);
+                        Debug.Log("Slot 2 có thẻ nhé");
+
+                    }
+                    else if (slotIndex == 2)
+                    {
+                        slot.GetComponentInChildren<Button>().onClick.AddListener(OnClickCard3);
+                        Debug.Log("Slot 3 có thẻ nhé");
+
+
+                    }
+                }
+                
+            }
+            
+            
         }
 
   
 
         public void OnClickCard1()
         {
-            transformButton = buttonPlayer1.transform;
+            transformButton = Slot1.GetComponentInChildren<Button>().transform;
             if (!isMoving && positionEnemyClick.transformEnemy != Vector3.zero)
             {
                 StartCoroutine(SetMoveAttack(transformButton));
@@ -52,7 +88,7 @@ namespace Projects.Script.PvP.PlayerScript
         }
         public void OnClickCard2()
         {
-            transformButton = buttonPlayer2.transform;
+            transformButton = Slot2.GetComponentInChildren<Button>().transform;
             if (!isMoving && positionEnemyClick.transformEnemy != Vector3.zero)
             {
                 StartCoroutine(SetMoveAttack(transformButton));
@@ -61,7 +97,7 @@ namespace Projects.Script.PvP.PlayerScript
         }
         public void OnClickCard3()
         {
-            transformButton = buttonPlayer3.transform;
+            transformButton = Slot3.GetComponentInChildren<Button>().transform;
             if (!isMoving && positionEnemyClick.transformEnemy != Vector3.zero)
             {
                 StartCoroutine(SetMoveAttack(transformButton));
@@ -88,7 +124,7 @@ namespace Projects.Script.PvP.PlayerScript
             //xet bien cho trigger hoat dong 
             AttackPlayer.IsEnemeTurn = true;
             //xet cardEnemy attack
-            foreach (Transform slot in cardSlots)
+            foreach (Transform slot in EnemyCards)
             {
                     if (slot.childCount > 0)
                     {

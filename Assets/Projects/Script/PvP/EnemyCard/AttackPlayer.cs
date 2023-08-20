@@ -15,18 +15,7 @@ public class AttackPlayer : MonoBehaviour
 
    private void OnTriggerEnter2D(Collider2D other)
    {
-      if (other.CompareTag("Player1")&&IsEnemeTurn)
-      {
-         IsEnemeTurn = false;
-         Settrigger(other);
-      }    
-      if (other.CompareTag("Player2")&&IsEnemeTurn)
-      {
-         IsEnemeTurn = false;
-         Settrigger(other);
-      }      
-
-      if (other.CompareTag("Player3")&&IsEnemeTurn)
+      if (IsEnemeTurn)
       {
          IsEnemeTurn = false;
          Settrigger(other);

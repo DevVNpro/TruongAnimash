@@ -14,19 +14,12 @@ namespace Projects.Script.PvP
         [Header("WinAlert")] [SerializeField] private Image imageLose;
         [Header("ButtonBack")] [SerializeField] private Button buttonBack;
 
-        [Header("ListPlayer")] [SerializeField]
-        private List<Transform> ListPlayer;
 
-        private bool playerAlve;
         private void Start()
         {
             buttonBack.onClick.AddListener(BackMenu);
         }
 
-        private void BackMenu()
-        {
-            SceneControl.Instance.LoadScene(0);
-        }
         private void Update()
         {
             if (TotalAttack._sumAttack == 0)
@@ -50,6 +43,10 @@ namespace Projects.Script.PvP
             buttonBack.gameObject.SetActive(true);
         }
 
+        private void BackMenu()
+        {
+            SceneControl.Instance.LoadScene(0);
+        }
     
      
     }
