@@ -8,6 +8,7 @@ namespace Projects.Script.PvP
             //   public string name;
                 public int attack;
               //  public int heath;
+              public bool onSlot;
 
         }
 }

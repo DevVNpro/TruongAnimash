@@ -51,7 +51,7 @@ public class AttackEnemy : MonoBehaviour
         if (attack >= health)
         {
             health -= health;
-            other.transform.LeanScale(new Vector3(0f, 0f), 2f);
+            other.transform.LeanScale(new Vector3(0f, 0f), 1.3f);
             //xu li tiep phan thoat ra khoi slot
             other.transform.SetParent(transform.root);
         }

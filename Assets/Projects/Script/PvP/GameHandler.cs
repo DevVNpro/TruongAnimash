@@ -29,34 +29,28 @@ namespace Projects.Script.PvP
         }
         private void Update()
         {
-            /*foreach (Transform card in ListPlayer)
-            {
-                if (card.childCount > 0)
-                {
-
-                    playerAlve = true;
-                }
-                else
-                {
-                    playerAlve = false;
-                }
-            }
-            if (TotalAttack._sumAttack == 0 &&!playerAlve)
-            {
-                imageLose.gameObject.SetActive(true);
-                buttonBack.gameObject.SetActive(true);
-            }*/
-
-            if (TotalAttackEnemy.sumAttack == 0)
+            if (TotalAttack._sumAttack == 0)
             {
                 Invoke("TurnOnLoseImg",3f);
             }
+            if (TotalAttackEnemy.sumAttack == 0)
+            {
+                Invoke("TurnOnWinImg",3f);
+            }
         }
 
-        private void TurnOnLoseImg()
+        private void TurnOnWinImg()
         {
             imageWin.gameObject.SetActive(true);
             buttonBack.gameObject.SetActive(true);
         }
+        private void TurnOnLoseImg()
+        {
+            imageLose.gameObject.SetActive(true);
+            buttonBack.gameObject.SetActive(true);
+        }
+
+    
+     
     }
 }

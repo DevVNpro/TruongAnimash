@@ -40,7 +40,7 @@ public class AttackPlayer : MonoBehaviour
       if (attack >= health)
       {
          health -= health;
-         other.transform.LeanScale(new Vector3(0f, 0f), 2f);
+         other.transform.LeanScale(new Vector3(0f, 0f), 1.3f);
          other.transform.SetParent(transform.root);
       }
       else

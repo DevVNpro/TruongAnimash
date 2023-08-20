@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Projects.Script.PvP.PlayerScript;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -64,6 +65,7 @@ namespace Projects.Script.PvP
      
         IEnumerator Test()
         {
+            TotalAttack.ChangeMethodSumDeck = false;
             dividingLine.SetActive(false);
             DeckGrid.SetActive(false);
             TeamGrid.rectTransform.LeanMove(new Vector3(0f, -500f), 1.3f);
