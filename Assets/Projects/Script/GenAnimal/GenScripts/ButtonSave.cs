@@ -17,7 +17,7 @@ namespace Projects.Script.GenScripts
 
         [Header("HeadText")] [SerializeField] private Text _text;
         [Header("Key")] [SerializeField] private Text _Key;
-        int[] attackValues = { 100, 200, 300, 400 };
+        int[] attackValues = { 100, 200, 300, 400,500,600 };
         private int attack;
         private void  Start()
         {
