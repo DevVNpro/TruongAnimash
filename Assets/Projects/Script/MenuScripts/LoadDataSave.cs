@@ -15,9 +15,10 @@ namespace Projects.Script.MenuScripts
           string path = Application.persistentDataPath + "AnimalJsonSave.json";
           
           
-          /*string content = File.ReadAllText(path);
+          /*
+          string content = File.ReadAllText(path);
           List<AnimalSaveData> a = JsonConvert.DeserializeObject<List<AnimalSaveData>>(content);
-          a.RemoveAll(item => item.key == "LO");
+          a.RemoveAll(item => item.key == "FW");
           string jsonSave = JsonConvert.SerializeObject(a);
           File.WriteAllText(path, jsonSave);
           Debug.Log(File.ReadAllText(path));*/
@@ -48,6 +49,7 @@ namespace Projects.Script.MenuScripts
             {
                 Debug.Log(File.ReadAllText(path));
                 savedAnimals = JsonConvert.DeserializeObject<List<AnimalSaveData>>(File.ReadAllText(path));
+                Debug.Log(savedAnimals);
             }
             catch (Exception e)
             {

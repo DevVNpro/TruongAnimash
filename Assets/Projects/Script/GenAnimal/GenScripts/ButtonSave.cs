@@ -17,8 +17,12 @@ namespace Projects.Script.GenScripts
 
         [Header("HeadText")] [SerializeField] private Text _text;
         [Header("Key")] [SerializeField] private Text _Key;
+        int[] attackValues = { 100, 200, 300, 400 };
+        private int attack;
         private void  Start()
         {
+            int randomIndex = Random.Range(0, attackValues.Length);
+             attack = attackValues[randomIndex];
             transform.localScale = new Vector3(0f,0f);
             StartCoroutine(AnimationButton());
             
@@ -48,7 +52,7 @@ namespace Projects.Script.GenScripts
                         return;
                     }
                 }
-                SaveManager.Instance.AddNewAnimal(DataAnimal.Instance._nameData, _Key.text,DataAnimal.Instance._keyData);
+                SaveManager.Instance.AddNewAnimal(DataAnimal.Instance._nameData, _Key.text,DataAnimal.Instance._keyData,attack);
                 _button.image.color = Color.grey;
                 _button.enabled = false;
                 SaveToJsonWithContent(SaveManager.Instance.animalDataList);
@@ -56,7 +60,7 @@ namespace Projects.Script.GenScripts
             }
             else
             {
-                SaveManager.Instance.AddNewAnimal(DataAnimal.Instance._nameData, _Key.text,DataAnimal.Instance._keyData);
+                SaveManager.Instance.AddNewAnimal(DataAnimal.Instance._nameData, _Key.text,DataAnimal.Instance._keyData,attack);
                 _button.image.color = Color.grey;
                 _button.enabled = false;
                 SaveToJsonWithNoContent(SaveManager.Instance.animalDataList);

@@ -2183,7 +2183,7 @@ GameObject:
   - component: {fileID: 727957979}
   - component: {fileID: 727957982}
   m_Layer: 8
-  m_Name: Button (Legacy)
+  m_Name: Button_Next
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9882,7 +9882,7 @@ GameObject:
   - component: {fileID: 1364689250}
   - component: {fileID: 1364689249}
   m_Layer: 8
-  m_Name: Text (Legacy)
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

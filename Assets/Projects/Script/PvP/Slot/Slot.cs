@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace Projects.Script.PvP
+namespace Projects.Script.PvP.Slot
 {
     public class Slot : MonoBehaviour,IDropHandler
     {
@@ -9,7 +9,7 @@ namespace Projects.Script.PvP
         {
             GameObject dropped = eventData.pointerDrag;
             DrapAbleItem drapAbleItem = dropped.GetComponent<DrapAbleItem>();
-            drapAbleItem.parentAfterDrag = transform;
+            drapAbleItem.parentAfterDrag =  this.transform;
         }
     }
 }
