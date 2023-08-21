@@ -53,18 +53,15 @@ namespace Projects.Script.PvP.PlayerScript
                     if (slotIndex == 0)
                     {
                         slot.GetComponentInChildren<Button>().onClick.AddListener(OnClickCard1);
-                        Debug.Log("Slot 1 có thẻ nhé");
                     }
                     else if (slotIndex == 1)
                     {
                         slot.GetComponentInChildren<Button>().onClick.AddListener(OnClickCard2);
-                        Debug.Log("Slot 2 có thẻ nhé");
 
                     }
                     else if (slotIndex == 2)
                     {
                         slot.GetComponentInChildren<Button>().onClick.AddListener(OnClickCard3);
-                        Debug.Log("Slot 3 có thẻ nhé");
 
 
                     }

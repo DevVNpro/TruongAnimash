@@ -15,11 +15,6 @@ public class AttackEnemy : MonoBehaviour
         IsPlayerTurn = true;
     }
 
-    private void Update()
-    {
-        Debug.Log(IsPlayerTurn);
-    }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (IsPlayerTurn&& other.CompareTag("Enemy"))

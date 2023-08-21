@@ -6,7 +6,6 @@ namespace Projects.Script.PvP
         public class Card : MonoBehaviour 
         {
                 public int attack;
-              public bool onSlot;
 
         }
 }

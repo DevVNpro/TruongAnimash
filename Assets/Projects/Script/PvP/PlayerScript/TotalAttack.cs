@@ -90,7 +90,6 @@ namespace Projects.Script.PvP.PlayerScript
 
             public void SumAttackPvP()
             {
-                Debug.Log("Da chuyen phuong tthuc tinh tong diem");
                 //slot1
                 if (slot1.GetComponentInChildren<Card>() != null)
                 {

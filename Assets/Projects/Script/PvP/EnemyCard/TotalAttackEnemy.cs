@@ -29,7 +29,6 @@ namespace Projects.Script.PvP
                 enemy3.attack = 0;
             }
             sumAttack = enemy1.attack + enemy2.attack + enemy3.attack;
-            Debug.Log(sumAttack);
         }
     }
 }
