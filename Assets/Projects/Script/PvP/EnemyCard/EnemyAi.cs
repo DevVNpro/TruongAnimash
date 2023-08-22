@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Projects.Script.PvP.PlayerScript;
 using UnityEngine;
 
 namespace Projects.Script.PvP.EnemyCard
@@ -14,6 +15,8 @@ namespace Projects.Script.PvP.EnemyCard
         [Header("Animation Text")] [SerializeField]
         private Animator enemyText;
 
+        [Header("BlockSpam")] 
+        [SerializeField] private CardOnClick BlockSpam;
         private void Start()
         {
             _transform = this.transform;
@@ -47,6 +50,7 @@ namespace Projects.Script.PvP.EnemyCard
             AttackEnemy.IsPlayerTurn = true;
             enemyText.SetTrigger("ChangeTurn");
             teamText.SetTrigger("ChangeTurn");
+            BlockSpam.blockSpam.SetActive(false);
         }
        
     } 

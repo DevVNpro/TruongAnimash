@@ -14,6 +14,7 @@ namespace Projects.Script.PvP
         [SerializeField]
         public Button buttonEnemy3;  
         public Vector3 transformEnemy;
+        public GameObject targetEnemy;
 
         void Awake()
         {
@@ -27,14 +28,17 @@ namespace Projects.Script.PvP
 
         public void CardEnemyOnClick1()
         {
+            targetEnemy = buttonEnemy1.gameObject;
             transformEnemy = buttonEnemy1.transform.position;
         }
         public void CardEnemyOnClick2()
         {
+            targetEnemy = buttonEnemy2.gameObject;
             transformEnemy = buttonEnemy2.transform.position;
         }
         public void CardEnemyOnClick3()
         {
+            targetEnemy = buttonEnemy3.gameObject;
             transformEnemy = buttonEnemy3.transform.position;
         }
 

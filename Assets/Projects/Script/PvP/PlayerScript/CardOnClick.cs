@@ -36,6 +36,8 @@ namespace Projects.Script.PvP.PlayerScript
         [Header("Animation Text")] [SerializeField]
         private Animator enemyText;
 
+        [Header("BlockSpam")] 
+         public  GameObject blockSpam;
         private void Start()
         {
             CheckListSlot();
@@ -76,27 +78,33 @@ namespace Projects.Script.PvP.PlayerScript
 
         public void OnClickCard1()
         {
-            transformButton = Slot1.GetComponentInChildren<Button>().transform;
-            if (!isMoving && positionEnemyClick.transformEnemy != Vector3.zero)
+
+            if (!isMoving && positionEnemyClick.transformEnemy != Vector3.zero && positionEnemyClick.targetEnemy.GetComponent<Card>().attack>0)
             {
+                transformButton = Slot1.GetComponentInChildren<Button>().transform;
+                blockSpam.SetActive(true);
                 StartCoroutine(SetMoveAttack(transformButton));
             }
            
         }
         public void OnClickCard2()
         {
-            transformButton = Slot2.GetComponentInChildren<Button>().transform;
-            if (!isMoving && positionEnemyClick.transformEnemy != Vector3.zero)
+
+            if (!isMoving && positionEnemyClick.transformEnemy != Vector3.zero && positionEnemyClick.targetEnemy.GetComponent<Card>().attack>0)
             {
+                transformButton = Slot2.GetComponentInChildren<Button>().transform;
+                blockSpam.SetActive(true);
                 StartCoroutine(SetMoveAttack(transformButton));
             }
            
         }
         public void OnClickCard3()
         {
-            transformButton = Slot3.GetComponentInChildren<Button>().transform;
-            if (!isMoving && positionEnemyClick.transformEnemy != Vector3.zero)
+
+            if (!isMoving && positionEnemyClick.transformEnemy != Vector3.zero && positionEnemyClick.targetEnemy.GetComponent<Card>().attack>0)
             {
+                transformButton = Slot3.GetComponentInChildren<Button>().transform;
+                blockSpam.SetActive(true);
                 StartCoroutine(SetMoveAttack(transformButton));
             }
           

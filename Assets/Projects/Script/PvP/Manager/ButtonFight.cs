@@ -41,7 +41,9 @@ namespace Projects.Script.PvP
         [Header("Animation Text")]
         [SerializeField] private Animator teamText;
 
-
+        [Header("Tutorial Attack")] [SerializeField]
+        private GameObject tutorrialAttack;
+    
 
         private void Awake()
         {
@@ -101,6 +103,8 @@ namespace Projects.Script.PvP
             GameHandler.SetActive(true);
             //animation text
             teamText.SetTrigger("Fight");
+            tutorrialAttack.SetActive(true);
+
     }
       
     }
