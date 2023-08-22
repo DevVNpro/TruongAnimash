@@ -63,7 +63,7 @@ namespace Projects.Script.GenScripts
                 SaveManager.Instance.AddNewAnimal(DataAnimal.Instance._nameData, _Key.text,DataAnimal.Instance._keyData,attack);
                 _button.image.color = Color.grey;
                 _button.enabled = false;
-                SaveToJsonWithNoContent(SaveManager.Instance.animalDataList,path);
+                SaveToJsonWithContent(SaveManager.Instance.animalDataList);
                 DataAnimal.Instance.DeleteNamedata();
 
             }

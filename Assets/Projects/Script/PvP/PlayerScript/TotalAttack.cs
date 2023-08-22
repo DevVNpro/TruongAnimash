@@ -95,6 +95,8 @@ namespace Projects.Script.PvP.PlayerScript
                 {
                     checkOnSlot1 = true;
                     cardPlayer1 = slot1.GetComponentInChildren<Card>();
+                    attackCard1 = cardPlayer1.attack;
+
                   
                 }
                 else if(checkOnSlot1)
@@ -108,7 +110,8 @@ namespace Projects.Script.PvP.PlayerScript
                 {
                     checkOnSlot2 = true;
                     cardPlayer2 = slot2.GetComponentInChildren<Card>();
-                 
+                    attackCard2 = cardPlayer2.attack;
+
                 }
                 else if(checkOnSlot2)
                 {
@@ -120,6 +123,8 @@ namespace Projects.Script.PvP.PlayerScript
                 {
                     checkOnSlot3 = true;
                     cardPlayer3 = slot3.GetComponentInChildren<Card>();
+                    attackCard3 = cardPlayer3.attack;
+
                    
                 }
                 else if(checkOnSlot3)

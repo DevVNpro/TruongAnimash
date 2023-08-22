@@ -134,8 +134,8 @@ public class EvenClick : MonoBehaviour
         particalSystem.SetActive(true);
         //add Sound VFX
         SoundManager.Instance.PlayVfxMuSic("merge_loop");
-        yield return new WaitForSeconds(5f);
-      //  particalSystem.SetActive(false);
+        yield return new WaitForSeconds(4f);
+        particalSystem.SetActive(false);
         SoundManager.Instance.TurnOffVfxSound();
         SceneControl.Instance.LoadNextScene();
 

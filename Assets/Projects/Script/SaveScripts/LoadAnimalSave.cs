@@ -12,8 +12,7 @@ namespace Projects.Script.SaveScripts
         {
            
             string path = Application.persistentDataPath + "AnimalJsonSave.json";
-            string jsonConten = File.ReadAllText(path);
-            if (jsonConten != "")
+            if (File.Exists(path))
             {
                 UpdateList(SaveManager.Instance.animalDataList);        
                 Debug.Log(" co du lieu");
