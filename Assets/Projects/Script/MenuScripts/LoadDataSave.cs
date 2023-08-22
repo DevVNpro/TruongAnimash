@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 using UnityEngine;
+using  UnityEngine.UI;
 
 namespace Projects.Script.MenuScripts
 {
     public class LoadDataSave : MonoBehaviour
     {
-       
+        [SerializeField] private Image image;
         void Start()
         {
           
@@ -32,6 +33,7 @@ namespace Projects.Script.MenuScripts
             else
             {
                 Debug.Log("Khong co du lieu");
+                image.gameObject.SetActive(false);
             }
 
         }
