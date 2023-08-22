@@ -36,9 +36,9 @@ namespace Projects.Script.GenScripts
   
         public void SaveData()
         {
-            string path = Application.persistentDataPath + "AnimalJsonSave.json";
-            string jsonContent = File.ReadAllText(path);
-            if (jsonContent != "")
+            string fileName = "AnimalJsonSave.json";
+            string path = Path.Combine(Application.persistentDataPath, fileName);
+            if (File.Exists(path))
             {
                 foreach (AnimalSaveData animmal in SaveManager.Instance.animalDataList)
                 {
@@ -63,7 +63,7 @@ namespace Projects.Script.GenScripts
                 SaveManager.Instance.AddNewAnimal(DataAnimal.Instance._nameData, _Key.text,DataAnimal.Instance._keyData,attack);
                 _button.image.color = Color.grey;
                 _button.enabled = false;
-                SaveToJsonWithNoContent(SaveManager.Instance.animalDataList);
+                SaveToJsonWithNoContent(SaveManager.Instance.animalDataList,path);
                 DataAnimal.Instance.DeleteNamedata();
 
             }
@@ -82,11 +82,11 @@ namespace Projects.Script.GenScripts
             File.WriteAllText(path, JsonConvert.SerializeObject(listAnimal));
         }
 
-        public void SaveToJsonWithNoContent(List<AnimalSaveData> listAnimal)
+        public void SaveToJsonWithNoContent(List<AnimalSaveData> listAnimal,string path)
         {
             Debug.Log("SaveWithNoContent");
-            string path = Application.persistentDataPath + "AnimalJsonSave.json";
-            File.WriteAllText(path, JsonConvert.SerializeObject(listAnimal));
+            string jsonContent = JsonConvert.SerializeObject(listAnimal);
+            File.WriteAllText(path, jsonContent);
         }
 
     }
