@@ -30,7 +30,7 @@ public class ShowTextGen : MonoBehaviour
         yield return  new WaitForSeconds(2f);
         textGen.text = DataAnimal.Instance._nameData;
         imgText.enabled = true;
-        transform.LeanScale(new Vector3(1.7f, 1.7f), 0.5f);
+        transform.LeanScale(new Vector3(1f, 1f), 0.5f);
 
     }
 

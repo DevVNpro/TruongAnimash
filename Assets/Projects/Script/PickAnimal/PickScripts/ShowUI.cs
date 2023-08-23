@@ -29,8 +29,9 @@ public class ShowUI : MonoBehaviour
   [Header("NextButton")] [SerializeField]
   private Button _nextButton;
 
+ 
 
-  
+
   private void Start()
   {
     this.AddOnClickevent();
@@ -87,12 +88,13 @@ public class ShowUI : MonoBehaviour
   //to chage display img when pick dad animal
   public void SetImgMom()
   {
+    imgMom.gameObject.SetActive(true);
     imgDisplay = imgMom;
   }
   //To move the imgDaa 
   public void MoveImgDad()
   {
-    imgDisplay.rectTransform.LeanMove((Vector3)new Vector2 (-335f, 562f), 0.4f);
+    imgDisplay.rectTransform.LeanMove((Vector3)new Vector2 (-252f, 241f), 0.4f);
     imgDisplay.rectTransform.LeanScale(new Vector2(0.5f, 0.5f),0.4f);
 
   }

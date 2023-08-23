@@ -11,7 +11,6 @@ public class EvenClick : MonoBehaviour
     [Header("Button Next")] 
     [SerializeField] private Button _buttonClick;
     [SerializeField]private Image _imageButton;
-    [SerializeField] private Text _TextButtonClick;
 
     [Header("Class ShowUI")]
     [SerializeField] private ShowUI _showUI;
@@ -26,6 +25,17 @@ public class EvenClick : MonoBehaviour
     private GameObject particalSystem;
 
     [Header("ImgText")] [SerializeField] private Image _imageText;
+    
+    
+    [Header("BachgroundChange")]
+    [SerializeField]
+    private GameObject BackgroundMom;
+    [SerializeField]
+    private GameObject FadeBackgroundMom;
+    [SerializeField]
+    private GameObject FadeBackgroundDad;
+    [SerializeField]
+    private GameObject BackgroundGen;
     
     
 
@@ -67,6 +77,12 @@ public class EvenClick : MonoBehaviour
         //delete button next
         transform.gameObject.SetActive(false);
         
+        //change background
+        BackgroundMom.SetActive(true);
+        FadeBackgroundMom.SetActive(true);
+        FadeBackgroundDad.SetActive(false);
+
+        
         //add new Event
         _buttonClick.onClick.RemoveListener(Even1);
         _buttonClick.onClick.AddListener(Even2);
@@ -85,6 +101,9 @@ public class EvenClick : MonoBehaviour
 
     private void Even2()
     {
+        FadeBackgroundMom.SetActive(false);
+        BackgroundGen.SetActive(true);
+        
         //addSoundVVFX
         SoundManager.Instance.PlayVfxMuSic("Next");
         
@@ -101,7 +120,7 @@ public class EvenClick : MonoBehaviour
         //deactice
         _buttonClick.enabled = false;
         _imageButton.enabled = false;
-        _TextButtonClick.enabled = false;
+        
 
         //animation Generation
         StartCoroutine(AnimationGeneration());
@@ -119,12 +138,12 @@ public class EvenClick : MonoBehaviour
     IEnumerator AnimationGeneration()
     {
 
-        _showUI.imgMom.rectTransform.LeanMove(new Vector3(330f, 562f), 0.4f);
+        _showUI.imgMom.rectTransform.LeanMove(new Vector3(241f, 241f), 0.4f);
         _showUI.imgDad.rectTransform.LeanScale(new Vector3(1f, 1f),0.4f);
         yield return new WaitForSeconds(1.5f);
 
-        _showUI.imgDad.rectTransform.LeanMove(new Vector3(0f, 562f), 0.9f);
-        _showUI.imgMom.rectTransform.LeanMove(new Vector3(0f, 562f), 0.9f);
+        _showUI.imgDad.rectTransform.LeanMove(new Vector3(0f, 241f), 0.9f);
+        _showUI.imgMom.rectTransform.LeanMove(new Vector3(0f, 241f), 0.9f);
         yield return new WaitForSeconds(1f);
         _showUI.imgDad.gameObject.SetActive((false));
         _showUI.imgMom.gameObject.SetActive((false));
@@ -135,7 +154,6 @@ public class EvenClick : MonoBehaviour
         //add Sound VFX
         SoundManager.Instance.PlayVfxMuSic("merge_loop");
         yield return new WaitForSeconds(4f);
-        particalSystem.SetActive(false);
         SoundManager.Instance.TurnOffVfxSound();
         SceneControl.Instance.LoadNextScene();
 
