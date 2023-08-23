@@ -24,6 +24,14 @@ namespace Projects.Script.GenScripts
             yield return new WaitForSeconds(5);
             transform.LeanScale(new Vector3(1f, 1f), 1f);
         }
+
+        public void LoadSceneBattle()
+        {
+            SoundManager.Instance.PlayVfxMuSic("Next");
+            DataAnimal.Instance.DeleteNamedata();
+            SceneControl.Instance.LoadScene(5);
+        }
+        
         
 
         public void BackSceneClick()
