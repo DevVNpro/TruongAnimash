@@ -94,7 +94,7 @@ public class ShowUI : MonoBehaviour
   //To move the imgDaa 
   public void MoveImgDad()
   {
-    imgDisplay.rectTransform.LeanMove((Vector3)new Vector2 (-252f, 241f), 0.4f);
+    imgDisplay.rectTransform.LeanMove((Vector3)new Vector2 (-226, 176), 0.4f);
     imgDisplay.rectTransform.LeanScale(new Vector2(0.5f, 0.5f),0.4f);
 
   }

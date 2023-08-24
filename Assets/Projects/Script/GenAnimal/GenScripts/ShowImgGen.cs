@@ -14,7 +14,7 @@ namespace Projects.Script.GenScripts
       IEnumerator ShowImg()
       {
          transform.localScale = new Vector3(0f, 0f, 0f);
-         transform.LeanScale(new Vector3(1.3f, 1.3f), 2.5f).setEaseOutBack();
+         transform.LeanScale(new Vector3(1.1f, 1.1f), 2.5f).setEaseOutBack();
          yield return  new WaitForSeconds(0.2f);
          SoundManager.Instance.PlayVfxMuSic("finish");
       }

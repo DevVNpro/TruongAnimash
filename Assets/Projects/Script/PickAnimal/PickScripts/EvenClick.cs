@@ -137,7 +137,7 @@ public class EvenClick : MonoBehaviour
     }
     IEnumerator AnimationGeneration()
     {
-
+        _showUI.imgDad.rectTransform.LeanMove(new Vector3(-241f, 241f),0.4f);
         _showUI.imgMom.rectTransform.LeanMove(new Vector3(241f, 241f), 0.4f);
         _showUI.imgDad.rectTransform.LeanScale(new Vector3(1f, 1f),0.4f);
         yield return new WaitForSeconds(1.5f);
@@ -153,7 +153,9 @@ public class EvenClick : MonoBehaviour
         particalSystem.SetActive(true);
         //add Sound VFX
         SoundManager.Instance.PlayVfxMuSic("merge_loop");
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(6f);
+        particalSystem.gameObject.LeanScale(new Vector3(0f, 0f), 0.8f);
+        yield return new WaitForSeconds(0.8f);
         SoundManager.Instance.TurnOffVfxSound();
         SceneControl.Instance.LoadNextScene();
 
