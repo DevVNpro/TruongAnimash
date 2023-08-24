@@ -364,7 +364,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 96, y: -425}
-  m_SizeDelta: {x: 1021.3553, y: 900}
+  m_SizeDelta: {x: 1021.3553, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &41198405
 MonoBehaviour:
@@ -1212,8 +1212,8 @@ MonoBehaviour:
   m_ChildAlignment: 1
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 270, y: 270}
-  m_Spacing: {x: 0, y: 0}
+  m_CellSize: {x: 230, y: 370}
+  m_Spacing: {x: 50, y: 50}
   m_Constraint: 1
   m_ConstraintCount: 3
 --- !u!1 &1329323853
@@ -1247,6 +1247,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animalPrefab: {fileID: 8001253751443180572, guid: 384b629dadcb65946939fa2bc4230788, type: 3}
   scrollViewContent: {fileID: 1209928358}
+  BorderLv1: {fileID: 21300000, guid: eb3d5a1903167cf499ee51c8db5c062f, type: 3}
+  BorderLv2: {fileID: 21300000, guid: 5c06bb952ac3312479ed79fd94f0f0c8, type: 3}
+  BorderLv3: {fileID: 21300000, guid: 5b6a58fb856928e47af9c481b1e9e02c, type: 3}
+  BackgroundLv1: {fileID: 21300000, guid: 3b8d45daaa462554e999a4c96027750c, type: 3}
+  BackgroundLv2: {fileID: 21300000, guid: 997b02a35312c854291e6f2055c2344c, type: 3}
+  BackgroundLv3: {fileID: 21300000, guid: 814d725bf2c23d043bd7289c3acec653, type: 3}
 --- !u!4 &1329323855
 Transform:
   m_ObjectHideFlags: 0

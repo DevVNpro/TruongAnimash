@@ -8,6 +8,15 @@ namespace Projects.Script.SaveScripts
     {
         public GameObject animalPrefab;
         public Transform scrollViewContent;
+
+        public Sprite BorderLv1;
+        public Sprite BorderLv2;
+        public Sprite BorderLv3;
+        
+        public Sprite BackgroundLv1;
+        public Sprite BackgroundLv2;
+        public Sprite BackgroundLv3;
+        
         private void Start()
         {
            
@@ -39,8 +48,18 @@ namespace Projects.Script.SaveScripts
                 }
                 else
                 {
-                    Image imageanimal = newAnimalPrefab.GetComponent<Image>();
-                    imageanimal.sprite = loadedSprite;
+                    Image boderImage = newAnimalPrefab.GetComponent<Image>();
+                    Transform backgroundCard = newAnimalPrefab.transform.Find("BackgroundCard");
+                    if (animalData.attack >= 400)
+                    {
+                        boderImage.sprite = BorderLv3;
+                         Image test =  backgroundCard.GetComponent<Image>();
+                        test.sprite  = BackgroundLv3;
+                        Transform  imageCard = backgroundCard.Find("ImagedCard");
+                        Image test1  = imageCard.GetComponent<Image>();
+                        test1.sprite = loadedSprite;
+                     
+                    }
                 }
 
                 newAnimalPrefab.name = animalData.name;
