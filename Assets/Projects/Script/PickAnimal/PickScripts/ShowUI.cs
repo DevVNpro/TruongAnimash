@@ -12,7 +12,9 @@ public class ShowUI : MonoBehaviour
 { 
   [Header("Animal")] 
   [SerializeField] private Button _buttonAnimal;
-  
+
+  [SerializeField] private Image imageButton;
+ 
   [Header("ImgAnimal")]
   [SerializeField] public Image imgDad;
   [SerializeField] public Image imgMom;
@@ -71,7 +73,7 @@ public class ShowUI : MonoBehaviour
 
   private void SetImg()
   {
-    imgDisplay.sprite = _buttonAnimal.image.sprite;
+    imgDisplay.sprite = imageButton.sprite;
   }
 
 

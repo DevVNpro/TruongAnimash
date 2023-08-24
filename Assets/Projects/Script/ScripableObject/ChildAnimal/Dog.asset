@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efa2e384df0dd34abbbfd1a42cf36a6, type: 3}
   m_Name: Dog
   m_EditorClassIdentifier: 
-  Key: T
+  Key: A

@@ -9,7 +9,6 @@ namespace Projects.Script.MenuScripts
 {
     public class LoadDataSave : MonoBehaviour
     {
-        [SerializeField] private Image image;
         void Start()
         {
           
@@ -19,7 +18,7 @@ namespace Projects.Script.MenuScripts
           /*
           string content = File.ReadAllText(path);
           List<AnimalSaveData> a = JsonConvert.DeserializeObject<List<AnimalSaveData>>(content);
-          a.RemoveAll(item => item.key == "FW");
+          a.RemoveAll(item => item.key == "BO");
           string jsonSave = JsonConvert.SerializeObject(a);
           File.WriteAllText(path, jsonSave);
           Debug.Log(File.ReadAllText(path));*/
@@ -33,7 +32,6 @@ namespace Projects.Script.MenuScripts
             else
             {
                 Debug.Log("Khong co du lieu");
-                image.gameObject.SetActive(false);
             }
 
         }
