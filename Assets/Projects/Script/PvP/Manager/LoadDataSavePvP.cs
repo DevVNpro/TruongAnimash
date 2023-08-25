@@ -12,6 +12,15 @@ namespace Projects.Script.PvP.Manager
 
         [Header("Content")]
         [SerializeField] private Transform content;
+        
+        
+        public Sprite BorderLv1;
+        public Sprite BorderLv2;
+        public Sprite BorderLv3;
+        
+        public Sprite BackgroundLv1;
+        public Sprite BackgroundLv2;
+        public Sprite BackgroundLv3;
         void Start()
         {
             string path = Application.persistentDataPath + "AnimalJsonSave.json";
@@ -44,7 +53,27 @@ namespace Projects.Script.PvP.Manager
                 else
                 {
                     Transform childTransform = newAnimalPrefab.transform.Find("Deck1");
-                    childTransform.GetComponent<Image>().sprite = loadedSprite;
+                    Transform backgroundCard = childTransform.transform.Find("BackgroundCard");
+                    Transform  imageCard = backgroundCard.transform.Find("ImageCard");
+
+                    if (animalData.attack <= 400)
+                    {
+                        childTransform.GetComponent<Image>().sprite = BorderLv1;
+                        backgroundCard.GetComponent<Image>().sprite = BackgroundLv1;
+                        imageCard.GetComponent<Image>().sprite = loadedSprite;
+                    }
+                    else if (animalData.attack == 500)
+                    {
+                        childTransform.GetComponent<Image>().sprite = BorderLv2;
+                        backgroundCard.GetComponent<Image>().sprite = BackgroundLv2;
+                        imageCard.GetComponent<Image>().sprite = loadedSprite;
+                    }
+                    else if(animalData.attack ==600)
+                    {
+                        childTransform.GetComponent<Image>().sprite = BorderLv3;
+                        backgroundCard.GetComponent<Image>().sprite = BackgroundLv3;
+                        imageCard.GetComponent<Image>().sprite = loadedSprite;
+                    }
                 }
 
                 newAnimalPrefab.name = animalData.name;

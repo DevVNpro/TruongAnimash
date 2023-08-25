@@ -9,7 +9,6 @@ public class ShowUiSave : MonoBehaviour
 {
     [SerializeField] private Button _button;
     [SerializeField] private GameObject _gameObjectimg;
-    [SerializeField] private Image _image;
     [SerializeField] private GameObject _gameObjecttext;
     [SerializeField] private Text _text;
 
@@ -20,8 +19,8 @@ public class ShowUiSave : MonoBehaviour
         _button.onClick.AddListener(ShowimgAndText);
         
         //get img 
-        _gameObjectimg = GameObject.FindGameObjectWithTag("img");
-        _image= _gameObjectimg.GetComponent<Image>();
+      //  _gameObjectimg = GameObject.FindGameObjectWithTag("img");
+     //   _image= _gameObjectimg.GetComponent<Image>();
 
         //get text
         _gameObjecttext = GameObject.FindGameObjectWithTag("text");
@@ -38,7 +37,7 @@ public class ShowUiSave : MonoBehaviour
 
     private void SetImgAndText()
     {
-        _image.sprite = _button.image.sprite;
+   //    _image.sprite = _button.image.sprite;
         _text.text = _button.name;
         
     }
@@ -50,8 +49,8 @@ public class ShowUiSave : MonoBehaviour
 
     private void SetAnimationImgDisplay()
     {
-        _image.transform.localScale = new Vector2(1.5f, 1.5f);
-        _image.transform.LeanScale(Vector2.one, 0.1f);
+ //       _image.transform.localScale = new Vector2(1.5f, 1.5f);
+   //     _image.transform.LeanScale(Vector2.one, 0.1f);
     }
 
 }

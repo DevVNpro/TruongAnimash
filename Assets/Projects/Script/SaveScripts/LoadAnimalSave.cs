@@ -50,7 +50,7 @@ namespace Projects.Script.SaveScripts
                 {
                     Image boderImage = newAnimalPrefab.GetComponent<Image>();
                     Transform backgroundCard = newAnimalPrefab.transform.Find("BackgroundCard");
-                    if (animalData.attack <= 300)
+                    if (animalData.attack <= 400)
                     {
                         boderImage.sprite = BorderLv1;
                          Image test =  backgroundCard.GetComponent<Image>();
@@ -60,7 +60,7 @@ namespace Projects.Script.SaveScripts
                         test1.sprite = loadedSprite;
                      
                     }
-                    else if (animalData.attack <= 500)
+                    else if (animalData.attack == 500)
                     {
                         boderImage.sprite = BorderLv2;
                         Image test =  backgroundCard.GetComponent<Image>();

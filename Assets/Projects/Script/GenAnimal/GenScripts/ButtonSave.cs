@@ -36,18 +36,21 @@ namespace Projects.Script.GenScripts
   
         public void SaveData()
         {
-            string fileName = "AnimalJsonSave.json";
-            string path = Path.Combine(Application.persistentDataPath, fileName);
+            /*string fileName = "AnimalJsonSave.json";
+            string path = Path.Combine(Application.persistentDataPath, fileName);*/
+            Debug.Log("SaveWithContent");
+            string path = Application.persistentDataPath + "AnimalJsonSave.json";
             if (File.Exists(path))
             {
+                Debug.Log("1");
                 foreach (AnimalSaveData animmal in SaveManager.Instance.animalDataList)
                 {
                     if (animmal.key == DataAnimal.Instance._keyData)
                     {
                         _button.image.color = Color.grey;
                         _button.enabled = false;
-                        _text.fontSize = 45;
-                        _text.text = "Characters already in the collection";
+                        _text.fontSize = 60;
+                        _text.text = "DUPLICATE";
                         DataAnimal.Instance.DeleteNamedata();
                         return;
                     }
@@ -60,6 +63,7 @@ namespace Projects.Script.GenScripts
             }
             else
             {
+                Debug.Log("2");
                 SaveManager.Instance.AddNewAnimal(DataAnimal.Instance._nameData, _Key.text,DataAnimal.Instance._keyData,attack);
                 _button.image.color = Color.grey;
                 _button.enabled = false;

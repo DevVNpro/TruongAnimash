@@ -12,7 +12,9 @@ namespace Projects.Script.PvP
     {
         [Header("GameHandler")] 
         [SerializeField] private GameObject GameHandler;
-        
+        [Header("Background Deck")]
+        [SerializeField] private GameObject backgroundDeck;
+
         [Header("ButtonFight")]
         [SerializeField] private Button buttonFight;
         [SerializeField] private Image imageButton;
@@ -22,13 +24,7 @@ namespace Projects.Script.PvP
 
         [Header("DeckGrid")] 
         [SerializeField] private GameObject DeckGrid;
-
-        [Header("dividingLine")]
-        [SerializeField] private GameObject dividingLine;
         
-        [Header("LoadingText")]
-        [SerializeField] private GameObject LoadingText;
-
         [Header("EnemyGrid")]
         [SerializeField] private Image EnemyGrid;
 
@@ -71,6 +67,7 @@ namespace Projects.Script.PvP
      
         IEnumerator Test()
         {
+            backgroundDeck.SetActive(false);
             //Turn On Click Slot Team
             _cardOnClick.enabled = true;
             
@@ -78,15 +75,11 @@ namespace Projects.Script.PvP
             TotalAttack.ChangeMethodSumDeck = false;
             
             //Set Animation
-            dividingLine.SetActive(false);
             DeckGrid.SetActive(false);
             TeamGrid.rectTransform.LeanMove(new Vector3(0f, -500f), 1.3f);
             imageButton.enabled = false;
-            buttonFight.GetComponentInChildren<Text>().enabled = false;
+     //       buttonFight.GetComponentInChildren<Text>().enabled = false;
             
-            yield return new WaitForSeconds(1.5f);          
-            dividingLine.SetActive(true);
-            LoadingText.SetActive(true);
             
             yield return new WaitForSeconds(1.5f);
             EnemyGrid.rectTransform.LeanScale(new Vector3(1f, 1f), 0.5f);
@@ -99,10 +92,9 @@ namespace Projects.Script.PvP
                 yield return new WaitForSeconds(1f);
             }
             yield return new WaitForSeconds(0.6f);
-            LoadingText.SetActive(false);
             GameHandler.SetActive(true);
             //animation text
-            teamText.SetTrigger("Fight");
+        //    teamText.SetTrigger("Fight");
             tutorrialAttack.SetActive(true);
 
     }

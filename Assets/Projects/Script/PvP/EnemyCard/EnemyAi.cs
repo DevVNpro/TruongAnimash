@@ -48,8 +48,8 @@ namespace Projects.Script.PvP.EnemyCard
             
             //re-enable the player's damage condition, so as not to confuse damage when the player attacks or the enemy attacks
             AttackEnemy.IsPlayerTurn = true;
-            enemyText.SetTrigger("ChangeTurn");
-            teamText.SetTrigger("ChangeTurn");
+//            enemyText.SetTrigger("ChangeTurn");
+      //      teamText.SetTrigger("ChangeTurn");
             BlockSpam.blockSpam.SetActive(false);
         }
        
