@@ -16,6 +16,10 @@ namespace Projects.Script.SaveScripts
         public Sprite BackgroundLv1;
         public Sprite BackgroundLv2;
         public Sprite BackgroundLv3;
+       
+        public Sprite imageStartLv1;
+        public Sprite imageStartLv2;
+        public Sprite imageStartLv3;
         
         private void Start()
         {
@@ -49,34 +53,38 @@ namespace Projects.Script.SaveScripts
                 else
                 {
                     Image boderImage = newAnimalPrefab.GetComponent<Image>();
-                    Transform backgroundCard = newAnimalPrefab.transform.Find("BackgroundCard");
+                    Transform tranformBackgroundCard = newAnimalPrefab.transform.Find("BackgroundCard");
+                    Transform  tranformImageCard = tranformBackgroundCard.Find("ImagedCard");
+                    Transform tranformStart = newAnimalPrefab.transform.Find("ImageStart");
+                    Image imageStart = tranformStart.GetComponent<Image>();
+                    Image imageBackground =  tranformBackgroundCard.GetComponent<Image>();
+                    Image imageCard  = tranformImageCard.GetComponent<Image>();
+                    
                     if (animalData.attack <= 400)
                     {
                         boderImage.sprite = BorderLv1;
-                         Image test =  backgroundCard.GetComponent<Image>();
-                        test.sprite  = BackgroundLv1;
-                        Transform  imageCard = backgroundCard.Find("ImagedCard");
-                        Image test1  = imageCard.GetComponent<Image>();
-                        test1.sprite = loadedSprite;
+                         imageBackground.sprite  = BackgroundLv1;
+                         imageStart.sprite = imageStartLv1;
+                         imageStart.SetNativeSize();
+                        imageCard.sprite = loadedSprite;
+                        
                      
                     }
                     else if (animalData.attack == 500)
                     {
                         boderImage.sprite = BorderLv2;
-                        Image test =  backgroundCard.GetComponent<Image>();
-                        test.sprite  = BackgroundLv2;
-                        Transform  imageCard = backgroundCard.Find("ImagedCard");
-                        Image test1  = imageCard.GetComponent<Image>();
-                        test1.sprite = loadedSprite;
+                        imageBackground.sprite  = BackgroundLv2;
+                        imageStart.sprite = imageStartLv2;
+                        imageStart.SetNativeSize();
+                        imageCard.sprite = loadedSprite;
                     }
                     else if(animalData.attack ==600)
                     {
                         boderImage.sprite = BorderLv3;
-                        Image test =  backgroundCard.GetComponent<Image>();
-                        test.sprite  = BackgroundLv3;
-                        Transform  imageCard = backgroundCard.Find("ImagedCard");
-                        Image test1  = imageCard.GetComponent<Image>();
-                        test1.sprite = loadedSprite;
+                        imageBackground.sprite  = BackgroundLv3;
+                        imageStart.sprite = imageStartLv3;
+                        imageStart.SetNativeSize();
+                        imageCard.sprite = loadedSprite;
                         
                     }
                 }

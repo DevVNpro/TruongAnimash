@@ -31,6 +31,7 @@ namespace Projects.Script.PvP
             transform.SetParent(parentAfterDrag);
             image.raycastTarget = true;
             
+            
         }
 
      

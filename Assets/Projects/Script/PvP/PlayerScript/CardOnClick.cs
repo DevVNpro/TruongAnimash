@@ -38,6 +38,11 @@ namespace Projects.Script.PvP.PlayerScript
 
         [Header("BlockSpam")] 
          public  GameObject blockSpam;
+
+         [Header("Animaiton background Turn")] [SerializeField]
+         private GameObject enemyTurn;
+         [SerializeField]
+         private GameObject playerTurn;
         private void Start()
         {
             CheckListSlot();
@@ -112,7 +117,6 @@ namespace Projects.Script.PvP.PlayerScript
         IEnumerator SetMoveAttack(Transform transformButton)
         {
             //Turn offanimation TeamText
-           // teamText.SetTrigger("ChangeTurn");
             //tancong enemy
             isMoving = true;
             Transform parentAfterDrag= transformButton.parent;
@@ -123,12 +127,15 @@ namespace Projects.Script.PvP.PlayerScript
             transformButton.transform.LeanMove(new Vector3(transformButton.position.x, transformButton.position.y), 0.5f);
             transformButton.SetParent(parentAfterDrag);
             isMoving = false;
+            playerTurn.SetActive(false);
+            enemyTurn.SetActive(true);
             //Turn on fanimation EnemyText
        //     enemyText.SetTrigger("ChangeTurn");
             yield return  new WaitForSeconds(2f);
             //xet bien cho trigger hoat dong 
             AttackPlayer.IsEnemeTurn = true;
             //xet cardEnemy attack
+  
             foreach (Transform slot in EnemyCards)
             {
                     if (slot.childCount > 0)

@@ -12,9 +12,17 @@ namespace Projects.Script.PvP
     {
         [Header("GameHandler")] 
         [SerializeField] private GameObject GameHandler;
-        [Header("Background Deck")]
-        [SerializeField] private GameObject backgroundDeck;
+        [Header("Background")]
+        [SerializeField] private GameObject backgroundDeck; 
+        [SerializeField] private GameObject backgroundBattle;
+        [SerializeField] private GameObject textBackground1;
+        [SerializeField] private GameObject textBackground2;
+        [SerializeField] private GameObject ButtonNextPageRight;
+        [SerializeField] private GameObject ButtonNextPageLeft;
 
+        [Header("Turn Animation")] 
+        [SerializeField] private GameObject playerTurn;
+        
         [Header("ButtonFight")]
         [SerializeField] private Button buttonFight;
         [SerializeField] private Image imageButton;
@@ -39,7 +47,9 @@ namespace Projects.Script.PvP
 
         [Header("Tutorial Attack")] [SerializeField]
         private GameObject tutorrialAttack;
-    
+
+        [Header("Loadding Text")] [SerializeField]
+        private GameObject textLoading;
 
         private void Awake()
         {
@@ -61,13 +71,18 @@ namespace Projects.Script.PvP
 
         private void Even1()
         {
-         StartCoroutine(Test());
+         StartCoroutine(StartBattle());
         }
 
      
-        IEnumerator Test()
+        IEnumerator StartBattle()
         {
+ 
             backgroundDeck.SetActive(false);
+            ButtonNextPageRight.SetActive(false);
+            ButtonNextPageLeft.SetActive(false);
+            
+            imageButton.enabled = false;
             //Turn On Click Slot Team
             _cardOnClick.enabled = true;
             
@@ -76,10 +91,16 @@ namespace Projects.Script.PvP
             
             //Set Animation
             DeckGrid.SetActive(false);
-            TeamGrid.rectTransform.LeanMove(new Vector3(0f, -500f), 1.3f);
-            imageButton.enabled = false;
-     //       buttonFight.GetComponentInChildren<Text>().enabled = false;
+            TeamGrid.rectTransform.LeanMove(new Vector3(0f, -500f), 0.6f);
+            yield return new WaitForSeconds(1.3f);
+          //  backgroundPick.SetActive(false);
+            backgroundBattle.LeanScale(new Vector3(1f, 1f), 0.5f);
+            yield return new WaitForSeconds(0.6f);
+            textBackground1.SetActive(true);
+            textBackground2.SetActive(true);
             
+     //       buttonFight.GetComponentInChildren<Text>().enabled = false;
+             textLoading.SetActive(true);
             
             yield return new WaitForSeconds(1.5f);
             EnemyGrid.rectTransform.LeanScale(new Vector3(1f, 1f), 0.5f);
@@ -91,10 +112,11 @@ namespace Projects.Script.PvP
                 image.rectTransform.LeanScale(new Vector3(1f, 1f), 0.8f);
                 yield return new WaitForSeconds(1f);
             }
+            textLoading.SetActive(false);
             yield return new WaitForSeconds(0.6f);
             GameHandler.SetActive(true);
             //animation text
-        //    teamText.SetTrigger("Fight");
+           playerTurn.SetActive(true);
             tutorrialAttack.SetActive(true);
 
     }

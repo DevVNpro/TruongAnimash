@@ -6,20 +6,21 @@ namespace Projects.Script.Menu
 {
     public class ButtonMenu : MonoBehaviour
     {
-        
-        // Start is called before the first frame update
 
-     
+        [SerializeField] private GameObject popUpBlockAds;
+
         public void LoadSceneTriple()
         {
             SoundManager.Instance.PlayVfxMuSic("Next");
             SceneControl.Instance.LoadScene(4);
         }
+
         public void LoadScenePVP()
         {
             SoundManager.Instance.PlayVfxMuSic("Next");
             SceneControl.Instance.LoadScene(5);
         }
+
         public void NextScene()
         {
             SoundManager.Instance.PlayVfxMuSic("Next");
@@ -32,7 +33,19 @@ namespace Projects.Script.Menu
             SceneControl.Instance.LoadScene(3);
         }
 
-      
-        
+        public void OpenPopUpBlockAds()
+        {
+            SoundManager.Instance.PlayVfxMuSic("Next");
+            popUpBlockAds.SetActive(true);
+        }
+
+        public void ClosePopUpBlackAds()
+        {
+            SoundManager.Instance.PlayVfxMuSic("Next");
+            popUpBlockAds.SetActive(false);
+        }
+
+
+
     }
 }

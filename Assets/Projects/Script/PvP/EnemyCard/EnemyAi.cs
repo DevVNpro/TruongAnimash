@@ -21,6 +21,11 @@ namespace Projects.Script.PvP.EnemyCard
         {
             _transform = this.transform;
         }
+        
+        [Header("Animaiton background Turn")] [SerializeField]
+        private GameObject enemyTurn;
+        [SerializeField]
+        private GameObject playerTurn;
 
         public void StartAttackLoop()
         {
@@ -48,8 +53,8 @@ namespace Projects.Script.PvP.EnemyCard
             
             //re-enable the player's damage condition, so as not to confuse damage when the player attacks or the enemy attacks
             AttackEnemy.IsPlayerTurn = true;
-//            enemyText.SetTrigger("ChangeTurn");
-      //      teamText.SetTrigger("ChangeTurn");
+            enemyTurn.SetActive(false);
+            playerTurn.SetActive(true);
             BlockSpam.blockSpam.SetActive(false);
         }
        
