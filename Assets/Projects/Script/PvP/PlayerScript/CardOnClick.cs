@@ -122,9 +122,9 @@ namespace Projects.Script.PvP.PlayerScript
             Transform parentAfterDrag= transformButton.parent;
             transformButton.SetParent(transform.root);
             transformButton.SetAsLastSibling();
-            transformButton.transform.LeanMove(new Vector3(positionEnemyClick.transformEnemy.x, positionEnemyClick.transformEnemy.y), 1.2f).setEasePunch();
-            yield return  new WaitForSeconds(1.4f);
-            transformButton.transform.LeanMove(new Vector3(transformButton.position.x, transformButton.position.y), 0.5f);
+            transformButton.transform.LeanMove(new Vector3(positionEnemyClick.transformEnemy.x, positionEnemyClick.transformEnemy.y), 1.7f).setEasePunch();
+            yield return  new WaitForSeconds(1.8f);
+            transformButton.transform.LeanMove(new Vector3(transformButton.position.x, transformButton.position.y), 1f);
             transformButton.SetParent(parentAfterDrag);
             isMoving = false;
             playerTurn.SetActive(false);

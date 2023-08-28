@@ -8,6 +8,19 @@ namespace Projects.Script.Menu
     {
 
         [SerializeField] private GameObject popUpBlockAds;
+        [SerializeField] private GameObject Setting;
+
+        public void LoadSetting()
+        {
+            SoundManager.Instance.PlayVfxMuSic("Next");
+            Setting.SetActive(true);
+        }
+
+        public void CloseSetingg()
+        {
+            SoundManager.Instance.PlayVfxMuSic("Next");
+            Setting.SetActive(false);
+        }
 
         public void LoadSceneTriple()
         {

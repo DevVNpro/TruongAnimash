@@ -19,7 +19,7 @@ namespace Projects.Script.PvP
             base.OnDrop(eventData);
             GameObject dropped = eventData.pointerDrag;
             buttonFight.SetActive(true);
-            tutorial.SetActive(false);
+//            tutorial.SetActive(false);
         }
   
 

@@ -91,10 +91,10 @@ namespace Projects.Script.PvP
             
             //Set Animation
             DeckGrid.SetActive(false);
-            TeamGrid.rectTransform.LeanMove(new Vector3(0f, -500f), 0.6f);
+            TeamGrid.rectTransform.LeanMove(new Vector3(0f, -470f), 0.6f);
             yield return new WaitForSeconds(1.3f);
           //  backgroundPick.SetActive(false);
-            backgroundBattle.LeanScale(new Vector3(1f, 1f), 0.5f);
+            backgroundBattle.LeanScale(new Vector3(1f, 1f), 1f);
             yield return new WaitForSeconds(0.6f);
             textBackground1.SetActive(true);
             textBackground2.SetActive(true);
