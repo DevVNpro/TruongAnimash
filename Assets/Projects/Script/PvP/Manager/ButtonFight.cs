@@ -79,8 +79,8 @@ namespace Projects.Script.PvP
         {
  
             backgroundDeck.SetActive(false);
-            ButtonNextPageRight.SetActive(false);
-            ButtonNextPageLeft.SetActive(false);
+     //       ButtonNextPageRight.SetActive(false);
+      //      ButtonNextPageLeft.SetActive(false);
             
             imageButton.enabled = false;
             //Turn On Click Slot Team

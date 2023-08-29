@@ -8,17 +8,13 @@ namespace Projects.Script.SaveScripts
         [Header("ScollTranform")] [SerializeField]
         private RectTransform scollTranform;
 
+      
         public Vector3 newPositon;
-        void Start()
+    
+        public void NextPage()
         {
-            transform.GetComponent<Button>().onClick.AddListener(NextPage);
-
-        }
-
-        private void NextPage()
-        {
+            Debug.Log("hello");
             Vector3 currentPosition = scollTranform.anchoredPosition;
-
             // Cộng thêm giá trị mới vào anchoredPosition để di chuyển
             Vector3 newPosition = currentPosition + newPositon;
             scollTranform.anchoredPosition = newPosition;

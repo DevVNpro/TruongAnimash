@@ -25,8 +25,8 @@ namespace Projects.Script.Manager
             this.PlayThemeMuSic("TheMagic");
         }
 
-        [SerializeField]  private AudioSource themeSource;
-        [SerializeField] private AudioSource vfxSource;
+        public AudioSource themeSource;
+        public AudioSource vfxSource;
         [SerializeField]private List<AudioClip> themes;
         [SerializeField] private List<AudioClip> vfxs;
 
