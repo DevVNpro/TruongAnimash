@@ -10,20 +10,9 @@ namespace Projects.Script.GenScripts
 {
     public class ButtonManagerGenScene : MonoBehaviour
     {
-        
-  
-        private void  Start()
-        {
-            transform.localScale = new Vector3(0f,0f);
-            StartCoroutine(AnimationButton());
-            
-        }
 
-        IEnumerator AnimationButton()
-        {
-            yield return new WaitForSeconds(5);
-            transform.LeanScale(new Vector3(1f, 1f), 1f);
-        }
+        [SerializeField] private GameObject setting;
+    
 
         public void LoadSceneBattle()
         {
@@ -34,7 +23,7 @@ namespace Projects.Script.GenScripts
         
         
 
-        public void BackSceneClick()
+        public void LoadCreateAnimal()
         {
             SoundManager.Instance.PlayVfxMuSic("Next");
             DataAnimal.Instance.DeleteNamedata();
@@ -46,6 +35,18 @@ namespace Projects.Script.GenScripts
             SoundManager.Instance.PlayVfxMuSic("Next");
             DataAnimal.Instance.DeleteNamedata();
             SceneControl.Instance.MenuScene();
+        }
+
+        public void OpenSetting()
+        {
+            SoundManager.Instance.PlayVfxMuSic("Next");
+            setting.SetActive(true);
+        }
+
+        public void CloseSetting()
+        {
+            SoundManager.Instance.PlayVfxMuSic("Next");
+            setting.SetActive(false);
         }
   
 

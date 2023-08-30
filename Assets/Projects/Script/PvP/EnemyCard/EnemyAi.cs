@@ -41,6 +41,7 @@ namespace Projects.Script.PvP.EnemyCard
 
         IEnumerator AttackPlayer(Transform slot)
         {
+            yield return new WaitForSeconds(2f);
             //attack player with no damage
             Transform parentAfterDrag = transform.parent;
             transform.SetParent(transform.root);

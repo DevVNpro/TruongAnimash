@@ -19,9 +19,7 @@ namespace Projects.Script.PvP
         [Header("ButtonWinLose")] [SerializeField] private GameObject buttonWinLose;
 
         [Header("TextBattle")] [SerializeField]  private GameObject textBattle;
-
-
-    
+       
         private void Update()
         {
 

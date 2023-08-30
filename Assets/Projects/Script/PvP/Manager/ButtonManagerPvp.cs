@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Projects.Script.Manager;
 using UnityEngine;
 
-public class ButtonManager : MonoBehaviour
+public class ButtonManagerPvp : MonoBehaviour
 {
     [Header("Setting")] [SerializeField] private GameObject setting;
     public void ResetBattle()

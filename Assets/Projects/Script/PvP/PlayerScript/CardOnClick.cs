@@ -116,8 +116,6 @@ namespace Projects.Script.PvP.PlayerScript
         }
         IEnumerator SetMoveAttack(Transform transformButton)
         {
-            //Turn offanimation TeamText
-            //tancong enemy
             isMoving = true;
             Transform parentAfterDrag= transformButton.parent;
             transformButton.SetParent(transform.root);
@@ -129,12 +127,8 @@ namespace Projects.Script.PvP.PlayerScript
             isMoving = false;
             playerTurn.SetActive(false);
             enemyTurn.SetActive(true);
-            //Turn on fanimation EnemyText
-       //     enemyText.SetTrigger("ChangeTurn");
             yield return  new WaitForSeconds(2f);
-            //xet bien cho trigger hoat dong 
             AttackPlayer.IsEnemeTurn = true;
-            //xet cardEnemy attack
   
             foreach (Transform slot in EnemyCards)
             {
