@@ -62,13 +62,13 @@ namespace Projects.Script.PvP.Manager
                         backgroundCard.GetComponent<Image>().sprite = BackgroundLv1;
                         imageCard.GetComponent<Image>().sprite = loadedSprite;
                     }
-                    else if (animalData.attack == 500)
+                    else if (animalData.attack <= 600)
                     {
                         childTransform.GetComponent<Image>().sprite = BorderLv2;
                         backgroundCard.GetComponent<Image>().sprite = BackgroundLv2;
                         imageCard.GetComponent<Image>().sprite = loadedSprite;
                     }
-                    else if(animalData.attack ==600)
+                    else if(animalData.attack <=900)
                     {
                         childTransform.GetComponent<Image>().sprite = BorderLv3;
                         backgroundCard.GetComponent<Image>().sprite = BackgroundLv3;

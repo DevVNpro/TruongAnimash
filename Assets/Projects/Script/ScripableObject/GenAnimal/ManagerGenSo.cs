@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using Projects.Script.GenAnimal.GenScripts;
+using Projects.Script.GenScripts;
 using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
@@ -54,6 +56,8 @@ namespace Projects.Script.ScripableObject.GenAnimal
                     if (characterData.Key == key)
                     {
                         characterImage.sprite = characterData.CharacterImg;
+                        StartAnimal.startNumber = characterData.Start;
+                        AttackAnimal.setAttack = characterData.Start;
                         return;
                     }
                 }

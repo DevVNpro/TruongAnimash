@@ -135,7 +135,8 @@ namespace Projects.Script.PvP
 
         private void Animation1()
         {
-               
+            ButtonNextPageRight.SetActive(false);
+            ButtonNextPageLeft.SetActive(false);
             backgroundDeck.SetActive(false);
             imageButton.enabled = false;
             //Turn On Click Slot Team

@@ -19,7 +19,7 @@ public class FixBattleUI : MonoBehaviour
     private void ChangeOffSet()
     {
         // Kiểm tra nếu scale của Canvas nhỏ hơn scaleFactorThreshold
-        if (canvasScaler.scaleFactor <  0.35f || canvasScaler.scaleFactor > 1.2f)
+        if (canvasScaler.scaleFactor <  0.35f || canvasScaler.scaleFactor > 1.4f)
         {
             // Đặt giá trị space của content theo trục x là xOffset
             content.GetComponent<GridLayoutGroup>().spacing =

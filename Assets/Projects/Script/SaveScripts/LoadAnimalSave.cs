@@ -70,7 +70,7 @@ namespace Projects.Script.SaveScripts
                         
                      
                     }
-                    else if (animalData.attack == 500)
+                    else if (animalData.attack <= 600)
                     {
                         boderImage.sprite = BorderLv2;
                         imageBackground.sprite  = BackgroundLv2;
@@ -78,7 +78,7 @@ namespace Projects.Script.SaveScripts
                         imageStart.SetNativeSize();
                         imageCard.sprite = loadedSprite;
                     }
-                    else if(animalData.attack ==600)
+                    else if(animalData.attack <=900)
                     {
                         boderImage.sprite = BorderLv3;
                         imageBackground.sprite  = BackgroundLv3;

@@ -10,6 +10,7 @@ namespace Projects.Script.ScripableObject.GenAnimal
     {
         [SerializeField] private string key;
         [SerializeField] private Sprite characterImg;
+        [SerializeField] private int start;
 
         public GenSO(string key, Sprite img)
         {
@@ -26,5 +27,7 @@ namespace Projects.Script.ScripableObject.GenAnimal
         {
             get => characterImg;
         }
+
+        public int Start => start;
     }
 }
