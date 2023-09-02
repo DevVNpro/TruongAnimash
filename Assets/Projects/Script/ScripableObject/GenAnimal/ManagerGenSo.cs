@@ -57,7 +57,7 @@ namespace Projects.Script.ScripableObject.GenAnimal
                     {
                         characterImage.sprite = characterData.CharacterImg;
                         StartAnimal.startNumber = characterData.Start;
-                        AttackAnimal.setAttack = characterData.Start;
+                        SetAttackAnimal.setAttack = characterData.Start;
                         return;
                     }
                 }

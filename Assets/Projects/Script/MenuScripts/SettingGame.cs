@@ -1,3 +1,4 @@
+using System;
 using Projects.Script.Manager;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,9 +10,42 @@ namespace Projects.Script.MenuScripts
         [Header("ImageOff")] 
         [SerializeField] private GameObject imageMusic;
         [SerializeField] private GameObject imageVfx;
-
-
+        private bool isMusicOn;
+        private bool isVfxOn;
         
+        private void Awake()
+        {
+            CheckMusicOn();
+            CheckVfxOn();
+        }
+
+        private void CheckMusicOn()
+        {
+            int checkMusic;
+            checkMusic = PlayerPrefs.GetInt("isMusicOn", 0);
+            if (checkMusic==1)
+            {
+                isMusicOn = true;
+            }
+            else if(checkMusic==0)
+            {
+                isMusicOn = false;
+            }
+        }
+
+        private void CheckVfxOn()
+        {
+            int checkVfx;
+            checkVfx = PlayerPrefs.GetInt("isVfxOn", 0);
+            if (checkVfx==1)
+            {
+                isVfxOn = true;
+            }
+            else if (checkVfx == 0)
+            {
+                isVfxOn = false;
+            }
+        }
 
         void Update()
         {
@@ -20,23 +54,27 @@ namespace Projects.Script.MenuScripts
         }
         private void ShowImageMusic()
         {
-            if (SoundManager.Instance.themeSource.enabled)
+            if (isMusicOn)
             {
+                SoundManager.Instance.themeSource.enabled = true;
                 imageMusic.SetActive(false);
             }
-            else if (!SoundManager.Instance.themeSource.enabled)
+            else if (!isMusicOn)
             {
+                SoundManager.Instance.themeSource.enabled = false;
                 imageMusic.SetActive(true);
             }
         }
         private void ShowImageVfx()
         {
-            if (SoundManager.Instance.vfxSource.enabled)
+            if (isVfxOn)
             {
+                SoundManager.Instance.vfxSource.enabled = true;
                 imageVfx.SetActive(false);
             }
-            else if (!SoundManager.Instance.vfxSource.enabled)
+            else if (!isVfxOn)
             {
+                SoundManager.Instance.vfxSource.enabled = false;
                 imageVfx.SetActive(true);
             }
         }
@@ -45,13 +83,15 @@ namespace Projects.Script.MenuScripts
             if (SoundManager.Instance.themeSource.isActiveAndEnabled)
             {
                 SoundManager.Instance.themeSource.enabled = false;
-
+                isMusicOn = false;
+                PlayerPrefs.SetInt("isMusicOn", isMusicOn ? 1 : 0);
                 imageMusic.SetActive(true);
             }
             else
             {
                 SoundManager.Instance.themeSource.enabled = true;
-
+                isMusicOn = true;
+                PlayerPrefs.SetInt("isMusicOn", isMusicOn ? 1 : 0);
                 imageMusic.SetActive(false);
             }
         }
@@ -60,11 +100,15 @@ namespace Projects.Script.MenuScripts
             if (SoundManager.Instance.vfxSource.isActiveAndEnabled)
             {
                 SoundManager.Instance.vfxSource.enabled = false;
+                isVfxOn = false;
+                PlayerPrefs.SetInt("isVfxOn", isVfxOn ? 1:0);
                 imageVfx.SetActive(true);
             }
             else
             {
                 SoundManager.Instance.vfxSource.enabled = true;
+                isVfxOn = true;
+                PlayerPrefs.SetInt("isVfxOn", isVfxOn ? 1: 0);
                 imageVfx.SetActive(false);
             }
         }

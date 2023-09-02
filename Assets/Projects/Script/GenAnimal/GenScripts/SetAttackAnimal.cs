@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Projects.Script.GenAnimal.GenScripts
 {
-    public class AttackAnimal : MonoBehaviour
+    public class SetAttackAnimal : MonoBehaviour
     {
         private int[] attackLv1 = {100, 200, 300, 400};
         private int[] attackLv2 = {500,600};

@@ -2,11 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Projects.Script.Manager;
+using Projects.Script.PvP;
 using UnityEngine;
 
 public class ButtonManagerPvp : MonoBehaviour
 {
     [Header("Setting")] [SerializeField] private GameObject setting;
+
+    [Header("ManagerAnimation Buttion")] [SerializeField]
+    private ManagerAnimationBattle _animationBattle;
     public void ResetBattle()
     {
         SoundManager.Instance.PlayVfxMuSic("Next");
@@ -35,6 +39,11 @@ public class ButtonManagerPvp : MonoBehaviour
     {
         SoundManager.Instance.PlayVfxMuSic("Next");
         setting.SetActive(false);
+    }
+
+    public void StartAnimatonBattle()
+    {
+        _animationBattle.StartCoroutineBattle();
     }
     
     

@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Projects.Script.PickAnimal.PickScripts
 {
-    public class ButtonPick : MonoBehaviour
+    public class ManagerButtonPick : MonoBehaviour
     {
         [Header("Setting PopUp")] [SerializeField]
         private GameObject setting;

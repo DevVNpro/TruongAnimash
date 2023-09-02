@@ -57,9 +57,6 @@ public class EvenClick : MonoBehaviour
 
         //Save name Display
         DataAnimal.Instance.SetNameData(_showUI.headText.text,_showUI.keyText.text);
-        
-        //save Key
-        
 
         //animation 
         _showUI.MoveImgDad();

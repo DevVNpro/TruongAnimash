@@ -18,7 +18,11 @@ namespace Projects.Script.PvP
 
         [Header("ButtonWinLose")] [SerializeField] private GameObject buttonWinLose;
 
-        [Header("TextBattle")] [SerializeField]  private GameObject textBattle;
+        [Header("TextBattle")] [SerializeField]  private GameObject textBattlePlayer;
+        [SerializeField]  private GameObject textBattleEnemy;
+
+        [Header("Background")] [SerializeField]
+        private RectTransform backgroundEnemy;
        
         private void Update()
         {
@@ -35,20 +39,22 @@ namespace Projects.Script.PvP
         IEnumerator TurnOnWinImg()
         {
             yield return  new WaitForSeconds(3f);
-            textBattle.SetActive(false);
+            textBattlePlayer.SetActive(false);
+            textBattleEnemy.SetActive(false);
             enemyTeam.gameObject.SetActive(false);
-            dectTeam.LeanMove(new Vector3(0f, 0f, 0f), 1.5f).setEasePunch();
-            yield return  new WaitForSeconds(1.6f);
+            dectTeam.gameObject.SetActive(false);
+        //    LeanTween.move(backgroundEnemy, new Vector3(backgroundEnemy.anchoredPosition.x, -2000f), 2f).setEase(LeanTweenType.easeOutQuad);
+            yield return  new WaitForSeconds(2f);
             buttonWinLose.SetActive(true);
             imageWin.gameObject.SetActive(true);
         }
         IEnumerator TurnOnLoseImg()
         {
             yield return  new WaitForSeconds(3f);
-            textBattle.SetActive(false);
+            textBattlePlayer.SetActive(false);
+            textBattleEnemy.SetActive(false);
             dectTeam.gameObject.SetActive(false);
-            enemyTeam.LeanMove(new Vector3(0f, 0f, 0f), 1.5f).setEasePunch();
-            yield return  new WaitForSeconds(1.5f);
+            enemyTeam.gameObject.SetActive(false);
             buttonWinLose.SetActive(true);
             imageLose.gameObject.SetActive(true);
         }

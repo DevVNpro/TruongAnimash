@@ -7,7 +7,7 @@ public class FixBattleUI : MonoBehaviour
 {
     [SerializeField] private Canvas canvasScaler;
     [SerializeField] private GameObject content;
-    [SerializeField] private float scaleFactorThreshold = 0.34f;
+  //  [SerializeField] private float scaleFactorThreshold = 0.34f;
     [SerializeField] private float xOffset = 68f;
     [SerializeField] private float xOffset1 = 50f;
 

@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 namespace Projects.Script.PvP
 {
-    public class ButtonFight : MonoBehaviour
+    public class ManagerAnimationBattle : MonoBehaviour
     {
         [Header("GameHandler")] 
         [SerializeField] private GameObject GameHandler;
@@ -53,31 +53,37 @@ namespace Projects.Script.PvP
 
         [Header("List Slot")] [SerializeField] private List<GameObject> slotTeam;
 
-        [Header("CardOnClick")] [SerializeField] private GameObject cardOnClick;
+   //     [Header("CardOnClick")] [SerializeField] private GameObject cardOnClick;
+        /*
         private void Awake()
         {
-            StartCoroutine(AnimationButton());
+         //   StartCoroutine(AnimationButton());
             buttonFight.onClick.AddListener(Even1);
         }
+        */
 
-        IEnumerator AnimationButton()
+        /*IEnumerator AnimationButton()
         {
-            while (true)
+            /*while (true)
             {
                 transform.LeanScale(new Vector3(1.1f, 1.1f), 0.6f);
                 yield return  new WaitForSeconds(0.7f);
                 transform.LeanScale(new Vector3(1f, 1f), 0.6f);
                 yield return  new WaitForSeconds(0.7f);
 
-            }
-        }
+            }#1#
+        }*/
 
-        private void Even1()
+        /*private void Even1()
         {
          StartCoroutine(StartBattle());
-        }
+        }*/
 
-     
+        public void StartCoroutineBattle()
+        {
+            StartCoroutine(StartBattle());
+
+        }
         IEnumerator StartBattle()
         {
             RemoveDrabItem();
