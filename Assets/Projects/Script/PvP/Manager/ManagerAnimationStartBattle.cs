@@ -9,7 +9,7 @@ using UnityEngine.UI;
 
 namespace Projects.Script.PvP
 {
-    public class ManagerAnimationBattle : MonoBehaviour
+    public class ManagerAnimationStartBattle : MonoBehaviour
     {
         [Header("GameHandler")] 
         [SerializeField] private GameObject GameHandler;
@@ -25,7 +25,7 @@ namespace Projects.Script.PvP
         [SerializeField] private GameObject playerTurn;
         
         [Header("ButtonFight")]
-        [SerializeField] private Button buttonFight;
+      //  [SerializeField] private Button buttonFight;
         [SerializeField] private Image imageButton;
         
         [Header("TeamGrid")]
@@ -43,8 +43,8 @@ namespace Projects.Script.PvP
         [Header("AnimationImgEnemy")] 
         [SerializeField] private List<Image> imageEnemy;
 
-        [Header("Animation Text")]
-        [SerializeField] private Animator teamText;
+     /*   [Header("Animation Text")]
+        [SerializeField] private Animator teamText;*/
 
         [Header("Tutorial Attack")] [SerializeField]
         private GameObject tutorrialAttack;
@@ -86,7 +86,7 @@ namespace Projects.Script.PvP
             yield return new WaitForSeconds(0.6f);
             
             Animation2();
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(3f);
             EnemyGrid.rectTransform.LeanScale(new Vector3(1f, 1f), 0.5f);
             
             

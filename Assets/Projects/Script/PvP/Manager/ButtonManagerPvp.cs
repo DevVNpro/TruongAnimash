@@ -10,7 +10,7 @@ public class ButtonManagerPvp : MonoBehaviour
     [Header("Setting")] [SerializeField] private GameObject setting;
 
     [Header("ManagerAnimation Buttion")] [SerializeField]
-    private ManagerAnimationBattle _animationBattle;
+    private ManagerAnimationStartBattle _animationBattle;
     public void ResetBattle()
     {
         SoundManager.Instance.PlayVfxMuSic("Next");

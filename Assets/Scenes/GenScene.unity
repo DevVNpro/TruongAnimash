@@ -3870,7 +3870,7 @@ MonoBehaviour:
     star: 2
   - key: AE
     characterImg: {fileID: 21300000, guid: 56a3f3b8c94b1e146b20b3305f1b21de, type: 3}
-    star: 2
+    star: 4
   - key: AF
     characterImg: {fileID: 21300000, guid: 817263d49a639b94bbdd07ffb5aed0ab, type: 3}
     star: 2
@@ -3882,7 +3882,7 @@ MonoBehaviour:
     star: 2
   - key: AI
     characterImg: {fileID: 21300000, guid: a66589ab037ad294db3bfee8ba56aef0, type: 3}
-    star: 4
+    star: 2
   - key: AJ
     characterImg: {fileID: 21300000, guid: 8506f499db59fff419284648e876dbe3, type: 3}
     star: 6
@@ -3891,16 +3891,16 @@ MonoBehaviour:
     star: 2
   - key: AL
     characterImg: {fileID: 21300000, guid: 00a4528bb8d3a2845a892021178439f8, type: 3}
-    star: 2
+    star: 4
   - key: AM
     characterImg: {fileID: 21300000, guid: 6de7dfa211efc604e862bbc67c933c1e, type: 3}
     star: 2
   - key: AN
     characterImg: {fileID: 21300000, guid: 256694ebb8028c84aa3ee42f6efbce48, type: 3}
-    star: 4
+    star: 2
   - key: BC
     characterImg: {fileID: 21300000, guid: 6927ff6f89b2bf34281d8031949d2ed5, type: 3}
-    star: 2
+    star: 4
   - key: BD
     characterImg: {fileID: 21300000, guid: 3ce66f04b09337a4aa255fffd29afe57, type: 3}
     star: 2
@@ -3915,13 +3915,13 @@ MonoBehaviour:
     star: 2
   - key: BH
     characterImg: {fileID: 21300000, guid: 64ec0e8f61d7a1a4484e8f7e0693472f, type: 3}
-    star: 2
+    star: 4
   - key: BI
     characterImg: {fileID: 21300000, guid: 1472bc8c585aa3e419e3cdf436e33dfe, type: 3}
     star: 4
   - key: BJ
     characterImg: {fileID: 21300000, guid: 19bc2a8deb95dd94685d78779dc0d5bd, type: 3}
-    star: 6
+    star: 4
   - key: BK
     characterImg: {fileID: 21300000, guid: e9b3b7d0b1b056145bf9837a1b17518f, type: 3}
     star: 2
@@ -3936,10 +3936,10 @@ MonoBehaviour:
     star: 2
   - key: CD
     characterImg: {fileID: 21300000, guid: b364bca96fbc52f43a85590b4143af7a, type: 3}
-    star: 2
+    star: 4
   - key: CE
     characterImg: {fileID: 21300000, guid: afe94e66b5d01fb448ebeece452958e9, type: 3}
-    star: 4
+    star: 2
   - key: CF
     characterImg: {fileID: 21300000, guid: 0b96840b19f3d4f4ba7cd86e54f1679c, type: 3}
     star: 2
@@ -3951,19 +3951,19 @@ MonoBehaviour:
     star: 2
   - key: CI
     characterImg: {fileID: 21300000, guid: 02fe19664c2933d45bc441992c5e63b8, type: 3}
-    star: 2
+    star: 4
   - key: CJ
     characterImg: {fileID: 21300000, guid: dfd8b2ea46e5bdc45a54cf4b06aff184, type: 3}
     star: 4
   - key: CK
     characterImg: {fileID: 21300000, guid: c52c3c3fb0e98fa4c9bcd67f70951d2b, type: 3}
-    star: 4
+    star: 2
   - key: CL
     characterImg: {fileID: 21300000, guid: b5b4b2828d97b4d4eaec1081aaece301, type: 3}
-    star: 2
+    star: 4
   - key: CM
     characterImg: {fileID: 21300000, guid: 1c4a52f4a1434b94c8b8dbf79cb88cb2, type: 3}
-    star: 2
+    star: 4
   - key: CN
     characterImg: {fileID: 21300000, guid: 70d8e68e00bbe0f408e7deabb82a2dc4, type: 3}
     star: 2
@@ -3984,19 +3984,19 @@ MonoBehaviour:
     star: 2
   - key: DJ
     characterImg: {fileID: 21300000, guid: d2fa592d4991b7841a965738f08567ce, type: 3}
-    star: 4
+    star: 6
   - key: DK
     characterImg: {fileID: 21300000, guid: b17a6b62639e4864e978e0a440401892, type: 3}
     star: 2
   - key: DL
     characterImg: {fileID: 21300000, guid: 14d2d2d5ef0605f448b28bf56cf5bb37, type: 3}
-    star: 4
+    star: 2
   - key: DM
     characterImg: {fileID: 21300000, guid: 602eb863ca1550c4fa382490ed46fabc, type: 3}
     star: 4
   - key: DN
     characterImg: {fileID: 21300000, guid: e17a212225cfd924fa20bb9e156db120, type: 3}
-    star: 2
+    star: 4
   - key: EF
     characterImg: {fileID: 21300000, guid: 7dba06c17c9cd5b448f66c902a8dae0c, type: 3}
     star: 2
@@ -4005,7 +4005,7 @@ MonoBehaviour:
     star: 4
   - key: EH
     characterImg: {fileID: 21300000, guid: 7903772fa8145354db9e2b2a81bea20e, type: 3}
-    star: 4
+    star: 2
   - key: EI
     characterImg: {fileID: 21300000, guid: 82840d953d6e5c24981e66b97b8484ac, type: 3}
     star: 2
@@ -4023,7 +4023,7 @@ MonoBehaviour:
     star: 2
   - key: EN
     characterImg: {fileID: 21300000, guid: b1f6ed550d505b04aae96bd9669d4d2e, type: 3}
-    star: 4
+    star: 2
   - key: FG
     characterImg: {fileID: 21300000, guid: abf326d7c3985fc41b503c0fbf583f41, type: 3}
     star: 2
@@ -4050,19 +4050,19 @@ MonoBehaviour:
     star: 2
   - key: GH
     characterImg: {fileID: 21300000, guid: 2a0f5a61f6e88ea4e8b42b7e88bfb2b2, type: 3}
-    star: 4
+    star: 2
   - key: GI
     characterImg: {fileID: 21300000, guid: be807e1a88cdd3b47a11713d5b63f72c, type: 3}
-    star: 4
+    star: 2
   - key: GJ
     characterImg: {fileID: 21300000, guid: 5e5b933f5e0476f4e9f347bc90c90c0a, type: 3}
     star: 6
   - key: GK
     characterImg: {fileID: 21300000, guid: 523f88b2fb0239a4989a5ef013c4133a, type: 3}
-    star: 2
+    star: 4
   - key: GL
     characterImg: {fileID: 21300000, guid: d3e743f492943e94ca33ff3fc3fef0fe, type: 3}
-    star: 2
+    star: 4
   - key: GM
     characterImg: {fileID: 21300000, guid: 10b929cce60549644bae6bf6573923a9, type: 3}
     star: 4
@@ -4080,19 +4080,19 @@ MonoBehaviour:
     star: 2
   - key: HL
     characterImg: {fileID: 21300000, guid: 665d3d937bbfeb44f858b6176732c778, type: 3}
-    star: 2
+    star: 4
   - key: HM
     characterImg: {fileID: 21300000, guid: 2d5f78db87cde6746a949d7628b51743, type: 3}
-    star: 2
+    star: 4
   - key: HN
     characterImg: {fileID: 21300000, guid: 2ce517050a3de764c84b6b21db93e2c1, type: 3}
-    star: 2
+    star: 4
   - key: IJ
     characterImg: {fileID: 21300000, guid: 941252ae45ade824daf5176c83aa1a4e, type: 3}
-    star: 6
+    star: 4
   - key: IK
     characterImg: {fileID: 21300000, guid: b5c111d8ff40e0a459b63db2d3e9012b, type: 3}
-    star: 2
+    star: 4
   - key: IL
     characterImg: {fileID: 21300000, guid: b1575eca00cafcc4fa8d37642ae2660a, type: 3}
     star: 2
@@ -4104,34 +4104,34 @@ MonoBehaviour:
     star: 2
   - key: JK
     characterImg: {fileID: 21300000, guid: 6242810a63d6f074f91ed4f65de2df98, type: 3}
-    star: 4
+    star: 2
   - key: JL
     characterImg: {fileID: 21300000, guid: ad7704d8f22ee1b408e33c0f6a923245, type: 3}
-    star: 4
+    star: 6
   - key: JM
     characterImg: {fileID: 21300000, guid: 0c985874352813b459b5cda438d1042b, type: 3}
-    star: 4
+    star: 2
   - key: JN
     characterImg: {fileID: 21300000, guid: e414eca9f6c17504f9698aad4a55874d, type: 3}
-    star: 4
+    star: 6
   - key: KL
     characterImg: {fileID: 21300000, guid: b8e0198f914bbc049b7e91d59d7e1f82, type: 3}
-    star: 2
+    star: 4
   - key: KM
     characterImg: {fileID: 21300000, guid: bcc47646c71b063438ce5258f156b768, type: 3}
-    star: 2
+    star: 4
   - key: KN
     characterImg: {fileID: 21300000, guid: c49ed67a2ce2d73428d23e84dc716197, type: 3}
-    star: 2
+    star: 4
   - key: LM
     characterImg: {fileID: 21300000, guid: ea095380f2bc42c49b6cba7c0b76f327, type: 3}
     star: 4
   - key: LN
     characterImg: {fileID: 21300000, guid: 4565cce520bf32c49b84f8ebb41a3374, type: 3}
-    star: 2
+    star: 4
   - key: MN
     characterImg: {fileID: 21300000, guid: 73900b3309b522245b35d36cb740c65f, type: 3}
-    star: 2
+    star: 4
   SpritePath: Assets/Projects/Resources
   characterImage: {fileID: 460863108}
 --- !u!4 &1787009188

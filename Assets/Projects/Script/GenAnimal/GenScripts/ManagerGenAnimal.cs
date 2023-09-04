@@ -12,7 +12,7 @@ namespace Projects.Script.ScripableObject.GenAnimal
     {
        
            [SerializeField]
-         private AnimalGen[] characterDataArray;
+          public AnimalGen[] characterDataArray;
 
          [SerializeField] private string SpritePath = "Assets/Projects/Resources";
             [SerializeField] private Image characterImage;
