@@ -28,12 +28,12 @@ namespace Projects.Script.SaveScripts
             if (File.Exists(path))
             {
                 UpdateList(SaveManager.Instance.animalDataList);        
-                Debug.Log(" co du lieu");
+                Debug.Log(" Exists Data");
 
             }
             else
             {
-                Debug.Log("Khong co du lieu");
+                Debug.Log("Null Data");
             }
         }
 

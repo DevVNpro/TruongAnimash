@@ -2063,7 +2063,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 80, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &788340467
@@ -2809,6 +2809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   setting: {fileID: 733742495}
+  logicSaveAnimal: {fileID: 1855714992}
 --- !u!1 &1169566569
 GameObject:
   m_ObjectHideFlags: 0
@@ -3614,7 +3615,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 208.195}
+  m_AnchoredPosition: {x: 0, y: 208.19507}
   m_SizeDelta: {x: 0, y: 416.39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1724401813
@@ -3860,277 +3861,277 @@ MonoBehaviour:
   characterDataArray:
   - key: AB
     characterImg: {fileID: 21300000, guid: 7a0d2d9624148024aad9928e184194ff, type: 3}
-    start: 2
+    star: 2
   - key: AC
     characterImg: {fileID: 21300000, guid: 082047272a2355e4b964d8f362a1c667, type: 3}
-    start: 2
+    star: 2
   - key: AD
     characterImg: {fileID: 21300000, guid: c7035c69b6986684884033b7c39a7f46, type: 3}
-    start: 2
+    star: 2
   - key: AE
     characterImg: {fileID: 21300000, guid: 56a3f3b8c94b1e146b20b3305f1b21de, type: 3}
-    start: 2
+    star: 2
   - key: AF
     characterImg: {fileID: 21300000, guid: 817263d49a639b94bbdd07ffb5aed0ab, type: 3}
-    start: 2
+    star: 2
   - key: AG
     characterImg: {fileID: 21300000, guid: e3ae9a7076fa41a40b19d3ecfe2221f4, type: 3}
-    start: 2
+    star: 2
   - key: AH
     characterImg: {fileID: 21300000, guid: 9f3c00f0b164f9241af1bfd96c7c869d, type: 3}
-    start: 2
+    star: 2
   - key: AI
     characterImg: {fileID: 21300000, guid: a66589ab037ad294db3bfee8ba56aef0, type: 3}
-    start: 2
+    star: 4
   - key: AJ
     characterImg: {fileID: 21300000, guid: 8506f499db59fff419284648e876dbe3, type: 3}
-    start: 6
+    star: 6
   - key: AK
     characterImg: {fileID: 21300000, guid: 0850c163f00bc6843aa5c6f7a8179de6, type: 3}
-    start: 2
+    star: 2
   - key: AL
     characterImg: {fileID: 21300000, guid: 00a4528bb8d3a2845a892021178439f8, type: 3}
-    start: 2
+    star: 2
   - key: AM
     characterImg: {fileID: 21300000, guid: 6de7dfa211efc604e862bbc67c933c1e, type: 3}
-    start: 2
+    star: 2
   - key: AN
     characterImg: {fileID: 21300000, guid: 256694ebb8028c84aa3ee42f6efbce48, type: 3}
-    start: 2
+    star: 4
   - key: BC
     characterImg: {fileID: 21300000, guid: 6927ff6f89b2bf34281d8031949d2ed5, type: 3}
-    start: 2
+    star: 2
   - key: BD
     characterImg: {fileID: 21300000, guid: 3ce66f04b09337a4aa255fffd29afe57, type: 3}
-    start: 2
+    star: 2
   - key: BE
     characterImg: {fileID: 21300000, guid: cad38655c48d082449247d46921b50f3, type: 3}
-    start: 4
+    star: 2
   - key: BF
     characterImg: {fileID: 21300000, guid: b7f7f29dcaabc2e49ac8327e3eb2d4d3, type: 3}
-    start: 2
+    star: 2
   - key: BG
     characterImg: {fileID: 21300000, guid: 22d2216b855b13849b990f4f31dc6e3e, type: 3}
-    start: 4
+    star: 2
   - key: BH
     characterImg: {fileID: 21300000, guid: 64ec0e8f61d7a1a4484e8f7e0693472f, type: 3}
-    start: 2
+    star: 2
   - key: BI
     characterImg: {fileID: 21300000, guid: 1472bc8c585aa3e419e3cdf436e33dfe, type: 3}
-    start: 2
+    star: 4
   - key: BJ
     characterImg: {fileID: 21300000, guid: 19bc2a8deb95dd94685d78779dc0d5bd, type: 3}
-    start: 4
+    star: 6
   - key: BK
     characterImg: {fileID: 21300000, guid: e9b3b7d0b1b056145bf9837a1b17518f, type: 3}
-    start: 4
+    star: 2
   - key: BL
     characterImg: {fileID: 21300000, guid: 1a23243f33b861d4a8c70069f7f200be, type: 3}
-    start: 2
+    star: 2
   - key: BM
     characterImg: {fileID: 21300000, guid: e20f6a16569986d47ad1a1301e5bd3e7, type: 3}
-    start: 4
+    star: 2
   - key: BN
     characterImg: {fileID: 21300000, guid: b1585c1d00df6194db8e26ed87f609cf, type: 3}
-    start: 2
+    star: 2
   - key: CD
     characterImg: {fileID: 21300000, guid: b364bca96fbc52f43a85590b4143af7a, type: 3}
-    start: 2
+    star: 2
   - key: CE
     characterImg: {fileID: 21300000, guid: afe94e66b5d01fb448ebeece452958e9, type: 3}
-    start: 4
+    star: 4
   - key: CF
     characterImg: {fileID: 21300000, guid: 0b96840b19f3d4f4ba7cd86e54f1679c, type: 3}
-    start: 2
+    star: 2
   - key: CG
     characterImg: {fileID: 21300000, guid: 26ddbfde155a0c449bd8cc29ccf83eaa, type: 3}
-    start: 2
+    star: 2
   - key: CH
     characterImg: {fileID: 21300000, guid: 34eccb2676e1cfd489c78312f38e9537, type: 3}
-    start: 2
+    star: 2
   - key: CI
     characterImg: {fileID: 21300000, guid: 02fe19664c2933d45bc441992c5e63b8, type: 3}
-    start: 2
+    star: 2
   - key: CJ
     characterImg: {fileID: 21300000, guid: dfd8b2ea46e5bdc45a54cf4b06aff184, type: 3}
-    start: 6
+    star: 4
   - key: CK
     characterImg: {fileID: 21300000, guid: c52c3c3fb0e98fa4c9bcd67f70951d2b, type: 3}
-    start: 4
+    star: 4
   - key: CL
     characterImg: {fileID: 21300000, guid: b5b4b2828d97b4d4eaec1081aaece301, type: 3}
-    start: 4
+    star: 2
   - key: CM
     characterImg: {fileID: 21300000, guid: 1c4a52f4a1434b94c8b8dbf79cb88cb2, type: 3}
-    start: 4
+    star: 2
   - key: CN
     characterImg: {fileID: 21300000, guid: 70d8e68e00bbe0f408e7deabb82a2dc4, type: 3}
-    start: 2
+    star: 2
   - key: DE
     characterImg: {fileID: 21300000, guid: 9a3e6377da34de9419c3f6169b4cd7a7, type: 3}
-    start: 2
+    star: 2
   - key: DF
     characterImg: {fileID: 21300000, guid: 77dcdac78aea2b34d961812b990dd66b, type: 3}
-    start: 2
+    star: 2
   - key: DG
     characterImg: {fileID: 21300000, guid: 3be164d582b5d9e4b8bc3f120dd59eff, type: 3}
-    start: 2
+    star: 2
   - key: DH
     characterImg: {fileID: 21300000, guid: e05a3b1eeb4bf974d8675778ead7e3e9, type: 3}
-    start: 2
+    star: 2
   - key: DI
     characterImg: {fileID: 21300000, guid: 919ad3175e1cac34aaee61ab9fc36986, type: 3}
-    start: 2
+    star: 2
   - key: DJ
     characterImg: {fileID: 21300000, guid: d2fa592d4991b7841a965738f08567ce, type: 3}
-    start: 4
+    star: 4
   - key: DK
     characterImg: {fileID: 21300000, guid: b17a6b62639e4864e978e0a440401892, type: 3}
-    start: 2
+    star: 2
   - key: DL
     characterImg: {fileID: 21300000, guid: 14d2d2d5ef0605f448b28bf56cf5bb37, type: 3}
-    start: 2
+    star: 4
   - key: DM
     characterImg: {fileID: 21300000, guid: 602eb863ca1550c4fa382490ed46fabc, type: 3}
-    start: 4
+    star: 4
   - key: DN
     characterImg: {fileID: 21300000, guid: e17a212225cfd924fa20bb9e156db120, type: 3}
-    start: 2
+    star: 2
   - key: EF
     characterImg: {fileID: 21300000, guid: 7dba06c17c9cd5b448f66c902a8dae0c, type: 3}
-    start: 2
+    star: 2
   - key: EG
     characterImg: {fileID: 21300000, guid: d06d065cc8c4fd7418fec62a3226281d, type: 3}
-    start: 2
+    star: 4
   - key: EH
     characterImg: {fileID: 21300000, guid: 7903772fa8145354db9e2b2a81bea20e, type: 3}
-    start: 2
+    star: 4
   - key: EI
     characterImg: {fileID: 21300000, guid: 82840d953d6e5c24981e66b97b8484ac, type: 3}
-    start: 2
+    star: 2
   - key: EJ
     characterImg: {fileID: 21300000, guid: db98e472b11625f47abd839924451d7e, type: 3}
-    start: 4
+    star: 4
   - key: EK
     characterImg: {fileID: 21300000, guid: f6c4d160be1f620458b40278b93c5330, type: 3}
-    start: 2
+    star: 2
   - key: EL
     characterImg: {fileID: 21300000, guid: 0c0209719f514dc4e832ff6d0ba45668, type: 3}
-    start: 2
+    star: 2
   - key: EM
     characterImg: {fileID: 21300000, guid: 2da660559251d194ea8ad4a6738c5bbb, type: 3}
-    start: 2
+    star: 2
   - key: EN
     characterImg: {fileID: 21300000, guid: b1f6ed550d505b04aae96bd9669d4d2e, type: 3}
-    start: 4
+    star: 4
   - key: FG
     characterImg: {fileID: 21300000, guid: abf326d7c3985fc41b503c0fbf583f41, type: 3}
-    start: 2
+    star: 2
   - key: FH
     characterImg: {fileID: 21300000, guid: dac1ac4141699f74a82b34a36212e55a, type: 3}
-    start: 2
+    star: 2
   - key: FI
     characterImg: {fileID: 21300000, guid: 99fcf2896f100e545a20e31d873c85a0, type: 3}
-    start: 2
+    star: 2
   - key: FJ
     characterImg: {fileID: 21300000, guid: f6fe6e5efec64bc4ca71d39605d7caa1, type: 3}
-    start: 6
+    star: 6
   - key: FK
     characterImg: {fileID: 21300000, guid: 574659ff5428f464fb7a8e283cc02076, type: 3}
-    start: 2
+    star: 2
   - key: FL
     characterImg: {fileID: 21300000, guid: 52d4302fc540b0647917dc9f187c8a92, type: 3}
-    start: 2
+    star: 2
   - key: FM
     characterImg: {fileID: 21300000, guid: 82ff0d1eed9dfea4d9ec8fe8b6390df2, type: 3}
-    start: 4
+    star: 2
   - key: FN
     characterImg: {fileID: 21300000, guid: 025402ef584714b49a9eec63de7ae4dc, type: 3}
-    start: 2
+    star: 2
   - key: GH
     characterImg: {fileID: 21300000, guid: 2a0f5a61f6e88ea4e8b42b7e88bfb2b2, type: 3}
-    start: 2
+    star: 4
   - key: GI
     characterImg: {fileID: 21300000, guid: be807e1a88cdd3b47a11713d5b63f72c, type: 3}
-    start: 2
+    star: 4
   - key: GJ
     characterImg: {fileID: 21300000, guid: 5e5b933f5e0476f4e9f347bc90c90c0a, type: 3}
-    start: 6
+    star: 6
   - key: GK
     characterImg: {fileID: 21300000, guid: 523f88b2fb0239a4989a5ef013c4133a, type: 3}
-    start: 2
+    star: 2
   - key: GL
     characterImg: {fileID: 21300000, guid: d3e743f492943e94ca33ff3fc3fef0fe, type: 3}
-    start: 2
+    star: 2
   - key: GM
     characterImg: {fileID: 21300000, guid: 10b929cce60549644bae6bf6573923a9, type: 3}
-    start: 6
+    star: 4
   - key: GN
     characterImg: {fileID: 21300000, guid: fc15b123641c57144865e87598ae52a8, type: 3}
-    start: 2
+    star: 2
   - key: HI
     characterImg: {fileID: 21300000, guid: bc1bfbc6f692f404392a007fbbbb2078, type: 3}
-    start: 2
+    star: 2
   - key: HJ
     characterImg: {fileID: 21300000, guid: 13c827eddb5408e4589db1a3123cb3f1, type: 3}
-    start: 6
+    star: 4
   - key: HK
     characterImg: {fileID: 21300000, guid: b56738593272d654cb92bd459ae71edd, type: 3}
-    start: 2
+    star: 2
   - key: HL
     characterImg: {fileID: 21300000, guid: 665d3d937bbfeb44f858b6176732c778, type: 3}
-    start: 2
+    star: 2
   - key: HM
     characterImg: {fileID: 21300000, guid: 2d5f78db87cde6746a949d7628b51743, type: 3}
-    start: 2
+    star: 2
   - key: HN
     characterImg: {fileID: 21300000, guid: 2ce517050a3de764c84b6b21db93e2c1, type: 3}
-    start: 2
+    star: 2
   - key: IJ
     characterImg: {fileID: 21300000, guid: 941252ae45ade824daf5176c83aa1a4e, type: 3}
-    start: 6
+    star: 6
   - key: IK
     characterImg: {fileID: 21300000, guid: b5c111d8ff40e0a459b63db2d3e9012b, type: 3}
-    start: 2
+    star: 2
   - key: IL
     characterImg: {fileID: 21300000, guid: b1575eca00cafcc4fa8d37642ae2660a, type: 3}
-    start: 2
+    star: 2
   - key: IM
     characterImg: {fileID: 21300000, guid: acd62c5a2deb2324d8b61d376375d65b, type: 3}
-    start: 4
+    star: 2
   - key: IN
     characterImg: {fileID: 21300000, guid: 451e4fc9a2efb1d4eafde79131d4278c, type: 3}
-    start: 4
+    star: 2
   - key: JK
     characterImg: {fileID: 21300000, guid: 6242810a63d6f074f91ed4f65de2df98, type: 3}
-    start: 6
+    star: 4
   - key: JL
     characterImg: {fileID: 21300000, guid: ad7704d8f22ee1b408e33c0f6a923245, type: 3}
-    start: 4
+    star: 4
   - key: JM
     characterImg: {fileID: 21300000, guid: 0c985874352813b459b5cda438d1042b, type: 3}
-    start: 6
+    star: 4
   - key: JN
     characterImg: {fileID: 21300000, guid: e414eca9f6c17504f9698aad4a55874d, type: 3}
-    start: 4
+    star: 4
   - key: KL
     characterImg: {fileID: 21300000, guid: b8e0198f914bbc049b7e91d59d7e1f82, type: 3}
-    start: 2
+    star: 2
   - key: KM
     characterImg: {fileID: 21300000, guid: bcc47646c71b063438ce5258f156b768, type: 3}
-    start: 2
+    star: 2
   - key: KN
     characterImg: {fileID: 21300000, guid: c49ed67a2ce2d73428d23e84dc716197, type: 3}
-    start: 2
+    star: 2
   - key: LM
     characterImg: {fileID: 21300000, guid: ea095380f2bc42c49b6cba7c0b76f327, type: 3}
-    start: 6
+    star: 4
   - key: LN
     characterImg: {fileID: 21300000, guid: 4565cce520bf32c49b84f8ebb41a3374, type: 3}
-    start: 2
+    star: 2
   - key: MN
     characterImg: {fileID: 21300000, guid: 73900b3309b522245b35d36cb740c65f, type: 3}
-    start: 2
+    star: 2
   SpritePath: Assets/Projects/Resources
   characterImage: {fileID: 460863108}
 --- !u!4 &1787009188
@@ -4353,6 +4354,7 @@ GameObject:
   - component: {fileID: 1855714991}
   - component: {fileID: 1855714989}
   - component: {fileID: 1855714992}
+  - component: {fileID: 1855714993}
   m_Layer: 5
   m_Name: SaveAnimal
   m_TagString: Untagged
@@ -4425,9 +4427,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1855714992}
-        m_TargetAssemblyTypeName: Projects.Script.GenScripts.ButtonSave, Assembly-CSharp
-        m_MethodName: SaveData
+      - m_Target: {fileID: 1121227728}
+        m_TargetAssemblyTypeName: Projects.Script.GenScripts.ManagerButtonGen, Assembly-CSharp
+        m_MethodName: SaveAnimal
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4457,10 +4459,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61ce211290b62fb428d4a0457ea2135c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _img: {fileID: 460863108}
   _button: {fileID: 1855714989}
   _text: {fileID: 499669310}
-  _Key: {fileID: 0}
+--- !u!114 &1855714993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855714984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e60ba34cd525546acf292967e6f904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1862834906
 GameObject:
   m_ObjectHideFlags: 0

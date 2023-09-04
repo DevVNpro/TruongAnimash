@@ -26,6 +26,10 @@ public class ButtonManagerPvp : MonoBehaviour
     public void LoadMenu()
     {
         SoundManager.Instance.PlayVfxMuSic("Next");
+        if(SoundManager.Instance.themeSource.clip.name != "TheMagic1")
+        {
+        SoundManager.Instance.PlayThemeMuSic("TheMagic1");
+        }
         SceneControl.Instance.LoadScene(0);
     }
 

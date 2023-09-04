@@ -16,7 +16,7 @@ namespace Projects.Script.PvP.PlayerScript
               //thay card bang slot /, lay du lieu tu slotteam de khong phu thuoc vao card , tu do de dang thay doi card
             //chi thay doi ham totalAttackPlayer ham showtotalattack khong can thay doi vi code game ko lien quan code ui
            //lấy máu theo slot thì bị ko update máu khi chết 
-            public static int _sumAttack = 0;
+            public static int sumAttack = 0;
             int attackCard1 = 0;
             int attackCard2 = 0;
             int attackCard3 = 0;
@@ -31,8 +31,6 @@ namespace Projects.Script.PvP.PlayerScript
             private bool checkOnSlot1;
             private bool checkOnSlot2;
             private bool checkOnSlot3;
-
-            
 
             private void Start()
             {
@@ -85,7 +83,7 @@ namespace Projects.Script.PvP.PlayerScript
                     attackCard3 = 0;
 
                 }
-                _sumAttack = attackCard1 + attackCard2 + attackCard3;
+                sumAttack = attackCard1 + attackCard2 + attackCard3;
             }
 
             public void SumAttackPvP()
@@ -132,7 +130,7 @@ namespace Projects.Script.PvP.PlayerScript
                     attackCard3 = cardPlayer3.attack;
                 }
                 
-                _sumAttack = attackCard1 + attackCard2 + attackCard3;
+                sumAttack = attackCard1 + attackCard2 + attackCard3;
             }
     }
 }

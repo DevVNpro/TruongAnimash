@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Projects.Script.Manager;
 using Projects.Script.PvP.PlayerScript;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -53,32 +54,22 @@ namespace Projects.Script.PvP
 
         [Header("List Slot")] [SerializeField] private List<GameObject> slotTeam;
 
-   //     [Header("CardOnClick")] [SerializeField] private GameObject cardOnClick;
-        /*
-        private void Awake()
+        private void Start()
         {
-         //   StartCoroutine(AnimationButton());
-            buttonFight.onClick.AddListener(Even1);
+            StartCoroutine(AnimationButton());
         }
-        */
 
-        /*IEnumerator AnimationButton()
+        IEnumerator AnimationButton()
         {
-            /*while (true)
+            while (true)
             {
                 transform.LeanScale(new Vector3(1.1f, 1.1f), 0.6f);
-                yield return  new WaitForSeconds(0.7f);
+                yield return new WaitForSeconds(0.7f);
                 transform.LeanScale(new Vector3(1f, 1f), 0.6f);
-                yield return  new WaitForSeconds(0.7f);
+                yield return new WaitForSeconds(0.7f);
 
-            }#1#
-        }*/
-
-        /*private void Even1()
-        {
-         StartCoroutine(StartBattle());
-        }*/
-
+            }
+        }
         public void StartCoroutineBattle()
         {
             StartCoroutine(StartBattle());
@@ -86,6 +77,7 @@ namespace Projects.Script.PvP
         }
         IEnumerator StartBattle()
         {
+            SoundManager.Instance.PlayThemeMuSic("TheMagic2");
             RemoveDrabItem();
             Animation1();
             yield return new WaitForSeconds(1.3f);
@@ -102,8 +94,8 @@ namespace Projects.Script.PvP
             yield return new WaitForSeconds(0.6f);
             foreach (Image image in imageEnemy)
             {
-                image.rectTransform.LeanScale(new Vector3(1f, 1f), 0.8f);
-                yield return new WaitForSeconds(1f);
+                image.rectTransform.LeanScale(new Vector3(1f, 1f), 1.4f);
+                yield return new WaitForSeconds(1.6f);
             }
             
             textLoading.SetActive(false);

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Projects.Script.Manager;
 using Projects.Script.PvP.EnemyCard;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -121,6 +122,7 @@ namespace Projects.Script.PvP.PlayerScript
             transformButton.SetParent(transform.root);
             transformButton.SetAsLastSibling();
             transformButton.transform.LeanMove(new Vector3(positionEnemyClick.transformEnemy.x, positionEnemyClick.transformEnemy.y), 1.7f).setEasePunch();
+            SoundManager.Instance.PlayVfxMuSic("Attack");
             yield return  new WaitForSeconds(1.8f);
             transformButton.transform.LeanMove(new Vector3(transformButton.position.x, transformButton.position.y), 1f);
             transformButton.SetParent(parentAfterDrag);

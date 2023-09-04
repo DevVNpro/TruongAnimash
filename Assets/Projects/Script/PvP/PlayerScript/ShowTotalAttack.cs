@@ -10,7 +10,7 @@ namespace Projects.Script.PvP.PlayerScript
 
         private void Update()
         {
-            textTotalAttack.text = TotalAttack._sumAttack.ToString();
+            textTotalAttack.text = TotalAttack.sumAttack.ToString();
         }
     }
 }

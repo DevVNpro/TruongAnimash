@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Projects.Script.Manager;
 using Projects.Script.PvP.PlayerScript;
 using UnityEngine;
 
@@ -47,6 +48,7 @@ namespace Projects.Script.PvP.EnemyCard
             transform.SetParent(transform.root);
             transform.SetAsLastSibling();
             transform.LeanMove(new Vector3(slot.position.x, slot.position.y), 1.7f).setEasePunch();
+            SoundManager.Instance.PlayVfxMuSic("Attack1");
             yield return new WaitForSeconds(1.8f);
             transform.LeanMove(new Vector3(_transform.position.x, _transform.position.y), 1f);
             transform.SetParent(parentAfterDrag);

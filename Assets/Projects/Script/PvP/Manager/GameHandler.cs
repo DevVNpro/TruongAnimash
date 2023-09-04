@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Projects.Script.Manager;
 using Projects.Script.PvP.EnemyCard;
 using Projects.Script.PvP.PlayerScript;
 using UnityEngine;
@@ -21,19 +22,35 @@ namespace Projects.Script.PvP
         [Header("TextBattle")] [SerializeField]  private GameObject textBattlePlayer;
         [SerializeField]  private GameObject textBattleEnemy;
 
-        [Header("Background")] [SerializeField]
-        private RectTransform backgroundEnemy;
+        [Header("Background")]
+        [SerializeField]
+        private GameObject whiteTriangle;
+
+        //playerWin
+        [SerializeField]  private RectTransform backgroundEnemy;
+        [SerializeField] private RectTransform bluePattern;
+        //enemyWin
+        [SerializeField] private RectTransform backgroundEnemyWin;
+        [SerializeField] private RectTransform yellowPattern;
+
+        bool endGame = false;
+
+
        
         private void Update()
         {
-
-            if (TotalAttack._sumAttack == 0)
+            if (!endGame)
             {
+            if (TotalAttack.sumAttack == 0)
+            {
+                endGame = true;
                 StartCoroutine(TurnOnLoseImg());
             }
             if (TotalAttackEnemy.sumAttack == 0)
             {
+                endGame = true;
                 StartCoroutine(TurnOnWinImg());
+            }
             }
         }
         IEnumerator TurnOnWinImg()
@@ -43,24 +60,34 @@ namespace Projects.Script.PvP
             textBattleEnemy.SetActive(false);
             enemyTeam.gameObject.SetActive(false);
             dectTeam.gameObject.SetActive(false);
-        //    LeanTween.move(backgroundEnemy, new Vector3(backgroundEnemy.anchoredPosition.x, -2000f), 2f).setEase(LeanTweenType.easeOutQuad);
-            yield return  new WaitForSeconds(2f);
-            buttonWinLose.SetActive(true);
-            imageWin.gameObject.SetActive(true);
+            whiteTriangle.SetActive(false);
+            LeanTween.move(backgroundEnemy, new Vector3(backgroundEnemy.anchoredPosition.x, 0), 3f).setEaseLinear();
+            LeanTween.move(bluePattern, new Vector3(bluePattern.anchoredPosition.x, 2000f), 1.5f);
+            yield return  new WaitForSeconds(2.3f);
+            buttonWinLose.LeanScale(new Vector3(1, 1), 1f).setEaseLinear();
+            imageWin.transform.LeanScale(new Vector3(1, 1), 1f).setEaseLinear();
+            yield return new WaitForSeconds(0.8f);
+            SoundManager.Instance.PlayVfxMuSic("Win");
         }
         IEnumerator TurnOnLoseImg()
         {
-            yield return  new WaitForSeconds(3f);
+            yield return  new WaitForSeconds(4f);
             textBattlePlayer.SetActive(false);
             textBattleEnemy.SetActive(false);
             dectTeam.gameObject.SetActive(false);
             enemyTeam.gameObject.SetActive(false);
-            buttonWinLose.SetActive(true);
-            imageLose.gameObject.SetActive(true);
+            whiteTriangle.SetActive(false);
+            LeanTween.move(backgroundEnemyWin, new Vector3(backgroundEnemyWin.anchoredPosition.x, 0), 2f);
+            LeanTween.move(yellowPattern, new Vector3(yellowPattern.anchoredPosition.x, 2100f), 2f);
+            yield return  new WaitForSeconds(2.3f);   
+            buttonWinLose.LeanScale(new Vector3(1, 1), 1f).setEaseLinear();
+            imageLose.transform.LeanScale(new Vector3(1, 1), 1f).setEaseLinear();
+            yield return new WaitForSeconds(0.8f);
+            SoundManager.Instance.PlayVfxMuSic("Lose");
         }
 
-      
-    
-     
+
+
+
     }
 }
