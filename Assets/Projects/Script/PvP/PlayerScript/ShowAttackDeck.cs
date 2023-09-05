@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 namespace Projects.Script.PvP.PlayerScript
@@ -6,7 +7,7 @@ namespace Projects.Script.PvP.PlayerScript
     public class ShowAttackDeck : MonoBehaviour
     {
         [SerializeField] private Card cardPlayer;
-        [SerializeField] private Text textAttack;
+        [SerializeField] private TextMeshProUGUI textAttack;
         
     
 

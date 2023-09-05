@@ -15,7 +15,10 @@ namespace Projects.Script.PvP
         [SerializeField] private GameObject GameHandler;
         [Header("Background")]
         [SerializeField] private GameObject backgroundDeck; 
-        [SerializeField] private GameObject backgroundBattle;
+        [SerializeField] private RectTransform backgroundBattleYellow;
+        [SerializeField] private GameObject parrtenYellow;
+        [SerializeField] private RectTransform backgroundBattleBlue;
+        [SerializeField] private GameObject whiteTriangle;
         [SerializeField] private GameObject textBackground1;
         [SerializeField] private GameObject textBackground2;
         [SerializeField] private GameObject ButtonNextPageRight;
@@ -82,11 +85,14 @@ namespace Projects.Script.PvP
             Animation1();
             yield return new WaitForSeconds(1.3f);
             
-            backgroundBattle.LeanScale(new Vector3(1f, 1f), 1f);
-            yield return new WaitForSeconds(0.6f);
-            
+          //  backgroundBattle.LeanScale(new Vector3(1f, 1f), 1f);
+          LeanTween.move(backgroundBattleBlue, new Vector3(backgroundBattleBlue.anchoredPosition.x, -1800f), 2f);
+          LeanTween.move(backgroundBattleYellow, new Vector3(backgroundBattleYellow.anchoredPosition.x, -1914f), 1f);
+          yield return new WaitForSeconds(1.6f);
+          whiteTriangle.SetActive(true);
+          parrtenYellow.SetActive(true);
             Animation2();
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(1f);
             EnemyGrid.rectTransform.LeanScale(new Vector3(1f, 1f), 0.5f);
             
             

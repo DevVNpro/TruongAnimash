@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 using  UnityEngine.UI;
 
@@ -6,7 +7,7 @@ namespace Projects.Script.PvP.PlayerScript
 {
     public class ShowTotalAttack : MonoBehaviour
     {
-        [SerializeField] private Text textTotalAttack;
+        [SerializeField] private TextMeshProUGUI textTotalAttack;
 
         private void Update()
         {
