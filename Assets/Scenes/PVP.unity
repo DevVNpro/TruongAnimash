@@ -1102,7 +1102,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 80.64045, y: 0}
+  m_AnchoredPosition: {x: -0.000022888184, y: 0}
   m_SizeDelta: {x: -80.64038, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &260597430
@@ -2513,7 +2513,7 @@ GameObject:
   - component: {fileID: 590450807}
   - component: {fileID: 590450810}
   - component: {fileID: 590450809}
-  - component: {fileID: 590450808}
+  - component: {fileID: 590450811}
   m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -2541,19 +2541,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &590450808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 590450806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8481ac077c72bf148a8583d2d27424d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textTotalAttack: {fileID: 590450809}
 --- !u!114 &590450809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2651,6 +2638,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 590450806}
   m_CullTransparentMesh: 1
+--- !u!114 &590450811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590450806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a827fa543c2d9694bb10c8706cdde4af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textTotalAttack: {fileID: 590450809}
 --- !u!1 &594417942
 GameObject:
   m_ObjectHideFlags: 0
@@ -2923,6 +2923,7 @@ MonoBehaviour:
   backgroundDeck: {fileID: 635664574}
   backgroundBattleYellow: {fileID: 1031666876}
   parrtenYellow: {fileID: 1850600268}
+  parrtenBlue: {fileID: 698478600}
   backgroundBattleBlue: {fileID: 475626739}
   whiteTriangle: {fileID: 296861050}
   textBackground1: {fileID: 1541641253}
@@ -2956,7 +2957,7 @@ GameObject:
   - component: {fileID: 630089393}
   - component: {fileID: 630089396}
   - component: {fileID: 630089395}
-  - component: {fileID: 630089394}
+  - component: {fileID: 630089397}
   m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -2984,19 +2985,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &630089394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 630089392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8481ac077c72bf148a8583d2d27424d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textTotalAttack: {fileID: 630089395}
 --- !u!114 &630089395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3094,6 +3082,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 630089392}
   m_CullTransparentMesh: 1
+--- !u!114 &630089397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630089392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8481ac077c72bf148a8583d2d27424d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textTotalAttack: {fileID: 630089395}
 --- !u!1 &635664574
 GameObject:
   m_ObjectHideFlags: 0
@@ -3226,7 +3227,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &698478601
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6688,7 +6689,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2087441023}
   m_HandleRect: {fileID: 2087441022}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -10165,7 +10166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a827fa543c2d9694bb10c8706cdde4af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textAttack: {fileID: 1942103297}
+  textTotalAttack: {fileID: 0}
 --- !u!1 &1986551263
 GameObject:
   m_ObjectHideFlags: 0

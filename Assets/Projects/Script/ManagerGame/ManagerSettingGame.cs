@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace Projects.Script.MenuScripts
 {
-    public class SettingGame : MonoBehaviour
+    public class ManagerSettingGame : MonoBehaviour
     {
         [Header("ImageOff")] 
         [SerializeField] private GameObject imageMusic;

@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 using  UnityEngine.UI;
 namespace Projects.Script.PvP.EnemyCard
@@ -8,11 +9,11 @@ namespace Projects.Script.PvP.EnemyCard
 
         
         [Header("AttackText")]
-        [SerializeField] private Text textAttack;
+        [SerializeField] private TextMeshProUGUI textTotalAttack;
 
         private void Update()
         {
-            textAttack.text = TotalAttackEnemy.sumAttack.ToString();
+            textTotalAttack.text = TotalAttackEnemy.sumAttack.ToString();
         }
     }
 }

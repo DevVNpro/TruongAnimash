@@ -17,6 +17,7 @@ namespace Projects.Script.PvP
         [SerializeField] private GameObject backgroundDeck; 
         [SerializeField] private RectTransform backgroundBattleYellow;
         [SerializeField] private GameObject parrtenYellow;
+        [SerializeField] private GameObject parrtenBlue;
         [SerializeField] private RectTransform backgroundBattleBlue;
         [SerializeField] private GameObject whiteTriangle;
         [SerializeField] private GameObject textBackground1;
@@ -84,14 +85,19 @@ namespace Projects.Script.PvP
             RemoveDrabItem();
             Animation1();
             yield return new WaitForSeconds(1.3f);
-            
-          //  backgroundBattle.LeanScale(new Vector3(1f, 1f), 1f);
-          LeanTween.move(backgroundBattleBlue, new Vector3(backgroundBattleBlue.anchoredPosition.x, -1800f), 2f);
-          LeanTween.move(backgroundBattleYellow, new Vector3(backgroundBattleYellow.anchoredPosition.x, -1914f), 1f);
-          yield return new WaitForSeconds(1.6f);
-          whiteTriangle.SetActive(true);
-          parrtenYellow.SetActive(true);
+            //move background battle
+            LeanTween.move(backgroundBattleBlue, new Vector3(backgroundBattleBlue.anchoredPosition.x, -1800f), 2f);
+             LeanTween.move(backgroundBattleYellow, new Vector3(backgroundBattleYellow.anchoredPosition.x, -1914f), 1f);
+            yield return new WaitForSeconds(1f);
+            whiteTriangle.SetActive(true);
+        /*    yield return new WaitForSeconds(1f);
+            parrtenYellow.SetActive(true);
+            parrtenBlue.SetActive(true);*/
             Animation2();
+            yield return new WaitForSeconds(1f);
+
+            parrtenYellow.SetActive(true);
+            parrtenBlue.SetActive(true);
             yield return new WaitForSeconds(1f);
             EnemyGrid.rectTransform.LeanScale(new Vector3(1f, 1f), 0.5f);
             
@@ -100,7 +106,7 @@ namespace Projects.Script.PvP
             yield return new WaitForSeconds(0.6f);
             foreach (Image image in imageEnemy)
             {
-                image.rectTransform.LeanScale(new Vector3(1f, 1f), 1.4f);
+                image.rectTransform.LeanScale(new Vector3(1f, 1f), 1f);
                 yield return new WaitForSeconds(1.6f);
             }
             
