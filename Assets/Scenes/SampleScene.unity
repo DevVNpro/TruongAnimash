@@ -609,7 +609,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 938932810}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.50927275
+  m_Size: 0.5914545
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1359,7 +1359,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 119, y: 134}
+  m_SizeDelta: {x: 135, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &364042983
 MonoBehaviour:
@@ -1381,7 +1381,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 52a825a7c1ec0264b94123a8fde09410, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 065f7c9ba3deb8b45847db5d3a9539b5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1595,7 +1595,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 334}
+  m_AnchoredPosition: {x: 0, y: 186}
   m_SizeDelta: {x: 2000, y: 3000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &394370153
@@ -2530,15 +2530,6 @@ MonoBehaviour:
   - {fileID: 982631585}
   - {fileID: 1557736442}
   - {fileID: 1373968368}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   _randomButton: {fileID: 935856300}
   particalSystem: {fileID: 1301484766}
   _imageText: {fileID: 203134943}
@@ -4318,7 +4309,7 @@ GameObject:
   - component: {fileID: 1063858194}
   - component: {fileID: 1063858193}
   m_Layer: 0
-  m_Name: ButtonMusic
+  m_Name: ButtonSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5155,7 +5146,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -122}
-  m_SizeDelta: {x: 127, y: 34}
+  m_SizeDelta: {x: 124, y: 34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1214226811
 MonoBehaviour:
@@ -5177,7 +5168,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7186427269c17b54db6630568c83c627, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 77a93080e141bb74b9651562a15076c3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5265,7 +5256,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -122}
-  m_SizeDelta: {x: 124, y: 34}
+  m_SizeDelta: {x: 127, y: 34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1249657717
 MonoBehaviour:
@@ -5287,7 +5278,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 77a93080e141bb74b9651562a15076c3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7186427269c17b54db6630568c83c627, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5595,7 +5586,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 50}
+  m_AnchoredPosition: {x: 0, y: 21}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1282995897
@@ -11953,7 +11944,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 135, y: 125}
+  m_SizeDelta: {x: 119, y: 134}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1611662556
 MonoBehaviour:
@@ -11975,7 +11966,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 065f7c9ba3deb8b45847db5d3a9539b5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 52a825a7c1ec0264b94123a8fde09410, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12555,7 +12546,7 @@ GameObject:
   - component: {fileID: 1677103058}
   - component: {fileID: 1677103057}
   m_Layer: 0
-  m_Name: ButtonSound
+  m_Name: ButtonMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13295,8 +13286,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -14.1}
-  m_SizeDelta: {x: 0, y: 577.2}
+  m_AnchoredPosition: {x: 0, y: -24.2}
+  m_SizeDelta: {x: 0, y: 667.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1806685855
 MonoBehaviour:

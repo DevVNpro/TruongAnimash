@@ -115,4 +115,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonFight: {fileID: 0}
-  tutorial: {fileID: 0}

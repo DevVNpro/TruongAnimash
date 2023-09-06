@@ -64,9 +64,9 @@ namespace Projects.Script.PvP
             LeanTween.move(backgroundEnemy, new Vector3(backgroundEnemy.anchoredPosition.x, 0), 3f).setEaseLinear();
             LeanTween.move(bluePattern, new Vector3(bluePattern.anchoredPosition.x, 2000f), 1.5f);
             yield return  new WaitForSeconds(2.3f);
-            buttonWinLose.LeanScale(new Vector3(1, 1), 1f).setEaseLinear();
-            imageWin.transform.LeanScale(new Vector3(1, 1), 1f).setEaseLinear();
-            yield return new WaitForSeconds(0.8f);
+            buttonWinLose.LeanScale(new Vector3(1, 1), 3f).setEase(LeanTweenType.easeOutElastic);
+            imageWin.transform.LeanScale(new Vector3(1, 1), 3f).setEase(LeanTweenType.easeOutElastic);
+            yield return new WaitForSeconds(0.3f);
             SoundManager.Instance.PlayVfxMuSic("Win");
         }
         IEnumerator TurnOnLoseImg()
@@ -80,9 +80,9 @@ namespace Projects.Script.PvP
             LeanTween.move(backgroundEnemyWin, new Vector3(backgroundEnemyWin.anchoredPosition.x, 0), 2f);
             LeanTween.move(yellowPattern, new Vector3(yellowPattern.anchoredPosition.x, 2100f), 2f);
             yield return  new WaitForSeconds(2.3f);   
-            buttonWinLose.LeanScale(new Vector3(1, 1), 1f).setEaseLinear();
-            imageLose.transform.LeanScale(new Vector3(1, 1), 1f).setEaseLinear();
-            yield return new WaitForSeconds(0.8f);
+            buttonWinLose.LeanScale(new Vector3(1, 1), 3f).setEase(LeanTweenType.easeOutElastic);
+            imageLose.transform.LeanScale(new Vector3(1, 1), 3f).setEase(LeanTweenType.easeOutElastic);
+            yield return new WaitForSeconds(0.3f);
             SoundManager.Instance.PlayVfxMuSic("Lose");
         }
 

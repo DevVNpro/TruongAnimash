@@ -31,19 +31,15 @@ namespace Projects.Script.PvP.PlayerScript
         private Transform transformButton;
         public bool  isMoving = false;
         
-        [Header("Animation Text")] [SerializeField]
-        private Animator teamText;
-
-        [Header("Animation Text")] [SerializeField]
-        private Animator enemyText;
-
         [Header("BlockSpam")] 
          public  GameObject blockSpam;
 
-         [Header("Animaiton background Turn")] [SerializeField]
+         [Header("Animaiton background Turn")]
+         [SerializeField]
          private GameObject enemyTurn;
          [SerializeField]
          private GameObject playerTurn;
+
         private void Start()
         {
             CheckListSlot();

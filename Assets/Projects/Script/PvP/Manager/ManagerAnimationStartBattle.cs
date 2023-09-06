@@ -45,7 +45,7 @@ namespace Projects.Script.PvP
         [SerializeField] private CardOnClick _cardOnClick;
 
         [Header("AnimationImgEnemy")] 
-        [SerializeField] private List<Image> imageEnemy;
+        [SerializeField] private List<RectTransform> enemys;
 
      /*   [Header("Animation Text")]
         [SerializeField] private Animator teamText;*/
@@ -104,10 +104,11 @@ namespace Projects.Script.PvP
             
             //Animation enemt scale
             yield return new WaitForSeconds(0.6f);
-            foreach (Image image in imageEnemy)
+            foreach (RectTransform enemy in enemys)
             {
-                image.rectTransform.LeanScale(new Vector3(1f, 1f), 1f);
-                yield return new WaitForSeconds(1.6f);
+                enemy.localScale = new Vector3(1,1,1);
+                LeanTween.move(enemy, new Vector3(enemy.anchoredPosition.x, -185f), 0.5f);
+                yield return new WaitForSeconds(1f);
             }
             
             textLoading.SetActive(false);
@@ -117,7 +118,7 @@ namespace Projects.Script.PvP
             //animation text
             playerTurn.SetActive(true);
             tutorrialAttack.SetActive(true); 
-           // cardOnClick.SetActive(true);
+           //cardOnClick.SetActive(true);
            _cardOnClick.enabled = true;
 
         }

@@ -6,7 +6,6 @@ namespace Projects.Script.PvP
 {
     public class TotalAttackEnemy : MonoBehaviour
     {
-        //lấy máu theo thẻ bài thi tính đưuọc lúc chết nhưng khi ko xếp bài vẫn tính máu(Đã fix
         [SerializeField] private Card enemy1;
         [SerializeField] private Card enemy2;
         [SerializeField] private Card enemy3;

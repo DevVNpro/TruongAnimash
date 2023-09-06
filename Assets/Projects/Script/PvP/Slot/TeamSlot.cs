@@ -9,9 +9,7 @@ namespace Projects.Script.PvP
     {
         [Header("ButtonFight")]
         [SerializeField] private GameObject buttonFight;
-        [Header("tutorialAnimaiton")]
-        [SerializeField] private GameObject tutorial;
-        
+ 
         
         
         public override void OnDrop(PointerEventData eventData)
